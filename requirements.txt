@@ -1,8 +1,11 @@
 # Requirements for ev_data_visualization
 # Recommended packages for working with the notebooks and datasets
 # Pin versions if you want reproducible installs; these are left unpinned for flexibility.
-kagglehub[pandas-datasets]
 pandas
 plotly
-kaggle
 jupyter
+scipy
+statsmodels
+numpy
+scipy
+numpy
