@@ -7,5 +7,5 @@ jupyter
 scipy
 statsmodels
 numpy
-scipy
-numpy
+folium
+global_land_mask
