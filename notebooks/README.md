@@ -1,34 +1,18 @@
-Visualization #1: Time-Series Line Chart
+Notes:
 
-Tracks EV stock growth for top 10 regions (2010-2024)
-Interactive Plotly chart with hover tooltips
-COVID-19 impact annotation
-Summary statistics on fastest growth periods
-Visualization #2: Geographic Heatmap
+1. On Government policy making impact on EV market
 
-Choropleth world map showing 2023 EV distribution
-Color-coded by stock volume
-ISO country code mapping for proper geography
-Top 5 regions summary table
-Visualization #3: Scatter Plot with Regression
+[IEA Policy Explorer](https://www.iea.org/data-and-statistics/data-tools/global-ev-policy-explorer)
 
-Correlates EV stock growth vs. infrastructure density (EVs per charging point)
-Plotly scatter with OLS trendline
-Pearson correlation coefficient + p-value calculation
-Filters outliers for cleaner insights
-Visualization #4: Stacked Bar Chart
+On India 2019 EV Sales rise: likely because of this policy legislation [India National Legislation Per kWh subsidy for electric two-wheeler increased to INR 15 000/kWh from earlier subsidy of INR 10 000/kWh, with a 50% local content requirement. 2019 2/3W India, Department of Heavy Industries]
 
-Compares BEV vs. PHEV adoption by region (2015-2023)
-Faceted layout showing 8 top regions
-Color-coded by powertrain type
-Calculates and displays BEV market share percentages
-Visualization #5: Timeline Chart
+Grok interpretation: https://x.com/i/grok/share/MWDLZ8bdKXufgcE26y2jAZjJc
 
-Horizontal bars showing growth periods for 5 key regions
-Annotated with major policy events (China subsidies, Paris Agreement, EU Green Deal, US tax credits)
-Visual storytelling connecting policy to adoption surges
-Visualization #6: Interactive Dashboard
+2. On new EV charging datasets
 
-Structured outline for full Dash/Streamlit implementation
-Code skeleton and component descriptions
-All notebook visualizations are already interactive
+INTL: https://www.kaggle.com/datasets/risheepanchal/global-ev-charging-stations-dataset
+CN: https://www.cnopendata.com/data/m/poi/POI-cdz.html [Found relevant dataset, just Australia left but not a big issue for now]
+AUS:
+
+[Notebook demo on Kaggle NEW DATASETS](https://www.kaggle.com/code/shean1107/notebooke9e7d52f3f))
+Comment: China & Australia EV charging station distribution doesn't match with sales data (they should be way more than that.)
