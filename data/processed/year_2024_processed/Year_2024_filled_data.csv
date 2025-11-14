@@ -1,0 +1,1349 @@
+region,category,parameter,mode,powertrain,unit,value,fill_method,year
+China,Projection-STEPS,EV sales,Trucks,PHEV,Vehicles,1560.0,interpolation,2024
+China,Projection-STEPS,EV stock,Trucks,PHEV,Vehicles,5400.0,interpolation,2024
+China,Projection-STEPS,EV stock,Cars,FCEV,Vehicles,4380.0,interpolation,2024
+China,Projection-STEPS,EV stock,Trucks,FCEV,Vehicles,17500.0,interpolation,2024
+China,Projection-STEPS,EV sales,Trucks,FCEV,Vehicles,6200.0,interpolation,2024
+China,Projection-STEPS,EV stock,Trucks,BEV,Vehicles,410000.0,interpolation,2024
+China,Projection-STEPS,EV sales,Trucks,BEV,Vehicles,104000.0,interpolation,2024
+China,Projection-STEPS,EV stock,Cars,PHEV,Vehicles,8900000.0,interpolation,2024
+China,Projection-STEPS,EV sales,Cars,PHEV,Vehicles,3050000.0,interpolation,2024
+China,Projection-STEPS,EV sales,Cars,FCEV,Vehicles,4260.0,interpolation,2024
+China,Projection-STEPS,EV stock,Cars,BEV,Vehicles,23000000.0,interpolation,2024
+China,Projection-STEPS,EV sales,Cars,BEV,Vehicles,6500000.0,interpolation,2024
+China,Projection-STEPS,EV stock,Vans,PHEV,Vehicles,15850.0,interpolation,2024
+China,Projection-STEPS,EV stock,Vans,BEV,Vehicles,940000.0,interpolation,2024
+China,Projection-STEPS,EV sales,Vans,FCEV,Vehicles,5650.0,interpolation,2024
+China,Projection-STEPS,EV stock,Vans,FCEV,Vehicles,9350.0,interpolation,2024
+China,Projection-STEPS,EV sales,Vans,BEV,Vehicles,315000.0,interpolation,2024
+China,Projection-STEPS,EV stock,Buses,PHEV,Vehicles,36000.0,interpolation,2024
+China,Projection-STEPS,EV sales,Buses,PHEV,Vehicles,790.0,interpolation,2024
+China,Projection-STEPS,EV stock,Buses,FCEV,Vehicles,12800.0,interpolation,2024
+China,Projection-STEPS,EV sales,Buses,FCEV,Vehicles,4100.0,interpolation,2024
+China,Projection-STEPS,EV stock,Buses,BEV,Vehicles,730000.0,interpolation,2024
+China,Projection-STEPS,EV sales,Buses,BEV,Vehicles,109500.0,interpolation,2024
+China,Projection-STEPS,EV stock share,Trucks,EV,percent,1.5,interpolation,2024
+China,Projection-STEPS,EV sales share,Trucks,EV,percent,5.39999997615814,interpolation,2024
+China,Projection-STEPS,EV stock share,Cars,EV,percent,10.799999952316284,interpolation,2024
+China,Projection-STEPS,EV sales share,Cars,EV,percent,43.5,interpolation,2024
+China,Projection-STEPS,EV stock share,Vans,EV,percent,4.799999952316285,interpolation,2024
+China,Projection-STEPS,EV sales share,Vans,EV,percent,18.5,interpolation,2024
+China,Projection-STEPS,EV stock share,Buses,EV,percent,28.5,interpolation,2024
+China,Projection-STEPS,EV sales share,Buses,EV,percent,50.0,interpolation,2024
+China,Projection-APS,EV charging points,EV,Publicly available fast,charging points,1650000.0,interpolation,2024
+China,Projection-APS,EV charging points,EV,Publicly available slow,charging points,2050000.0,interpolation,2024
+China,Projection-APS,EV stock share,Trucks,EV,percent,1.5,interpolation,2024
+China,Projection-APS,EV sales share,Trucks,EV,percent,5.39999997615814,interpolation,2024
+China,Projection-APS,EV stock share,Cars,EV,percent,10.799999952316284,interpolation,2024
+China,Projection-APS,EV sales share,Cars,EV,percent,43.5,interpolation,2024
+China,Projection-APS,EV stock share,Vans,EV,percent,4.799999952316285,interpolation,2024
+China,Projection-APS,EV sales share,Vans,EV,percent,18.5,interpolation,2024
+China,Projection-APS,EV stock,Cars,FCEV,Vehicles,14880.0,interpolation,2024
+China,Projection-APS,EV sales,Cars,FCEV,Vehicles,13760.0,interpolation,2024
+China,Projection-APS,EV stock,Cars,BEV,Vehicles,23500000.0,interpolation,2024
+China,Projection-APS,EV sales,Cars,BEV,Vehicles,6850000.0,interpolation,2024
+China,Projection-APS,EV stock,Vans,PHEV,Vehicles,14850.0,interpolation,2024
+China,Projection-APS,EV sales,Vans,FCEV,Vehicles,5350.0,interpolation,2024
+China,Projection-APS,EV stock,Vans,FCEV,Vehicles,9350.0,interpolation,2024
+China,Projection-APS,EV stock,Vans,BEV,Vehicles,940000.0,interpolation,2024
+China,Projection-APS,EV sales,Vans,BEV,Vehicles,305000.0,interpolation,2024
+China,Projection-APS,EV stock,Buses,PHEV,Vehicles,36000.0,interpolation,2024
+China,Projection-APS,EV sales,Buses,PHEV,Vehicles,790.0,interpolation,2024
+China,Projection-APS,EV stock,Buses,FCEV,Vehicles,12800.0,interpolation,2024
+China,Projection-APS,EV sales,Buses,FCEV,Vehicles,4100.0,interpolation,2024
+China,Projection-APS,EV stock,Buses,BEV,Vehicles,730000.0,interpolation,2024
+China,Projection-APS,EV sales,Buses,BEV,Vehicles,109500.0,interpolation,2024
+China,Projection-STEPS,EV charging points,EV,Publicly available fast,charging points,1650000.0,interpolation,2024
+China,Projection-STEPS,EV charging points,EV,Publicly available slow,charging points,2050000.0,interpolation,2024
+China,Projection-APS,Electricity demand,Buses,EV,GWh,13350.0,interpolation,2024
+China,Projection-APS,Electricity demand,Trucks,EV,GWh,7450.0,interpolation,2024
+China,Projection-APS,Electricity demand,Vans,EV,GWh,1800.0,interpolation,2024
+China,Projection-APS,Electricity demand,Cars,EV,GWh,62000.0,interpolation,2024
+China,Projection-APS,Oil displacement Mbd,Buses,EV,Milion barrels per day,0.039000000804662496,interpolation,2024
+China,Projection-APS,Oil displacement Mbd,Trucks,EV,Milion barrels per day,0.0309999994933605,interpolation,2024
+China,Projection-APS,Oil displacement Mbd,Vans,EV,Milion barrels per day,0.014399999752640499,interpolation,2024
+China,Projection-APS,Oil displacement Mbd,Cars,EV,Milion barrels per day,0.455000013113022,interpolation,2024
+China,Projection-APS,"Oil displacement, million lge",Buses,EV,"Oil displacement, million lge",2350.0,interpolation,2024
+China,Projection-APS,"Oil displacement, million lge",Trucks,EV,"Oil displacement, million lge",1850.0,interpolation,2024
+China,Projection-APS,"Oil displacement, million lge",Vans,EV,"Oil displacement, million lge",845.0,interpolation,2024
+China,Projection-APS,"Oil displacement, million lge",Cars,EV,"Oil displacement, million lge",27500.0,interpolation,2024
+China,Projection-STEPS,Oil displacement Mbd,Buses,EV,Milion barrels per day,0.039000000804662496,interpolation,2024
+China,Projection-STEPS,Oil displacement Mbd,Trucks,EV,Milion barrels per day,0.0315000005066395,interpolation,2024
+China,Projection-STEPS,Oil displacement Mbd,Vans,EV,Milion barrels per day,0.014399999752640499,interpolation,2024
+China,Projection-STEPS,Oil displacement Mbd,Cars,EV,Milion barrels per day,0.4600000083446505,interpolation,2024
+China,Projection-STEPS,"Oil displacement, million lge",Buses,EV,"Oil displacement, million lge",2350.0,interpolation,2024
+China,Projection-STEPS,"Oil displacement, million lge",Trucks,EV,"Oil displacement, million lge",1900.0,interpolation,2024
+China,Projection-STEPS,"Oil displacement, million lge",Vans,EV,"Oil displacement, million lge",895.0,interpolation,2024
+China,Projection-STEPS,"Oil displacement, million lge",Cars,EV,"Oil displacement, million lge",27500.0,interpolation,2024
+China,Projection-APS,EV sales,Trucks,PHEV,Vehicles,1510.0,interpolation,2024
+China,Projection-APS,EV stock,Trucks,PHEV,Vehicles,5350.0,interpolation,2024
+China,Projection-APS,EV stock,Trucks,FCEV,Vehicles,18000.0,interpolation,2024
+China,Projection-APS,EV sales,Trucks,FCEV,Vehicles,6650.0,interpolation,2024
+China,Projection-APS,EV stock,Trucks,BEV,Vehicles,405000.0,interpolation,2024
+China,Projection-APS,EV sales,Trucks,BEV,Vehicles,94000.0,interpolation,2024
+China,Projection-APS,EV stock,Cars,PHEV,Vehicles,8900000.0,interpolation,2024
+China,Projection-APS,EV sales,Cars,PHEV,Vehicles,2650000.0,interpolation,2024
+China,Projection-APS,EV stock share,Buses,EV,percent,28.5,interpolation,2024
+China,Projection-APS,EV sales share,Buses,EV,percent,50.0,interpolation,2024
+China,Projection-STEPS,Electricity demand,Buses,EV,GWh,13350.0,interpolation,2024
+China,Projection-STEPS,Electricity demand,Trucks,EV,GWh,7600.0,interpolation,2024
+China,Projection-STEPS,Electricity demand,Vans,EV,GWh,1800.0,interpolation,2024
+China,Projection-STEPS,Electricity demand,Cars,EV,GWh,63000.0,interpolation,2024
+Europe,Projection-APS,EV sales,Vans,PHEV,Vehicles,13200.0,interpolation,2024
+Europe,Projection-APS,EV stock,Vans,BEV,Vehicles,695000.0,interpolation,2024
+Europe,Projection-APS,EV sales,Vans,BEV,Vehicles,240000.0,interpolation,2024
+Europe,Projection-APS,EV stock,Buses,PHEV,Vehicles,2550.0,interpolation,2024
+Europe,Projection-APS,EV sales,Buses,PHEV,Vehicles,980.0,interpolation,2024
+Europe,Projection-APS,EV stock,Buses,FCEV,Vehicles,1830.0,interpolation,2024
+Europe,Projection-APS,EV sales,Buses,FCEV,Vehicles,905.0,interpolation,2024
+Europe,Projection-APS,EV stock,Buses,BEV,Vehicles,46000.0,interpolation,2024
+Europe,Projection-APS,EV sales,Buses,BEV,Vehicles,16150.0,interpolation,2024
+Europe,Projection-APS,EV sales,Trucks,PHEV,Vehicles,919.0,interpolation,2024
+Europe,Projection-APS,EV stock,Trucks,FCEV,Vehicles,625.0,interpolation,2024
+Europe,Projection-APS,EV sales,Trucks,FCEV,Vehicles,84.5,interpolation,2024
+Europe,Projection-APS,EV stock,Trucks,BEV,Vehicles,44500.0,interpolation,2024
+Europe,Projection-APS,EV sales,Trucks,BEV,Vehicles,17500.0,interpolation,2024
+Europe,Projection-APS,EV stock,Cars,PHEV,Vehicles,5650000.0,interpolation,2024
+Europe,Projection-APS,EV sales,Cars,PHEV,Vehicles,1100000.0,interpolation,2024
+Europe,Projection-APS,EV stock,Cars,FCEV,Vehicles,9250.0,interpolation,2024
+Europe,Projection-APS,EV stock,Trucks,PHEV,Vehicles,1100.0,interpolation,2024
+Europe,Projection-APS,EV sales,Cars,FCEV,Vehicles,3310.0,interpolation,2024
+Europe,Projection-APS,EV stock,Cars,BEV,Vehicles,9850000.0,interpolation,2024
+Europe,Projection-APS,EV sales,Cars,BEV,Vehicles,2900000.0,interpolation,2024
+Europe,Projection-APS,EV stock,Vans,PHEV,Vehicles,26500.0,interpolation,2024
+Europe,Projection-APS,EV stock,Vans,FCEV,Vehicles,5190.0,interpolation,2024
+Europe,Projection-APS,EV sales,Vans,FCEV,Vehicles,4079.0,interpolation,2024
+Europe,Projection-STEPS,EV charging points,EV,Publicly available fast,charging points,145000.0,interpolation,2024
+Europe,Projection-STEPS,EV charging points,EV,Publicly available slow,charging points,735000.0,interpolation,2024
+Europe,Projection-APS,Electricity demand,Buses,EV,GWh,2600.0,interpolation,2024
+Europe,Projection-APS,Electricity demand,Trucks,EV,GWh,2950.0,interpolation,2024
+Europe,Projection-APS,Electricity demand,Vans,EV,GWh,6050.0,interpolation,2024
+Europe,Projection-APS,Electricity demand,Cars,EV,GWh,42000.0,interpolation,2024
+Europe,Projection-APS,Oil displacement Mbd,Buses,EV,Milion barrels per day,0.010000000242144001,interpolation,2024
+Europe,Projection-APS,Oil displacement Mbd,Trucks,EV,Milion barrels per day,0.0120000005699695,interpolation,2024
+Europe,Projection-APS,Oil displacement Mbd,Vans,EV,Milion barrels per day,0.0300000002607705,interpolation,2024
+Europe,Projection-APS,Oil displacement Mbd,Cars,EV,Milion barrels per day,0.2400000020861625,interpolation,2024
+Europe,Projection-APS,"Oil displacement, million lge",Buses,EV,"Oil displacement, million lge",590.0,interpolation,2024
+Europe,Projection-APS,"Oil displacement, million lge",Trucks,EV,"Oil displacement, million lge",705.0,interpolation,2024
+Europe,Projection-APS,"Oil displacement, million lge",Vans,EV,"Oil displacement, million lge",1750.0,interpolation,2024
+Europe,Projection-APS,"Oil displacement, million lge",Cars,EV,"Oil displacement, million lge",14000.0,interpolation,2024
+Europe,Projection-APS,EV charging points,EV,Publicly available fast,charging points,145000.0,interpolation,2024
+Europe,Projection-APS,EV charging points,EV,Publicly available slow,charging points,735000.0,interpolation,2024
+Europe,Projection-STEPS,Oil displacement Mbd,Buses,EV,Milion barrels per day,0.010000000242144001,interpolation,2024
+Europe,Projection-STEPS,Oil displacement Mbd,Trucks,EV,Milion barrels per day,0.0124999997206035,interpolation,2024
+Europe,Projection-STEPS,Oil displacement Mbd,Vans,EV,Milion barrels per day,0.0300000002607705,interpolation,2024
+Europe,Projection-STEPS,Oil displacement Mbd,Cars,EV,Milion barrels per day,0.244999997317791,interpolation,2024
+Europe,Projection-STEPS,"Oil displacement, million lge",Buses,EV,"Oil displacement, million lge",570.0,interpolation,2024
+Europe,Projection-STEPS,"Oil displacement, million lge",Trucks,EV,"Oil displacement, million lge",705.0,interpolation,2024
+Europe,Projection-STEPS,"Oil displacement, million lge",Vans,EV,"Oil displacement, million lge",1750.0,interpolation,2024
+Europe,Projection-STEPS,"Oil displacement, million lge",Cars,EV,"Oil displacement, million lge",14000.0,interpolation,2024
+Europe,Projection-APS,EV stock share,Trucks,EV,percent,0.54500000923872,interpolation,2024
+Europe,Projection-APS,EV sales share,Trucks,EV,percent,3.80000001192093,interpolation,2024
+Europe,Projection-APS,EV sales share,Cars,EV,percent,26.0,interpolation,2024
+Europe,Projection-APS,EV stock share,Vans,EV,percent,2.05000001192093,interpolation,2024
+Europe,Projection-APS,EV sales share,Vans,EV,percent,11.09999990463257,interpolation,2024
+Europe,Projection-APS,EV stock share,Buses,EV,percent,2.80000001192093,interpolation,2024
+Europe,Projection-APS,EV stock share,Cars,EV,percent,5.39999997615814,interpolation,2024
+Europe,Projection-APS,EV sales share,Buses,EV,percent,20.5,interpolation,2024
+Europe,Projection-STEPS,EV sales share,Trucks,EV,percent,3.30000001192093,interpolation,2024
+Europe,Projection-STEPS,EV stock share,Trucks,EV,percent,0.539999984204769,interpolation,2024
+Europe,Projection-STEPS,EV stock share,Cars,EV,percent,5.39999997615814,interpolation,2024
+Europe,Projection-STEPS,EV sales share,Cars,EV,percent,26.0,interpolation,2024
+Europe,Projection-STEPS,EV stock share,Vans,EV,percent,1.5500000119209298,interpolation,2024
+Europe,Projection-STEPS,EV sales share,Vans,EV,percent,10.59999990463257,interpolation,2024
+Europe,Projection-STEPS,EV sales share,Buses,EV,percent,18.5,interpolation,2024
+Europe,Projection-STEPS,EV stock share,Buses,EV,percent,2.80000001192093,interpolation,2024
+Europe,Projection-STEPS,EV sales,Trucks,PHEV,Vehicles,359.0,interpolation,2024
+Europe,Projection-STEPS,EV stock,Trucks,PHEV,Vehicles,550.0,interpolation,2024
+Europe,Projection-STEPS,EV stock,Trucks,FCEV,Vehicles,560.0,interpolation,2024
+Europe,Projection-STEPS,EV sales,Trucks,FCEV,Vehicles,24.0,interpolation,2024
+Europe,Projection-STEPS,EV stock,Trucks,BEV,Vehicles,44500.0,interpolation,2024
+Europe,Projection-STEPS,EV sales,Trucks,BEV,Vehicles,18000.0,interpolation,2024
+Europe,Projection-STEPS,EV stock,Cars,PHEV,Vehicles,5850000.0,interpolation,2024
+Europe,Projection-STEPS,EV sales,Cars,PHEV,Vehicles,1300000.0,interpolation,2024
+Europe,Projection-STEPS,EV stock,Cars,FCEV,Vehicles,5700.0,interpolation,2024
+Europe,Projection-STEPS,EV sales,Cars,FCEV,Vehicles,2310.0,interpolation,2024
+Europe,Projection-STEPS,EV stock,Buses,PHEV,Vehicles,2300.0,interpolation,2024
+Europe,Projection-STEPS,EV sales,Buses,PHEV,Vehicles,730.0,interpolation,2024
+Europe,Projection-STEPS,EV stock,Buses,FCEV,Vehicles,1330.0,interpolation,2024
+Europe,Projection-STEPS,EV sales,Buses,FCEV,Vehicles,445.0,interpolation,2024
+Europe,Projection-STEPS,EV stock,Buses,BEV,Vehicles,44000.0,interpolation,2024
+Europe,Projection-STEPS,EV sales,Buses,BEV,Vehicles,14650.0,interpolation,2024
+Europe,Projection-STEPS,EV stock,Cars,BEV,Vehicles,9350000.0,interpolation,2024
+Europe,Projection-STEPS,EV sales,Cars,BEV,Vehicles,2750000.0,interpolation,2024
+Europe,Projection-STEPS,EV stock,Vans,PHEV,Vehicles,25000.0,interpolation,2024
+Europe,Projection-STEPS,EV sales,Vans,PHEV,Vehicles,11700.0,interpolation,2024
+Europe,Projection-STEPS,EV stock,Vans,BEV,Vehicles,685000.0,interpolation,2024
+Europe,Projection-STEPS,EV sales,Vans,BEV,Vehicles,230000.0,interpolation,2024
+Europe,Projection-STEPS,EV stock,Vans,FCEV,Vehicles,5090.0,interpolation,2024
+Europe,Projection-STEPS,EV sales,Vans,FCEV,Vehicles,3829.0,interpolation,2024
+Europe,Projection-STEPS,Electricity demand,Buses,EV,GWh,2450.0,interpolation,2024
+Europe,Projection-STEPS,Electricity demand,Trucks,EV,GWh,3000.0,interpolation,2024
+Europe,Projection-STEPS,Electricity demand,Vans,EV,GWh,5950.0,interpolation,2024
+Europe,Projection-STEPS,Electricity demand,Cars,EV,GWh,42500.0,interpolation,2024
+India,Projection-APS,EV sales share,Cars,EV,percent,5.5,interpolation,2024
+India,Projection-APS,EV stock share,Cars,EV,percent,0.655000001192093,interpolation,2024
+India,Projection-APS,EV stock share,Vans,EV,percent,0.2085000053048135,interpolation,2024
+India,Projection-APS,EV sales share,Vans,EV,percent,2.5309999994933605,interpolation,2024
+India,Projection-APS,EV stock share,Buses,EV,percent,1.219999998807907,interpolation,2024
+India,Projection-APS,EV sales share,Buses,EV,percent,9.90000009536743,interpolation,2024
+India,Projection-APS,EV stock,Cars,PHEV,Vehicles,5195.0,interpolation,2024
+India,Projection-APS,EV sales,Cars,PHEV,Vehicles,4935.0,interpolation,2024
+India,Projection-APS,EV stock,Cars,BEV,Vehicles,410000.0,interpolation,2024
+India,Projection-APS,EV sales,Cars,BEV,Vehicles,236000.0,interpolation,2024
+India,Projection-APS,EV stock,Cars,FCEV,Vehicles,23.5,interpolation,2024
+India,Projection-STEPS,EV sales,Cars,PHEV,Vehicles,2235.0,interpolation,2024
+India,Projection-STEPS,EV stock,Cars,PHEV,Vehicles,2295.0,interpolation,2024
+India,Projection-STEPS,EV stock,Cars,BEV,Vehicles,370000.0,interpolation,2024
+India,Projection-STEPS,EV sales,Cars,BEV,Vehicles,201000.0,interpolation,2024
+India,Projection-STEPS,EV stock,Vans,BEV,Vehicles,14150.0,interpolation,2024
+India,Projection-STEPS,EV sales,Buses,FCEV,Vehicles,216.0,interpolation,2024
+India,Projection-STEPS,EV stock,Buses,FCEV,Vehicles,455.0,interpolation,2024
+India,Projection-STEPS,EV sales,Vans,BEV,Vehicles,5675.0,interpolation,2024
+India,Projection-STEPS,EV stock,Buses,BEV,Vehicles,26200.0,interpolation,2024
+India,Projection-STEPS,EV sales,Buses,BEV,Vehicles,8150.0,interpolation,2024
+India,Projection-STEPS,EV stock share,Buses,EV,percent,1.219999998807907,interpolation,2024
+India,Projection-STEPS,EV sales share,Buses,EV,percent,8.40000009536743,interpolation,2024
+India,Projection-STEPS,EV stock share,Cars,EV,percent,0.655000001192093,interpolation,2024
+India,Projection-STEPS,EV sales share,Cars,EV,percent,4.5,interpolation,2024
+India,Projection-STEPS,EV stock share,Vans,EV,percent,0.173499993979931,interpolation,2024
+India,Projection-STEPS,EV sales share,Vans,EV,percent,1.5309999994933605,interpolation,2024
+India,Projection-STEPS,Electricity demand,Buses,EV,GWh,1245.0,interpolation,2024
+India,Projection-STEPS,Electricity demand,Vans,EV,GWh,95.5,interpolation,2024
+India,Projection-STEPS,Electricity demand,Cars,EV,GWh,1005.0,interpolation,2024
+India,Projection-STEPS,Oil displacement Mbd,Buses,EV,Milion barrels per day,0.0053000000771135,interpolation,2024
+India,Projection-STEPS,Oil displacement Mbd,Vans,EV,Milion barrels per day,0.000520000001416,interpolation,2024
+India,Projection-STEPS,Oil displacement Mbd,Cars,EV,Milion barrels per day,0.0062999998917805,interpolation,2024
+India,Projection-STEPS,"Oil displacement, million lge",Buses,EV,"Oil displacement, million lge",305.0,interpolation,2024
+India,Projection-STEPS,"Oil displacement, million lge",Vans,EV,"Oil displacement, million lge",30.0,interpolation,2024
+India,Projection-STEPS,"Oil displacement, million lge",Cars,EV,"Oil displacement, million lge",365.0,interpolation,2024
+India,Projection-APS,EV stock,Vans,BEV,Vehicles,16650.0,interpolation,2024
+India,Projection-APS,EV sales,Vans,BEV,Vehicles,8175.0,interpolation,2024
+India,Projection-APS,EV sales,Buses,FCEV,Vehicles,281.0,interpolation,2024
+India,Projection-APS,EV stock,Buses,FCEV,Vehicles,520.0,interpolation,2024
+India,Projection-APS,EV stock,Buses,BEV,Vehicles,28200.0,interpolation,2024
+India,Projection-APS,EV sales,Buses,BEV,Vehicles,10650.0,interpolation,2024
+India,Projection-APS,EV charging points,EV,Publicly available fast,charging points,4750.0,interpolation,2024
+India,Projection-APS,EV charging points,EV,Publicly available slow,charging points,33900.0,interpolation,2024
+India,Projection-APS,Oil displacement Mbd,Buses,EV,Milion barrels per day,0.0057000000961125,interpolation,2024
+India,Projection-APS,Oil displacement Mbd,Vans,EV,Milion barrels per day,0.000604999993811,interpolation,2024
+India,Projection-APS,Oil displacement Mbd,Cars,EV,Milion barrels per day,0.0067999999737364996,interpolation,2024
+India,Projection-APS,"Oil displacement, million lge",Buses,EV,"Oil displacement, million lge",325.0,interpolation,2024
+India,Projection-APS,"Oil displacement, million lge",Vans,EV,"Oil displacement, million lge",34.5,interpolation,2024
+India,Projection-APS,"Oil displacement, million lge",Cars,EV,"Oil displacement, million lge",405.0,interpolation,2024
+India,Projection-STEPS,EV charging points,EV,Publicly available fast,charging points,4300.0,interpolation,2024
+India,Projection-STEPS,EV charging points,EV,Publicly available slow,charging points,28400.0,interpolation,2024
+India,Projection-APS,Electricity demand,Buses,EV,GWh,1345.0,interpolation,2024
+India,Projection-APS,Electricity demand,Vans,EV,GWh,112.0,interpolation,2024
+India,Projection-APS,Electricity demand,Cars,EV,GWh,1105.0,interpolation,2024
+Rest of the world,Projection-APS,Oil displacement Mbd,Buses,EV,Milion barrels per day,0.009049999876879,interpolation,2024
+Rest of the world,Projection-APS,Oil displacement Mbd,Trucks,EV,Milion barrels per day,0.0051000000676145,interpolation,2024
+Rest of the world,Projection-APS,Oil displacement Mbd,Vans,EV,Milion barrels per day,0.018300000578165,interpolation,2024
+Rest of the world,Projection-APS,Oil displacement Mbd,Cars,EV,Milion barrels per day,0.0924999974668025,interpolation,2024
+Rest of the world,Projection-APS,"Oil displacement, million lge",Buses,EV,"Oil displacement, million lge",525.0,interpolation,2024
+Rest of the world,Projection-APS,"Oil displacement, million lge",Trucks,EV,"Oil displacement, million lge",294.5,interpolation,2024
+Rest of the world,Projection-APS,"Oil displacement, million lge",Vans,EV,"Oil displacement, million lge",1050.0,interpolation,2024
+Rest of the world,Projection-APS,"Oil displacement, million lge",Cars,EV,"Oil displacement, million lge",5350.0,interpolation,2024
+Rest of the world,Projection-APS,EV charging points,EV,Publicly available fast,charging points,109000.0,interpolation,2024
+Rest of the world,Projection-APS,EV charging points,EV,Publicly available slow,charging points,360000.0,interpolation,2024
+Rest of the world,Projection-APS,Electricity demand,Buses,EV,GWh,2550.0,interpolation,2024
+Rest of the world,Projection-APS,Electricity demand,Trucks,EV,GWh,1165.0,interpolation,2024
+Rest of the world,Projection-APS,Electricity demand,Vans,EV,GWh,2600.0,interpolation,2024
+Rest of the world,Projection-APS,Electricity demand,Cars,EV,GWh,14450.0,interpolation,2024
+Rest of the world,Projection-STEPS,EV charging points,EV,Publicly available fast,charging points,84000.0,interpolation,2024
+Rest of the world,Projection-STEPS,EV charging points,EV,Publicly available slow,charging points,335000.0,interpolation,2024
+Rest of the world,Projection-APS,EV sales,Trucks,FCEV,Vehicles,325.5,interpolation,2024
+Rest of the world,Projection-APS,EV stock,Trucks,PHEV,Vehicles,2756.5,interpolation,2024
+Rest of the world,Projection-APS,EV stock,Trucks,FCEV,Vehicles,373.0,interpolation,2024
+Rest of the world,Projection-APS,EV stock,Trucks,BEV,Vehicles,19750.0,interpolation,2024
+Rest of the world,Projection-APS,EV sales,Trucks,BEV,Vehicles,11650.0,interpolation,2024
+Rest of the world,Projection-APS,EV stock,Cars,PHEV,Vehicles,1120000.0,interpolation,2024
+Rest of the world,Projection-APS,EV sales,Cars,PHEV,Vehicles,325000.0,interpolation,2024
+Rest of the world,Projection-APS,EV stock,Cars,FCEV,Vehicles,76000.0,interpolation,2024
+Rest of the world,Projection-APS,EV sales,Cars,FCEV,Vehicles,36300.0,interpolation,2024
+Rest of the world,Projection-APS,EV stock,Cars,BEV,Vehicles,3050000.0,interpolation,2024
+Rest of the world,Projection-APS,EV sales,Cars,BEV,Vehicles,1145000.0,interpolation,2024
+Rest of the world,Projection-APS,EV stock,Vans,PHEV,Vehicles,32075.0,interpolation,2024
+Rest of the world,Projection-APS,EV sales,Vans,PHEV,Vehicles,25550.0,interpolation,2024
+Rest of the world,Projection-APS,EV stock,Vans,FCEV,Vehicles,6005.0,interpolation,2024
+Rest of the world,Projection-APS,EV sales,Vans,FCEV,Vehicles,3650.5,interpolation,2024
+Rest of the world,Projection-APS,EV stock,Vans,BEV,Vehicles,330000.0,interpolation,2024
+Rest of the world,Projection-APS,EV sales,Vans,BEV,Vehicles,143500.0,interpolation,2024
+Rest of the world,Projection-APS,EV stock,Buses,PHEV,Vehicles,7024.5,interpolation,2024
+Rest of the world,Projection-STEPS,EV sales,Cars,BEV,Vehicles,995000.0,interpolation,2024
+Rest of the world,Projection-STEPS,EV stock,Vans,PHEV,Vehicles,13575.0,interpolation,2024
+Rest of the world,Projection-STEPS,EV sales,Vans,PHEV,Vehicles,6550.0,interpolation,2024
+Rest of the world,Projection-STEPS,EV stock,Vans,FCEV,Vehicles,6005.0,interpolation,2024
+Rest of the world,Projection-STEPS,EV sales,Vans,FCEV,Vehicles,3600.5,interpolation,2024
+Rest of the world,Projection-STEPS,EV stock,Vans,BEV,Vehicles,310000.0,interpolation,2024
+Rest of the world,Projection-STEPS,EV sales,Vans,BEV,Vehicles,118500.0,interpolation,2024
+Rest of the world,Projection-STEPS,EV stock,Buses,PHEV,Vehicles,7524.5,interpolation,2024
+Rest of the world,Projection-STEPS,EV stock,Buses,FCEV,Vehicles,4650.0,interpolation,2024
+Rest of the world,Projection-STEPS,EV sales,Buses,FCEV,Vehicles,2385.0,interpolation,2024
+Rest of the world,Projection-STEPS,EV stock,Buses,BEV,Vehicles,39000.0,interpolation,2024
+Rest of the world,Projection-STEPS,EV sales,Buses,BEV,Vehicles,15300.0,interpolation,2024
+Rest of the world,Projection-STEPS,EV sales share,Trucks,EV,percent,0.25,interpolation,2024
+Rest of the world,Projection-STEPS,EV stock share,Trucks,EV,percent,0.0450000008568165,interpolation,2024
+Rest of the world,Projection-STEPS,EV stock share,Cars,EV,percent,0.7899999916553495,interpolation,2024
+Rest of the world,Projection-STEPS,EV sales share,Cars,EV,percent,5.450000047683715,interpolation,2024
+Rest of the world,Projection-STEPS,EV stock share,Vans,EV,percent,0.405000001192093,interpolation,2024
+Rest of the world,Projection-STEPS,EV sales share,Vans,EV,percent,2.10000002384186,interpolation,2024
+Rest of the world,Projection-STEPS,EV sales share,Buses,EV,percent,1.280000001192093,interpolation,2024
+Rest of the world,Projection-STEPS,EV stock share,Buses,EV,percent,0.365000009536743,interpolation,2024
+Rest of the world,Projection-APS,EV sales share,Trucks,EV,percent,0.425000011920929,interpolation,2024
+Rest of the world,Projection-APS,EV stock share,Cars,EV,percent,0.7899999916553495,interpolation,2024
+Rest of the world,Projection-APS,EV sales share,Cars,EV,percent,6.450000047683715,interpolation,2024
+Rest of the world,Projection-APS,EV stock share,Vans,EV,percent,0.455000013113022,interpolation,2024
+Rest of the world,Projection-APS,EV stock share,Trucks,EV,percent,0.0630000000819565,interpolation,2024
+Rest of the world,Projection-STEPS,EV sales,Trucks,FCEV,Vehicles,64.0,interpolation,2024
+Rest of the world,Projection-STEPS,EV stock,Trucks,BEV,Vehicles,15750.0,interpolation,2024
+Rest of the world,Projection-STEPS,EV sales,Trucks,BEV,Vehicles,8150.0,interpolation,2024
+Rest of the world,Projection-STEPS,EV stock,Cars,PHEV,Vehicles,1070000.0,interpolation,2024
+Rest of the world,Projection-STEPS,EV sales,Cars,PHEV,Vehicles,285000.0,interpolation,2024
+Rest of the world,Projection-STEPS,EV stock,Cars,FCEV,Vehicles,54000.0,interpolation,2024
+Rest of the world,Projection-STEPS,EV sales,Cars,FCEV,Vehicles,15300.0,interpolation,2024
+Rest of the world,Projection-STEPS,EV stock,Cars,BEV,Vehicles,2850000.0,interpolation,2024
+Rest of the world,Projection-STEPS,EV stock,Trucks,PHEV,Vehicles,50.5,interpolation,2024
+Rest of the world,Projection-STEPS,EV stock,Trucks,FCEV,Vehicles,113.0,interpolation,2024
+Rest of the world,Projection-STEPS,Electricity demand,Buses,EV,GWh,1995.0,interpolation,2024
+Rest of the world,Projection-STEPS,Electricity demand,Trucks,EV,GWh,770.0,interpolation,2024
+Rest of the world,Projection-STEPS,Electricity demand,Vans,EV,GWh,2100.0,interpolation,2024
+Rest of the world,Projection-STEPS,Electricity demand,Cars,EV,GWh,13950.0,interpolation,2024
+Rest of the world,Projection-STEPS,Oil displacement Mbd,Buses,EV,Milion barrels per day,0.007050000014714499,interpolation,2024
+Rest of the world,Projection-STEPS,Oil displacement Mbd,Trucks,EV,Milion barrels per day,0.0033500000135975,interpolation,2024
+Rest of the world,Projection-STEPS,Oil displacement Mbd,Vans,EV,Milion barrels per day,0.01575000025332,interpolation,2024
+Rest of the world,Projection-STEPS,Oil displacement Mbd,Cars,EV,Milion barrels per day,0.08749999850988399,interpolation,2024
+Rest of the world,Projection-STEPS,"Oil displacement, million lge",Buses,EV,"Oil displacement, million lge",400.0,interpolation,2024
+Rest of the world,Projection-STEPS,"Oil displacement, million lge",Trucks,EV,"Oil displacement, million lge",194.5,interpolation,2024
+Rest of the world,Projection-STEPS,"Oil displacement, million lge",Vans,EV,"Oil displacement, million lge",895.0,interpolation,2024
+Rest of the world,Projection-STEPS,"Oil displacement, million lge",Cars,EV,"Oil displacement, million lge",5150.0,interpolation,2024
+Rest of the world,Projection-APS,EV sales share,Vans,EV,percent,3.10000002384186,interpolation,2024
+Rest of the world,Projection-APS,EV sales share,Buses,EV,percent,1.780000001192093,interpolation,2024
+Rest of the world,Projection-APS,EV stock share,Buses,EV,percent,0.45499998331069946,interpolation,2024
+Rest of the world,Projection-APS,EV sales,Buses,FCEV,Vehicles,2835.0,interpolation,2024
+Rest of the world,Projection-APS,EV stock,Buses,BEV,Vehicles,50500.0,interpolation,2024
+Rest of the world,Projection-APS,EV stock,Buses,FCEV,Vehicles,5100.0,interpolation,2024
+Rest of the world,Projection-APS,EV sales,Buses,BEV,Vehicles,27300.0,interpolation,2024
+USA,Projection-APS,Oil displacement Mbd,Buses,EV,Milion barrels per day,0.0038499999791385,interpolation,2024
+USA,Projection-APS,Oil displacement Mbd,Cars,EV,Milion barrels per day,0.25999999791383754,interpolation,2024
+USA,Projection-APS,"Oil displacement, million lge",Buses,EV,"Oil displacement, million lge",221.5,interpolation,2024
+USA,Projection-APS,"Oil displacement, million lge",Cars,EV,"Oil displacement, million lge",14850.0,interpolation,2024
+USA,Projection-APS,EV charging points,EV,Publicly available fast,charging points,71500.0,interpolation,2024
+USA,Projection-APS,EV charging points,EV,Publicly available slow,charging points,210000.0,interpolation,2024
+USA,Projection-APS,Electricity demand,Buses,EV,GWh,1045.0,interpolation,2024
+USA,Projection-APS,Electricity demand,Cars,EV,GWh,36500.0,interpolation,2024
+USA,Projection-STEPS,EV charging points,EV,Publicly available fast,charging points,71500.0,interpolation,2024
+USA,Projection-STEPS,EV charging points,EV,Publicly available slow,charging points,210000.0,interpolation,2024
+USA,Projection-APS,EV stock share,Buses,EV,percent,2.4600000083446503,interpolation,2024
+USA,Projection-APS,EV sales share,Buses,EV,percent,5.884999990463257,interpolation,2024
+USA,Projection-APS,EV stock share,Cars,EV,percent,3.049999952316285,interpolation,2024
+USA,Projection-APS,EV sales share,Cars,EV,percent,14.75,interpolation,2024
+USA,Projection-STEPS,EV stock share,Buses,EV,percent,2.4600000083446503,interpolation,2024
+USA,Projection-STEPS,EV sales share,Buses,EV,percent,5.884999990463257,interpolation,2024
+USA,Projection-STEPS,EV sales share,Cars,EV,percent,14.75,interpolation,2024
+USA,Projection-STEPS,EV stock share,Cars,EV,percent,3.049999952316285,interpolation,2024
+USA,Projection-APS,EV stock,Cars,PHEV,Vehicles,1700000.0,interpolation,2024
+USA,Projection-APS,EV sales,Cars,PHEV,Vehicles,380000.0,interpolation,2024
+USA,Projection-APS,EV stock,Cars,FCEV,Vehicles,21500.0,interpolation,2024
+USA,Projection-APS,EV sales,Cars,FCEV,Vehicles,3400.0,interpolation,2024
+USA,Projection-APS,EV stock,Cars,BEV,Vehicles,5550000.0,interpolation,2024
+USA,Projection-APS,EV stock,Buses,BEV,Vehicles,16450.0,interpolation,2024
+USA,Projection-APS,EV sales,Buses,BEV,Vehicles,6875.0,interpolation,2024
+USA,Projection-APS,EV sales,Cars,BEV,Vehicles,1850000.0,interpolation,2024
+USA,Projection-APS,EV stock,Buses,PHEV,Vehicles,2175.0,interpolation,2024
+USA,Projection-APS,EV stock,Buses,FCEV,Vehicles,810.0,interpolation,2024
+USA,Projection-STEPS,EV sales,Cars,PHEV,Vehicles,425000.0,interpolation,2024
+USA,Projection-STEPS,EV stock,Cars,PHEV,Vehicles,1750000.0,interpolation,2024
+USA,Projection-STEPS,EV stock,Cars,FCEV,Vehicles,20000.0,interpolation,2024
+USA,Projection-STEPS,EV sales,Cars,FCEV,Vehicles,3400.0,interpolation,2024
+USA,Projection-STEPS,EV stock,Cars,BEV,Vehicles,5500000.0,interpolation,2024
+USA,Projection-STEPS,EV sales,Cars,BEV,Vehicles,1800000.0,interpolation,2024
+USA,Projection-STEPS,EV stock,Buses,PHEV,Vehicles,2225.0,interpolation,2024
+USA,Projection-STEPS,EV stock,Buses,FCEV,Vehicles,810.0,interpolation,2024
+USA,Projection-STEPS,EV sales,Buses,BEV,Vehicles,6875.0,interpolation,2024
+USA,Projection-STEPS,EV stock,Buses,BEV,Vehicles,16450.0,interpolation,2024
+USA,Projection-STEPS,Electricity demand,Buses,EV,GWh,1045.0,interpolation,2024
+USA,Projection-STEPS,Electricity demand,Cars,EV,GWh,37000.0,interpolation,2024
+USA,Projection-STEPS,Oil displacement Mbd,Buses,EV,Milion barrels per day,0.0038499999791385,interpolation,2024
+USA,Projection-STEPS,Oil displacement Mbd,Cars,EV,Milion barrels per day,0.25999999791383754,interpolation,2024
+USA,Projection-STEPS,"Oil displacement, million lge",Buses,EV,"Oil displacement, million lge",221.5,interpolation,2024
+USA,Projection-STEPS,"Oil displacement, million lge",Cars,EV,"Oil displacement, million lge",14850.0,interpolation,2024
+World,Projection-APS,EV sales,Trucks,BEV,Vehicles,151500.0,interpolation,2024
+World,Projection-APS,EV stock,Cars,PHEV,Vehicles,17000000.0,interpolation,2024
+World,Projection-APS,EV sales,Cars,PHEV,Vehicles,4500000.0,interpolation,2024
+World,Projection-APS,EV stock,Cars,FCEV,Vehicles,118000.0,interpolation,2024
+World,Projection-APS,EV sales,Cars,FCEV,Vehicles,59450.0,interpolation,2024
+World,Projection-APS,EV stock,Cars,BEV,Vehicles,42000000.0,interpolation,2024
+World,Projection-APS,EV sales,Cars,BEV,Vehicles,13250000.0,interpolation,2024
+World,Projection-APS,EV stock,Vans,PHEV,Vehicles,82500.0,interpolation,2024
+World,Projection-APS,EV sales,Trucks,PHEV,Vehicles,9680.0,interpolation,2024
+World,Projection-APS,EV stock,Trucks,FCEV,Vehicles,22000.0,interpolation,2024
+World,Projection-APS,EV sales,Trucks,FCEV,Vehicles,9300.0,interpolation,2024
+World,Projection-APS,EV stock,Trucks,BEV,Vehicles,500000.0,interpolation,2024
+World,Projection-APS,EV stock,Trucks,PHEV,Vehicles,13650.0,interpolation,2024
+World,Projection-APS,EV sales,Vans,PHEV,Vehicles,53300.0,interpolation,2024
+World,Projection-APS,EV stock,Vans,FCEV,Vehicles,25600.0,interpolation,2024
+World,Projection-APS,EV sales,Vans,FCEV,Vehicles,17500.0,interpolation,2024
+World,Projection-APS,EV stock,Vans,BEV,Vehicles,2100000.0,interpolation,2024
+World,Projection-APS,EV sales,Vans,BEV,Vehicles,780000.0,interpolation,2024
+World,Projection-APS,EV stock,Buses,PHEV,Vehicles,48000.0,interpolation,2024
+World,Projection-APS,EV sales,Buses,PHEV,Vehicles,6700.0,interpolation,2024
+World,Projection-APS,EV stock,Buses,FCEV,Vehicles,21350.0,interpolation,2024
+World,Projection-APS,EV sales,Buses,FCEV,Vehicles,8400.0,interpolation,2024
+World,Projection-APS,EV stock,Buses,BEV,Vehicles,875000.0,interpolation,2024
+World,Projection-APS,EV sales,Buses,BEV,Vehicles,169000.0,interpolation,2024
+World,Projection-STEPS,EV stock share,Trucks,EV,percent,0.5200000107288361,interpolation,2024
+World,Projection-STEPS,EV charging points,EV,Publicly available fast,charging points,1950000.0,interpolation,2024
+World,Projection-STEPS,EV charging points,EV,Publicly available slow,charging points,3400000.0,interpolation,2024
+World,Projection-STEPS,EV sales share,Trucks,EV,percent,1.955000013113022,interpolation,2024
+World,Projection-STEPS,EV stock share,Cars,EV,percent,4.60000002384186,interpolation,2024
+World,Projection-STEPS,EV sales share,Cars,EV,percent,21.5,interpolation,2024
+World,Projection-STEPS,EV stock share,Vans,EV,percent,1.425000011920929,interpolation,2024
+World,Projection-STEPS,EV sales share,Buses,EV,percent,7.049999952316285,interpolation,2024
+World,Projection-STEPS,EV stock share,Buses,EV,percent,4.799999952316285,interpolation,2024
+World,Projection-STEPS,EV sales share,Vans,EV,percent,6.700000047683715,interpolation,2024
+World,Projection-APS,EV stock share,Trucks,EV,percent,0.5450000166893005,interpolation,2024
+World,Projection-APS,EV sales share,Trucks,EV,percent,2.455000013113022,interpolation,2024
+World,Projection-APS,EV stock share,Cars,EV,percent,4.60000002384186,interpolation,2024
+World,Projection-APS,EV sales share,Cars,EV,percent,22.0,interpolation,2024
+World,Projection-APS,EV sales share,Buses,EV,percent,8.049999952316284,interpolation,2024
+World,Projection-APS,EV stock share,Vans,EV,percent,1.425000011920929,interpolation,2024
+World,Projection-APS,EV sales share,Vans,EV,percent,7.200000047683715,interpolation,2024
+World,Projection-APS,EV stock share,Buses,EV,percent,4.799999952316285,interpolation,2024
+World,Projection-STEPS,EV stock,Trucks,BEV,Vehicles,490000.0,interpolation,2024
+World,Projection-STEPS,EV sales,Trucks,BEV,Vehicles,136500.0,interpolation,2024
+World,Projection-STEPS,EV stock,Cars,PHEV,Vehicles,17500000.0,interpolation,2024
+World,Projection-STEPS,EV sales,Cars,PHEV,Vehicles,5050000.0,interpolation,2024
+World,Projection-STEPS,EV stock,Cars,FCEV,Vehicles,83000.0,interpolation,2024
+World,Projection-STEPS,EV sales,Cars,FCEV,Vehicles,25450.0,interpolation,2024
+World,Projection-STEPS,EV stock,Cars,BEV,Vehicles,41500000.0,interpolation,2024
+World,Projection-STEPS,EV sales,Cars,BEV,Vehicles,12250000.0,interpolation,2024
+World,Projection-STEPS,EV stock,Trucks,PHEV,Vehicles,6150.0,interpolation,2024
+World,Projection-STEPS,EV sales,Trucks,PHEV,Vehicles,2080.0,interpolation,2024
+World,Projection-STEPS,EV stock,Trucks,FCEV,Vehicles,20000.0,interpolation,2024
+World,Projection-STEPS,EV sales,Trucks,FCEV,Vehicles,7300.0,interpolation,2024
+World,Projection-STEPS,EV stock,Vans,PHEV,Vehicles,57500.0,interpolation,2024
+World,Projection-STEPS,EV sales,Vans,PHEV,Vehicles,30800.0,interpolation,2024
+World,Projection-STEPS,EV stock,Vans,FCEV,Vehicles,25100.0,interpolation,2024
+World,Projection-STEPS,EV sales,Vans,FCEV,Vehicles,17500.0,interpolation,2024
+World,Projection-STEPS,EV stock,Vans,BEV,Vehicles,2050000.0,interpolation,2024
+World,Projection-STEPS,EV sales,Vans,BEV,Vehicles,730000.0,interpolation,2024
+World,Projection-STEPS,EV stock,Buses,PHEV,Vehicles,48500.0,interpolation,2024
+World,Projection-STEPS,EV sales,Buses,PHEV,Vehicles,6700.0,interpolation,2024
+World,Projection-STEPS,EV stock,Buses,FCEV,Vehicles,20350.0,interpolation,2024
+World,Projection-STEPS,EV sales,Buses,FCEV,Vehicles,7400.0,interpolation,2024
+World,Projection-STEPS,EV stock,Buses,BEV,Vehicles,875000.0,interpolation,2024
+World,Projection-STEPS,EV sales,Buses,BEV,Vehicles,154000.0,interpolation,2024
+World,Projection-APS,EV charging points,EV,Publicly available fast,charging points,2050000.0,interpolation,2024
+World,Projection-APS,EV charging points,EV,Publicly available slow,charging points,3400000.0,interpolation,2024
+World,Projection-STEPS,Electricity demand,Buses,EV,GWh,20000.0,interpolation,2024
+World,Projection-STEPS,Electricity demand,Trucks,EV,GWh,12800.0,interpolation,2024
+World,Projection-STEPS,Electricity demand,Vans,EV,GWh,10850.0,interpolation,2024
+World,Projection-STEPS,Electricity demand,Cars,EV,GWh,158500.0,interpolation,2024
+World,Projection-APS,Electricity demand,Buses,EV,GWh,21000.0,interpolation,2024
+World,Projection-APS,Electricity demand,Trucks,EV,GWh,13800.0,interpolation,2024
+World,Projection-APS,Electricity demand,Vans,EV,GWh,11350.0,interpolation,2024
+World,Projection-APS,Electricity demand,Cars,EV,GWh,158500.0,interpolation,2024
+World,Projection-STEPS,Oil displacement Mbd,Buses,EV,Milion barrels per day,0.0649999994784595,interpolation,2024
+World,Projection-STEPS,Oil displacement Mbd,Trucks,EV,Milion barrels per day,0.051999999210239,interpolation,2024
+World,Projection-STEPS,Oil displacement Mbd,Vans,EV,Milion barrels per day,0.067500000819564,interpolation,2024
+World,Projection-STEPS,Oil displacement Mbd,Cars,EV,Milion barrels per day,1.054999977350234,interpolation,2024
+World,Projection-STEPS,"Oil displacement, million lge",Buses,EV,"Oil displacement, million lge",3850.0,interpolation,2024
+World,Projection-STEPS,"Oil displacement, million lge",Trucks,EV,"Oil displacement, million lge",3050.0,interpolation,2024
+World,Projection-STEPS,"Oil displacement, million lge",Vans,EV,"Oil displacement, million lge",3950.0,interpolation,2024
+World,Projection-STEPS,"Oil displacement, million lge",Cars,EV,"Oil displacement, million lge",62000.0,interpolation,2024
+World,Projection-APS,Oil displacement Mbd,Buses,EV,Milion barrels per day,0.0679999981075525,interpolation,2024
+World,Projection-APS,Oil displacement Mbd,Trucks,EV,Milion barrels per day,0.0580000001937155,interpolation,2024
+World,Projection-APS,Oil displacement Mbd,Vans,EV,Milion barrels per day,0.06999999843537799,interpolation,2024
+World,Projection-APS,Oil displacement Mbd,Cars,EV,Milion barrels per day,1.054999977350234,interpolation,2024
+World,Projection-APS,"Oil displacement, million lge",Buses,EV,"Oil displacement, million lge",4000.0,interpolation,2024
+World,Projection-APS,"Oil displacement, million lge",Trucks,EV,"Oil displacement, million lge",3400.0,interpolation,2024
+World,Projection-APS,"Oil displacement, million lge",Vans,EV,"Oil displacement, million lge",4100.0,interpolation,2024
+World,Projection-APS,"Oil displacement, million lge",Cars,EV,"Oil displacement, million lge",62000.0,interpolation,2024
+Australia,Historical,EV charging points,EV,Publicly available fast,charging points,926.8085106382979,forward_fill,2024
+Australia,Historical,EV charging points,EV,Publicly available slow,charging points,2100.0,forward_fill,2024
+Australia,Historical,EV stock share,Cars,EV,percent,2.440678268559773,forward_fill,2024
+Australia,Historical,EV sales,Cars,PHEV,Vehicles,20508.474576271186,forward_fill,2024
+Australia,Historical,EV stock,Cars,PHEV,Vehicles,45761.90476190476,forward_fill,2024
+Australia,Historical,EV stock,Cars,FCEV,Vehicles,45.5,forward_fill,2024
+Australia,Historical,EV sales share,Cars,EV,percent,28.235294645632838,forward_fill,2024
+Australia,Historical,EV sales,Cars,BEV,Vehicles,229363.63636363638,forward_fill,2024
+Australia,Historical,EV stock,Cars,BEV,Vehicles,335820.89552238805,forward_fill,2024
+Australia,Historical,EV sales,Cars,FCEV,Vehicles,4.199999999999999,forward_fill,2024
+Austria,Historical,EV stock share,Cars,EV,percent,6.453333613077797,forward_fill,2024
+Austria,Historical,EV sales share,Cars,EV,percent,30.72727272727273,forward_fill,2024
+Austria,Historical,EV charging points,EV,Publicly available fast,charging points,2403.846153846154,forward_fill,2024
+Austria,Historical,EV charging points,EV,Publicly available slow,charging points,17307.692307692305,forward_fill,2024
+Austria,Historical,EV stock,Cars,PHEV,Vehicles,88595.23809523809,forward_fill,2024
+Austria,Historical,EV stock,Cars,FCEV,Vehicles,127.75806451612904,forward_fill,2024
+Austria,Historical,EV sales,Cars,FCEV,Vehicles,6.3,forward_fill,2024
+Austria,Historical,EV stock,Cars,BEV,Vehicles,232727.27272727274,forward_fill,2024
+Austria,Historical,EV sales,Cars,BEV,Vehicles,67764.70588235294,forward_fill,2024
+Austria,Historical,EV sales,Cars,PHEV,Vehicles,22230.76923076923,forward_fill,2024
+Belgium,Historical,EV stock share,Trucks,EV,percent,0.4250000044703475,forward_fill,2024
+Belgium,Historical,EV sales share,Trucks,EV,percent,8.02777790912879,forward_fill,2024
+Belgium,Historical,EV stock share,Cars,EV,percent,14.617390927385076,forward_fill,2024
+Belgium,Historical,EV sales share,Vans,EV,percent,6.22352897914638,forward_fill,2024
+Belgium,Historical,EV stock share,Buses,EV,percent,16.363636008964072,forward_fill,2024
+Belgium,Historical,EV sales share,Buses,EV,percent,349.4545454545455,forward_fill,2024
+Belgium,Historical,EV charging points,EV,Publicly available fast,charging points,3636.3636363636365,forward_fill,2024
+Belgium,Historical,EV charging points,EV,Publicly available slow,charging points,76695.65217391305,forward_fill,2024
+Belgium,Historical,EV sales,Trucks,BEV,Vehicles,825.8064516129032,forward_fill,2024
+Belgium,Historical,EV stock,Trucks,BEV,Vehicles,1191.8918918918919,forward_fill,2024
+Belgium,Historical,EV sales,Trucks,PHEV,Vehicles,8.4,forward_fill,2024
+Belgium,Historical,EV stock,Trucks,PHEV,Vehicles,8.4,forward_fill,2024
+Belgium,Historical,EV sales,Cars,PHEV,Vehicles,169491.5254237288,forward_fill,2024
+Belgium,Historical,EV stock,Cars,PHEV,Vehicles,435555.55555555556,forward_fill,2024
+Belgium,Historical,EV stock,Cars,FCEV,Vehicles,122.5125,forward_fill,2024
+Belgium,Historical,EV sales share,Cars,EV,percent,64.65384615384615,forward_fill,2024
+Belgium,Historical,EV stock share,Vans,EV,percent,1.5531372340171887,forward_fill,2024
+Belgium,Historical,EV sales,Buses,BEV,Vehicles,2752.3809523809523,forward_fill,2024
+Belgium,Historical,EV stock,Cars,BEV,Vehicles,401111.1111111111,forward_fill,2024
+Belgium,Historical,EV sales,Cars,FCEV,Vehicles,6.3,forward_fill,2024
+Belgium,Historical,EV stock,Vans,PHEV,Vehicles,150.41666666666666,forward_fill,2024
+Belgium,Historical,EV sales,Cars,BEV,Vehicles,227605.26315789478,forward_fill,2024
+Belgium,Historical,EV sales,Vans,PHEV,Vehicles,16.799999999999997,forward_fill,2024
+Belgium,Historical,EV stock,Vans,BEV,Vehicles,13719.51219512195,forward_fill,2024
+Belgium,Historical,EV stock,Buses,PHEV,Vehicles,268.8888888888889,forward_fill,2024
+Belgium,Historical,EV sales,Vans,BEV,Vehicles,5338.88888888889,forward_fill,2024
+Belgium,Historical,EV stock,Buses,BEV,Vehicles,2992.666666666667,forward_fill,2024
+Belgium,Historical,EV sales,Buses,PHEV,Vehicles,484.00000000000006,forward_fill,2024
+Brazil,Historical,EV charging points,EV,Publicly available fast,charging points,4.90000009536743,forward_fill,2024
+Brazil,Historical,EV charging points,EV,Publicly available slow,charging points,4813.333333333333,forward_fill,2024
+Brazil,Historical,EV sales share,Trucks,EV,percent,0.57018181067853,forward_fill,2024
+Brazil,Historical,EV stock share,Trucks,EV,percent,0.13278725081207168,forward_fill,2024
+Brazil,Historical,EV stock share,Cars,EV,percent,0.4955055784086519,forward_fill,2024
+Brazil,Historical,EV sales share,Cars,EV,percent,7.499999701976762,forward_fill,2024
+Brazil,Historical,EV stock share,Vans,EV,percent,0.026888889754996058,forward_fill,2024
+Brazil,Historical,EV sales share,Vans,EV,percent,0.19692307534302472,forward_fill,2024
+Brazil,Historical,EV stock share,Buses,EV,percent,0.25941174577883036,forward_fill,2024
+Brazil,Historical,EV sales share,Buses,EV,percent,0.35,forward_fill,2024
+Brazil,Historical,EV stock,Cars,BEV,Vehicles,83769.23076923077,forward_fill,2024
+Brazil,Historical,EV sales,Cars,BEV,Vehicles,42470.58823529412,forward_fill,2024
+Brazil,Historical,EV stock,Vans,BEV,Vehicles,2045.4545454545457,forward_fill,2024
+Brazil,Historical,EV stock,Cars,FCEV,Vehicles,3.0,forward_fill,2024
+Brazil,Historical,EV sales,Cars,PHEV,Vehicles,108900.0,forward_fill,2024
+Brazil,Historical,EV stock,Trucks,BEV,Vehicles,3281.818181818182,forward_fill,2024
+Brazil,Historical,EV stock,Cars,PHEV,Vehicles,133884.61538461538,forward_fill,2024
+Brazil,Historical,EV sales,Vans,BEV,Vehicles,915.5769230769231,forward_fill,2024
+Brazil,Historical,EV stock,Buses,FCEV,Vehicles,4.5,forward_fill,2024
+Brazil,Historical,EV sales,Trucks,BEV,Vehicles,924.0845070422536,forward_fill,2024
+Brazil,Historical,EV stock,Buses,BEV,Vehicles,1515.7894736842104,forward_fill,2024
+Brazil,Historical,EV sales,Buses,BEV,Vehicles,140.0,forward_fill,2024
+Bulgaria,Historical,EV sales,Cars,PHEV,Vehicles,925.7142857142857,forward_fill,2024
+Bulgaria,Historical,EV sales,Cars,BEV,Vehicles,3240.0,forward_fill,2024
+Bulgaria,Historical,EV sales share,Cars,EV,percent,8.410000553131102,forward_fill,2024
+Canada,Historical,EV sales,Trucks,FCEV,Vehicles,18.0,forward_fill,2024
+Canada,Historical,EV stock,Trucks,FCEV,Vehicles,8.4,forward_fill,2024
+Canada,Historical,EV stock,Cars,PHEV,Vehicles,222307.6923076923,forward_fill,2024
+Canada,Historical,EV sales,Trucks,BEV,Vehicles,4819.277108433735,forward_fill,2024
+Canada,Historical,EV stock,Cars,FCEV,Vehicles,341.3333333333333,forward_fill,2024
+Canada,Historical,EV stock,Trucks,BEV,Vehicles,7384.615384615385,forward_fill,2024
+Canada,Historical,EV sales,Cars,PHEV,Vehicles,70041.66666666667,forward_fill,2024
+Canada,Historical,EV charging points,EV,Publicly available fast,charging points,5907.692307692308,forward_fill,2024
+Canada,Historical,EV charging points,EV,Publicly available slow,charging points,28470.58823529412,forward_fill,2024
+Canada,Historical,EV sales share,Vans,EV,percent,5.931372659933288,forward_fill,2024
+Canada,Historical,EV sales share,Cars,EV,percent,17.789473684210527,forward_fill,2024
+Canada,Historical,EV stock share,Cars,EV,percent,3.1117644895731673,forward_fill,2024
+Canada,Historical,EV stock share,Trucks,EV,percent,0.25000000372528997,forward_fill,2024
+Canada,Historical,EV stock share,Buses,EV,percent,5.938144626672153,forward_fill,2024
+Canada,Historical,EV sales share,Buses,EV,percent,86.72131283121128,forward_fill,2024
+Canada,Historical,EV sales,Buses,BEV,Vehicles,3284.7368421052633,forward_fill,2024
+Canada,Historical,EV sales,Cars,BEV,Vehicles,185714.2857142857,forward_fill,2024
+Canada,Historical,EV sales,Vans,PHEV,Vehicles,5422.58064516129,forward_fill,2024
+Canada,Historical,EV sales,Vans,BEV,Vehicles,11830.0,forward_fill,2024
+Canada,Historical,EV stock,Buses,BEV,Vehicles,3710.144927536232,forward_fill,2024
+Canada,Historical,EV stock,Vans,FCEV,Vehicles,6.3,forward_fill,2024
+Canada,Historical,EV stock,Cars,BEV,Vehicles,515714.28571428574,forward_fill,2024
+Canada,Historical,EV sales,Cars,FCEV,Vehicles,9.1,forward_fill,2024
+Canada,Historical,EV sales share,Trucks,EV,percent,2.8166663481129515,forward_fill,2024
+Chile,Historical,EV sales share,Cars,EV,percent,0.2170000016689302,forward_fill,2024
+Chile,Historical,EV stock share,Cars,EV,percent,0.11130881107454266,forward_fill,2024
+Chile,Historical,EV charging points,EV,Publicly available fast,charging points,495.0,forward_fill,2024
+Chile,Historical,EV charging points,EV,Publicly available slow,charging points,1244.5454545454545,forward_fill,2024
+Chile,Historical,EV stock,Cars,PHEV,Vehicles,2700.0,forward_fill,2024
+Chile,Historical,EV stock,Cars,BEV,Vehicles,2594.1176470588234,forward_fill,2024
+Chile,Historical,EV sales,Cars,PHEV,Vehicles,419.51612903225805,forward_fill,2024
+Chile,Historical,EV stock,Cars,FCEV,Vehicles,2.0,forward_fill,2024
+Chile,Historical,EV sales,Cars,BEV,Vehicles,287.0,forward_fill,2024
+China,Historical,EV stock share,Trucks,EV,percent,1.1235955236777113,forward_fill,2024
+China,Historical,EV stock share,Cars,EV,percent,11.325490123627052,forward_fill,2024
+China,Historical,EV sales share,Trucks,EV,percent,2.529032249728541,forward_fill,2024
+China,Historical,EV sales share,Cars,EV,percent,49.79310344827586,forward_fill,2024
+China,Historical,EV stock share,Vans,EV,percent,4.984615303355563,forward_fill,2024
+China,Historical,EV sales share,Vans,EV,percent,13.09090909090909,forward_fill,2024
+China,Historical,EV stock share,Buses,EV,percent,28.409090909090907,forward_fill,2024
+China,Historical,EV sales share,Buses,EV,percent,37.878787878787875,forward_fill,2024
+China,Historical,EV stock,Trucks,BEV,Vehicles,346153.8461538461,forward_fill,2024
+China,Historical,EV sales,Cars,FCEV,Vehicles,1126.6666666666667,forward_fill,2024
+China,Historical,EV stock,Cars,FCEV,Vehicles,2406.6666666666665,forward_fill,2024
+China,Historical,EV stock,Trucks,FCEV,Vehicles,14285.714285714286,forward_fill,2024
+China,Historical,EV sales,Trucks,PHEV,Vehicles,393.84615384615387,forward_fill,2024
+China,Historical,EV stock,Trucks,PHEV,Vehicles,1714.2857142857142,forward_fill,2024
+China,Historical,EV sales,Trucks,FCEV,Vehicles,4281.481481481482,forward_fill,2024
+China,Historical,EV stock,Cars,PHEV,Vehicles,10851612.903225807,forward_fill,2024
+China,Historical,EV sales,Trucks,BEV,Vehicles,42470.58823529412,forward_fill,2024
+China,Historical,EV sales,Cars,PHEV,Vehicles,4860000.0,forward_fill,2024
+China,Historical,EV stock,Cars,BEV,Vehicles,23272727.272727273,forward_fill,2024
+China,Historical,EV sales,Cars,BEV,Vehicles,6627272.7272727275,forward_fill,2024
+China,Historical,Oil displacement Mbd,Buses,EV,Milion barrels per day,0.028000000864267,forward_fill,2024
+China,Historical,Oil displacement Mbd,Trucks,EV,Milion barrels per day,0.028470586379507428,forward_fill,2024
+China,Historical,Oil displacement Mbd,Vans,EV,Milion barrels per day,0.014775384661009474,forward_fill,2024
+China,Historical,Oil displacement Mbd,Cars,EV,Milion barrels per day,0.6006250226637374,forward_fill,2024
+China,Historical,"Oil displacement, million lge",Buses,EV,"Oil displacement, million lge",1806.25,forward_fill,2024
+China,Historical,"Oil displacement, million lge",Trucks,EV,"Oil displacement, million lge",1690.0,forward_fill,2024
+China,Historical,"Oil displacement, million lge",Vans,EV,"Oil displacement, million lge",892.5641025641025,forward_fill,2024
+China,Historical,"Oil displacement, million lge",Cars,EV,"Oil displacement, million lge",37604.166666666664,forward_fill,2024
+China,Historical,EV charging points,EV,Publicly available fast,charging points,1894736.8421052631,forward_fill,2024
+China,Historical,EV charging points,EV,Publicly available slow,charging points,2250000.0,forward_fill,2024
+China,Historical,EV stock,Buses,FCEV,Vehicles,8066.666666666667,forward_fill,2024
+China,Historical,EV stock,Buses,BEV,Vehicles,631578.947368421,forward_fill,2024
+China,Historical,EV sales,Buses,FCEV,Vehicles,1107.6923076923078,forward_fill,2024
+China,Historical,EV sales,Buses,BEV,Vehicles,20300.0,forward_fill,2024
+China,Historical,EV stock,Vans,BEV,Vehicles,1005217.3913043478,forward_fill,2024
+China,Historical,EV sales,Vans,BEV,Vehicles,338823.5294117647,forward_fill,2024
+China,Historical,EV sales,Buses,PHEV,Vehicles,1536.3636363636365,forward_fill,2024
+China,Historical,EV stock,Buses,PHEV,Vehicles,38027.777777777774,forward_fill,2024
+China,Historical,EV stock,Vans,PHEV,Vehicles,1700.0,forward_fill,2024
+China,Historical,EV sales,Vans,FCEV,Vehicles,4456.79012345679,forward_fill,2024
+China,Historical,EV stock,Vans,FCEV,Vehicles,9000.0,forward_fill,2024
+China,Historical,Electricity demand,Buses,EV,GWh,8553.636363636364,forward_fill,2024
+China,Historical,Electricity demand,Trucks,EV,GWh,5518.367346938776,forward_fill,2024
+China,Historical,Electricity demand,Vans,EV,GWh,1531.9148936170213,forward_fill,2024
+China,Historical,Electricity demand,Cars,EV,GWh,62782.608695652176,forward_fill,2024
+Colombia,Historical,EV sales,Cars,BEV,Vehicles,6821.0526315789475,forward_fill,2024
+Colombia,Historical,EV sales,Cars,PHEV,Vehicles,2604.166666666667,forward_fill,2024
+Colombia,Historical,EV sales share,Cars,EV,percent,7.605000371932981,forward_fill,2024
+Costa Rica,Historical,EV sales,Cars,BEV,Vehicles,15006.25,forward_fill,2024
+Costa Rica,Historical,EV sales share,Cars,EV,percent,26.18181818181818,forward_fill,2024
+Costa Rica,Historical,EV stock,Cars,BEV,Vehicles,19756.09756097561,forward_fill,2024
+Croatia,Historical,EV sales share,Cars,EV,percent,4.231999824523931,forward_fill,2024
+Croatia,Historical,EV sales,Cars,BEV,Vehicles,1828.5714285714284,forward_fill,2024
+Croatia,Historical,EV sales,Cars,PHEV,Vehicles,1166.7857142857142,forward_fill,2024
+Cyprus,Historical,EV sales,Cars,PHEV,Vehicles,1130.8695652173913,forward_fill,2024
+Cyprus,Historical,EV sales,Cars,BEV,Vehicles,1560.25,forward_fill,2024
+Cyprus,Historical,EV sales share,Cars,EV,percent,14.340741109128508,forward_fill,2024
+Czech Republic,Historical,EV sales share,Cars,EV,percent,7.476923158182898,forward_fill,2024
+Czech Republic,Historical,EV sales,Cars,PHEV,Vehicles,7802.777777777778,forward_fill,2024
+Czech Republic,Historical,EV sales,Cars,BEV,Vehicles,11510.25641025641,forward_fill,2024
+Denmark,Historical,EV charging points,EV,Publicly available fast,charging points,7500.0,forward_fill,2024
+Denmark,Historical,EV charging points,EV,Publicly available slow,charging points,23614.457831325304,forward_fill,2024
+Denmark,Historical,EV stock,Vans,FCEV,Vehicles,2.0,forward_fill,2024
+Denmark,Historical,EV stock,Buses,PHEV,Vehicles,11.899999999999999,forward_fill,2024
+Denmark,Historical,EV sales,Vans,PHEV,Vehicles,370.0,forward_fill,2024
+Denmark,Historical,EV stock,Vans,BEV,Vehicles,12111.363636363638,forward_fill,2024
+Denmark,Historical,EV sales,Vans,BEV,Vehicles,4426.315789473684,forward_fill,2024
+Denmark,Historical,EV stock,Vans,PHEV,Vehicles,1875.0,forward_fill,2024
+Denmark,Historical,EV stock,Cars,BEV,Vehicles,363636.36363636365,forward_fill,2024
+Denmark,Historical,EV sales,Cars,BEV,Vehicles,128032.25806451612,forward_fill,2024
+Denmark,Historical,EV sales,Cars,FCEV,Vehicles,0.7,forward_fill,2024
+Denmark,Historical,EV stock,Cars,FCEV,Vehicles,230.0,forward_fill,2024
+Denmark,Historical,EV sales,Buses,BEV,Vehicles,140.0,forward_fill,2024
+Denmark,Historical,EV stock,Buses,BEV,Vehicles,1209.142857142857,forward_fill,2024
+Denmark,Historical,EV sales,Cars,PHEV,Vehicles,11900.0,forward_fill,2024
+Denmark,Historical,EV stock,Trucks,BEV,Vehicles,2137.3737373737376,forward_fill,2024
+Denmark,Historical,EV stock,Trucks,FCEV,Vehicles,3.1500000000000004,forward_fill,2024
+Denmark,Historical,EV stock,Cars,PHEV,Vehicles,121000.00000000001,forward_fill,2024
+Denmark,Historical,EV stock,Buses,FCEV,Vehicles,2.25,forward_fill,2024
+Denmark,Historical,EV sales,Trucks,BEV,Vehicles,1024.0,forward_fill,2024
+Denmark,Historical,EV sales share,Buses,EV,percent,13.299999999999999,forward_fill,2024
+Denmark,Historical,EV sales share,Vans,EV,percent,19.42528778219305,forward_fill,2024
+Denmark,Historical,EV stock share,Buses,EV,percent,11.115384615384615,forward_fill,2024
+Denmark,Historical,EV stock share,Trucks,EV,percent,2.450000047683715,forward_fill,2024
+Denmark,Historical,EV sales share,Trucks,EV,percent,14.404762558926278,forward_fill,2024
+Denmark,Historical,EV stock share,Vans,EV,percent,3.840000305175782,forward_fill,2024
+Denmark,Historical,EV stock share,Cars,EV,percent,15.512820133482617,forward_fill,2024
+Denmark,Historical,EV sales share,Cars,EV,percent,54.256410256410255,forward_fill,2024
+Estonia,Historical,EV sales share,Cars,EV,percent,14.340741109128508,forward_fill,2024
+Estonia,Historical,EV sales,Cars,BEV,Vehicles,2684.931506849315,forward_fill,2024
+Estonia,Historical,EV sales,Cars,PHEV,Vehicles,729.3023255813954,forward_fill,2024
+EU27,Historical,EV sales,Cars,PHEV,Vehicles,802777.7777777778,forward_fill,2024
+EU27,Historical,EV sales,Trucks,BEV,Vehicles,26896.0,forward_fill,2024
+EU27,Historical,EV stock,Cars,PHEV,Vehicles,4711538.461538462,forward_fill,2024
+EU27,Historical,EV stock share,Cars,EV,percent,5.183999725341806,forward_fill,2024
+EU27,Historical,EV sales share,Cars,EV,percent,23.047619047619047,forward_fill,2024
+EU27,Historical,EV stock share,Vans,EV,percent,1.800000116229071,forward_fill,2024
+EU27,Historical,EV sales share,Vans,EV,percent,11.325490123627052,forward_fill,2024
+EU27,Historical,EV stock share,Buses,EV,percent,3.6450001287460445,forward_fill,2024
+EU27,Historical,EV sales share,Buses,EV,percent,18.75,forward_fill,2024
+EU27,Historical,EV stock,Buses,FCEV,Vehicles,720.0,forward_fill,2024
+EU27,Historical,EV sales,Buses,FCEV,Vehicles,416.66666666666663,forward_fill,2024
+EU27,Historical,EV charging points,EV,Publicly available slow,charging points,684473.6842105263,forward_fill,2024
+EU27,Historical,EV sales,Vans,PHEV,Vehicles,1861.5384615384614,forward_fill,2024
+EU27,Historical,EV stock,Buses,PHEV,Vehicles,720.9890109890109,forward_fill,2024
+EU27,Historical,EV stock,Vans,FCEV,Vehicles,456.33333333333337,forward_fill,2024
+EU27,Historical,EV sales,Vans,FCEV,Vehicles,60.900000000000006,forward_fill,2024
+EU27,Historical,EV stock,Vans,BEV,Vehicles,457619.04761904763,forward_fill,2024
+EU27,Historical,EV sales,Vans,BEV,Vehicles,189062.5,forward_fill,2024
+EU27,Historical,EV sales,Buses,PHEV,Vehicles,355.55555555555554,forward_fill,2024
+EU27,Historical,EV stock,Buses,BEV,Vehicles,23272.727272727272,forward_fill,2024
+EU27,Historical,EV sales,Buses,BEV,Vehicles,7511.111111111111,forward_fill,2024
+EU27,Historical,EV stock share,Trucks,EV,percent,0.7000000029802325,forward_fill,2024
+EU27,Historical,EV sales share,Trucks,EV,percent,6.530863907511231,forward_fill,2024
+EU27,Historical,EV stock,Cars,FCEV,Vehicles,5522.5,forward_fill,2024
+EU27,Historical,EV sales,Cars,FCEV,Vehicles,539.0,forward_fill,2024
+EU27,Historical,EV stock,Cars,BEV,Vehicles,7053333.333333333,forward_fill,2024
+EU27,Historical,EV sales,Cars,BEV,Vehicles,2133333.333333333,forward_fill,2024
+EU27,Historical,EV stock,Vans,PHEV,Vehicles,12600.0,forward_fill,2024
+EU27,Historical,EV charging points,EV,Publicly available fast,charging points,137224.48979591837,forward_fill,2024
+EU27,Historical,EV stock,Trucks,BEV,Vehicles,72592.5925925926,forward_fill,2024
+EU27,Historical,EV stock,Trucks,FCEV,Vehicles,177.5,forward_fill,2024
+EU27,Historical,EV sales,Trucks,PHEV,Vehicles,60.16666666666667,forward_fill,2024
+EU27,Historical,EV sales,Trucks,FCEV,Vehicles,25.78571428571429,forward_fill,2024
+EU27,Historical,EV stock,Trucks,PHEV,Vehicles,156.25,forward_fill,2024
+Europe,Historical,Oil displacement Mbd,Buses,EV,Milion barrels per day,0.011250000479777122,forward_fill,2024
+Europe,Historical,Oil displacement Mbd,Trucks,EV,Milion barrels per day,0.017500000540167503,forward_fill,2024
+Europe,Historical,Oil displacement Mbd,Vans,EV,Milion barrels per day,0.03674999868962976,forward_fill,2024
+Europe,Historical,Oil displacement Mbd,Cars,EV,Milion barrels per day,0.2890000017732374,forward_fill,2024
+Europe,Historical,"Oil displacement, million lge",Buses,EV,"Oil displacement, million lge",680.5555555555555,forward_fill,2024
+Europe,Historical,"Oil displacement, million lge",Trucks,EV,"Oil displacement, million lge",1769.4736842105262,forward_fill,2024
+Europe,Historical,"Oil displacement, million lge",Vans,EV,"Oil displacement, million lge",1999.9999999999998,forward_fill,2024
+Europe,Historical,"Oil displacement, million lge",Cars,EV,"Oil displacement, million lge",16666.666666666664,forward_fill,2024
+Europe,Historical,EV stock share,Trucks,EV,percent,0.599999986588955,forward_fill,2024
+Europe,Historical,EV sales share,Trucks,EV,percent,3.6056340192429075,forward_fill,2024
+Europe,Historical,EV stock share,Cars,EV,percent,5.348147919475609,forward_fill,2024
+Europe,Historical,EV charging points,EV,Publicly available slow,charging points,791136.3636363635,forward_fill,2024
+Europe,Historical,EV charging points,EV,Publicly available fast,charging points,177941.17647058825,forward_fill,2024
+Europe,Historical,EV sales share,Cars,EV,percent,22.05,forward_fill,2024
+Europe,Historical,EV sales share,Buses,EV,percent,21.304348267769768,forward_fill,2024
+Europe,Historical,EV stock share,Vans,EV,percent,1.5714286784736562,forward_fill,2024
+Europe,Historical,EV sales share,Vans,EV,percent,9.969230606711125,forward_fill,2024
+Europe,Historical,EV stock share,Buses,EV,percent,2.327272746188583,forward_fill,2024
+Europe,Historical,EV stock,Trucks,BEV,Vehicles,75348.83720930234,forward_fill,2024
+Europe,Historical,EV stock,Trucks,FCEV,Vehicles,865.3846153846154,forward_fill,2024
+Europe,Historical,EV stock,Trucks,PHEV,Vehicles,144.92753623188406,forward_fill,2024
+Europe,Historical,EV sales,Trucks,PHEV,Vehicles,60.16666666666667,forward_fill,2024
+Europe,Historical,EV sales,Trucks,FCEV,Vehicles,22.5625,forward_fill,2024
+Europe,Historical,Electricity demand,Buses,EV,GWh,3124.9999999999995,forward_fill,2024
+Europe,Historical,Electricity demand,Trucks,EV,GWh,11115.384615384615,forward_fill,2024
+Europe,Historical,Electricity demand,Vans,EV,GWh,10506.25,forward_fill,2024
+Europe,Historical,Electricity demand,Cars,EV,GWh,76454.54545454547,forward_fill,2024
+Europe,Historical,EV sales,Trucks,BEV,Vehicles,32702.7027027027,forward_fill,2024
+Europe,Historical,EV stock,Cars,PHEV,Vehicles,5955882.352941176,forward_fill,2024
+Europe,Historical,EV sales,Cars,PHEV,Vehicles,1100000.0,forward_fill,2024
+Europe,Historical,EV stock,Cars,FCEV,Vehicles,6436.170212765957,forward_fill,2024
+Europe,Historical,EV sales,Cars,FCEV,Vehicles,574.0,forward_fill,2024
+Europe,Historical,EV stock,Cars,BEV,Vehicles,10202272.727272727,forward_fill,2024
+Europe,Historical,EV sales,Cars,BEV,Vehicles,3025000.0,forward_fill,2024
+Europe,Historical,EV stock,Vans,PHEV,Vehicles,16000.0,forward_fill,2024
+Europe,Historical,EV sales,Vans,PHEV,Vehicles,1745.4545454545455,forward_fill,2024
+Europe,Historical,EV stock,Vans,FCEV,Vehicles,451.25,forward_fill,2024
+Europe,Historical,EV stock,Vans,BEV,Vehicles,630000.0,forward_fill,2024
+Europe,Historical,EV sales,Vans,FCEV,Vehicles,60.900000000000006,forward_fill,2024
+Europe,Historical,EV sales,Buses,PHEV,Vehicles,350.6849315068493,forward_fill,2024
+Europe,Historical,EV stock,Buses,FCEV,Vehicles,1254.4,forward_fill,2024
+Europe,Historical,EV stock,Buses,PHEV,Vehicles,1107.6923076923078,forward_fill,2024
+Europe,Historical,EV sales,Vans,BEV,Vehicles,249999.99999999997,forward_fill,2024
+Europe,Historical,EV sales,Buses,FCEV,Vehicles,367.5,forward_fill,2024
+Europe,Historical,EV stock,Buses,BEV,Vehicles,32266.666666666668,forward_fill,2024
+Europe,Historical,EV sales,Buses,BEV,Vehicles,13778.000000000002,forward_fill,2024
+Finland,Historical,EV stock share,Buses,EV,percent,6.8653064403668935,forward_fill,2024
+Finland,Historical,EV sales share,Vans,EV,percent,35.156249476131066,forward_fill,2024
+Finland,Historical,EV sales share,Cars,EV,percent,76.73684210526315,forward_fill,2024
+Finland,Historical,EV stock share,Vans,EV,percent,2.122807136202792,forward_fill,2024
+Finland,Historical,EV sales share,Trucks,EV,percent,6.333333253860457,forward_fill,2024
+Finland,Historical,EV stock share,Cars,EV,percent,12.150000929832483,forward_fill,2024
+Finland,Historical,EV stock share,Trucks,EV,percent,0.2999999932944775,forward_fill,2024
+Finland,Historical,EV sales share,Buses,EV,percent,30.099999999999998,forward_fill,2024
+Finland,Historical,EV charging points,EV,Publicly available fast,charging points,6030.7692307692305,forward_fill,2024
+Finland,Historical,EV charging points,EV,Publicly available slow,charging points,11232.467532467534,forward_fill,2024
+Finland,Historical,EV sales,Vans,BEV,Vehicles,3764.7058823529414,forward_fill,2024
+Finland,Historical,EV stock,Buses,PHEV,Vehicles,2.0,forward_fill,2024
+Finland,Historical,EV sales,Vans,PHEV,Vehicles,9.799999999999999,forward_fill,2024
+Finland,Historical,EV stock,Vans,BEV,Vehicles,6400.0,forward_fill,2024
+Finland,Historical,EV stock,Buses,BEV,Vehicles,744.7272727272727,forward_fill,2024
+Finland,Historical,EV sales,Buses,BEV,Vehicles,77.0,forward_fill,2024
+Finland,Historical,EV stock,Cars,PHEV,Vehicles,196000.0,forward_fill,2024
+Finland,Historical,EV sales,Trucks,BEV,Vehicles,190.0,forward_fill,2024
+Finland,Historical,EV stock,Trucks,BEV,Vehicles,484.00000000000006,forward_fill,2024
+Finland,Historical,EV sales,Cars,PHEV,Vehicles,20250.0,forward_fill,2024
+Finland,Historical,EV stock,Vans,PHEV,Vehicles,323.46153846153845,forward_fill,2024
+Finland,Historical,EV stock,Cars,FCEV,Vehicles,2.0,forward_fill,2024
+Finland,Historical,EV sales,Cars,BEV,Vehicles,60000.0,forward_fill,2024
+Finland,Historical,EV stock,Cars,BEV,Vehicles,156800.0,forward_fill,2024
+France,Historical,EV sales share,Trucks,EV,percent,45.22352536079401,forward_fill,2024
+France,Historical,EV stock share,Trucks,EV,percent,1.500000059604645,forward_fill,2024
+France,Historical,EV stock share,Cars,EV,percent,6.003571251521319,forward_fill,2024
+France,Historical,EV sales share,Cars,EV,percent,31.25,forward_fill,2024
+France,Historical,EV stock,Buses,BEV,Vehicles,2594.1176470588234,forward_fill,2024
+France,Historical,EV sales,Buses,FCEV,Vehicles,23.1,forward_fill,2024
+France,Historical,EV stock,Buses,FCEV,Vehicles,57.5,forward_fill,2024
+France,Historical,EV stock,Buses,PHEV,Vehicles,2.0999999999999996,forward_fill,2024
+France,Historical,EV sales,Vans,BEV,Vehicles,56250.0,forward_fill,2024
+France,Historical,EV stock,Vans,BEV,Vehicles,88662.16216216216,forward_fill,2024
+France,Historical,EV stock share,Vans,EV,percent,1.408333174056471,forward_fill,2024
+France,Historical,EV sales share,Vans,EV,percent,11.787754576785147,forward_fill,2024
+France,Historical,EV stock share,Buses,EV,percent,2.784210445808235,forward_fill,2024
+France,Historical,EV sales share,Buses,EV,percent,12.071428571428571,forward_fill,2024
+France,Historical,EV stock,Cars,BEV,Vehicles,1549032.2580645161,forward_fill,2024
+France,Historical,EV sales,Cars,BEV,Vehicles,457619.04761904763,forward_fill,2024
+France,Historical,EV sales,Cars,FCEV,Vehicles,480.5,forward_fill,2024
+France,Historical,EV stock,Cars,FCEV,Vehicles,1342.542372881356,forward_fill,2024
+France,Historical,EV stock,Vans,PHEV,Vehicles,2585.8585858585857,forward_fill,2024
+France,Historical,EV stock,Vans,FCEV,Vehicles,311.48148148148147,forward_fill,2024
+France,Historical,EV sales,Vans,PHEV,Vehicles,154.0,forward_fill,2024
+France,Historical,EV stock,Trucks,BEV,Vehicles,31113.636363636368,forward_fill,2024
+France,Historical,EV sales,Trucks,FCEV,Vehicles,1.05,forward_fill,2024
+France,Historical,EV stock,Trucks,FCEV,Vehicles,1.05,forward_fill,2024
+France,Historical,EV stock,Trucks,PHEV,Vehicles,10.5,forward_fill,2024
+France,Historical,EV sales,Trucks,BEV,Vehicles,26947.368421052637,forward_fill,2024
+France,Historical,EV stock,Cars,PHEV,Vehicles,809534.8837209302,forward_fill,2024
+France,Historical,EV sales,Cars,PHEV,Vehicles,196923.07692307694,forward_fill,2024
+France,Historical,EV sales,Buses,BEV,Vehicles,684.5,forward_fill,2024
+France,Historical,EV charging points,EV,Publicly available fast,charging points,41237.11340206185,forward_fill,2024
+France,Historical,EV charging points,EV,Publicly available slow,charging points,129783.78378378379,forward_fill,2024
+Germany,Historical,EV sales,Trucks,BEV,Vehicles,4400.0,forward_fill,2024
+Germany,Historical,EV stock,Cars,PHEV,Vehicles,1162790.6976744186,forward_fill,2024
+Germany,Historical,EV stock,Trucks,BEV,Vehicles,41344.444444444445,forward_fill,2024
+Germany,Historical,EV sales,Trucks,FCEV,Vehicles,8.4,forward_fill,2024
+Germany,Historical,EV stock,Trucks,FCEV,Vehicles,8.4,forward_fill,2024
+Germany,Historical,EV sales,Trucks,PHEV,Vehicles,4.2,forward_fill,2024
+Germany,Historical,EV stock,Trucks,PHEV,Vehicles,4.2,forward_fill,2024
+Germany,Historical,EV sales share,Trucks,EV,percent,3.526666520436594,forward_fill,2024
+Germany,Historical,EV stock share,Cars,EV,percent,7.476923158182898,forward_fill,2024
+Germany,Historical,EV sales share,Cars,EV,percent,18.58064516129032,forward_fill,2024
+Germany,Historical,EV stock share,Trucks,EV,percent,1.624999940395355,forward_fill,2024
+Germany,Historical,EV stock share,Vans,EV,percent,4.6117644194500516,forward_fill,2024
+Germany,Historical,EV sales share,Vans,EV,percent,11.336143871993487,forward_fill,2024
+Germany,Historical,EV stock,Cars,BEV,Vehicles,2250000.0,forward_fill,2024
+Germany,Historical,EV sales,Cars,FCEV,Vehicles,182.0,forward_fill,2024
+Germany,Historical,EV sales,Cars,BEV,Vehicles,575319.1489361703,forward_fill,2024
+Germany,Historical,EV stock,Vans,PHEV,Vehicles,3324.675324675324,forward_fill,2024
+Germany,Historical,EV stock share,Buses,EV,percent,6.278260842162853,forward_fill,2024
+Germany,Historical,EV sales share,Buses,EV,percent,17.307692307692307,forward_fill,2024
+Germany,Historical,EV stock,Cars,FCEV,Vehicles,2742.8571428571427,forward_fill,2024
+Germany,Historical,EV sales,Cars,PHEV,Vehicles,125999.99999999999,forward_fill,2024
+Germany,Historical,EV stock,Buses,BEV,Vehicles,4611.764705882353,forward_fill,2024
+Germany,Historical,EV sales,Buses,BEV,Vehicles,1120.0,forward_fill,2024
+Germany,Historical,EV charging points,EV,Publicly available fast,charging points,29399.999999999996,forward_fill,2024
+Germany,Historical,EV charging points,EV,Publicly available slow,charging points,106605.6338028169,forward_fill,2024
+Germany,Historical,EV sales,Vans,PHEV,Vehicles,251.99999999999997,forward_fill,2024
+Germany,Historical,EV sales,Vans,FCEV,Vehicles,50.400000000000006,forward_fill,2024
+Germany,Historical,EV stock,Vans,FCEV,Vehicles,137.5,forward_fill,2024
+Germany,Historical,EV stock,Vans,BEV,Vehicles,149452.83018867922,forward_fill,2024
+Germany,Historical,EV stock,Buses,PHEV,Vehicles,150.76923076923077,forward_fill,2024
+Germany,Historical,EV sales,Vans,BEV,Vehicles,34722.22222222222,forward_fill,2024
+Germany,Historical,EV sales,Buses,FCEV,Vehicles,88.04761904761904,forward_fill,2024
+Germany,Historical,EV stock,Buses,FCEV,Vehicles,376.47058823529414,forward_fill,2024
+Germany,Historical,EV sales,Buses,PHEV,Vehicles,3.5,forward_fill,2024
+Greece,Historical,EV charging points,EV,Publicly available fast,charging points,573.1578947368421,forward_fill,2024
+Greece,Historical,EV charging points,EV,Publicly available slow,charging points,8228.57142857143,forward_fill,2024
+Greece,Historical,EV stock share,Cars,EV,percent,1.592500150203712,forward_fill,2024
+Greece,Historical,EV sales share,Cars,EV,percent,24.810126282774938,forward_fill,2024
+Greece,Historical,EV stock,Cars,PHEV,Vehicles,36750.0,forward_fill,2024
+Greece,Historical,EV sales,Cars,BEV,Vehicles,17500.0,forward_fill,2024
+Greece,Historical,EV stock,Cars,BEV,Vehicles,22837.83783783784,forward_fill,2024
+Greece,Historical,EV sales,Cars,PHEV,Vehicles,18181.818181818184,forward_fill,2024
+Hungary,Historical,EV sales share,Cars,EV,percent,14.069766817768587,forward_fill,2024
+Hungary,Historical,EV sales,Cars,PHEV,Vehicles,6173.469387755102,forward_fill,2024
+Hungary,Historical,EV sales,Cars,BEV,Vehicles,7157.446808510638,forward_fill,2024
+Iceland,Historical,EV charging points,EV,Publicly available fast,charging points,142.22222222222223,forward_fill,2024
+Iceland,Historical,EV charging points,EV,Publicly available slow,charging points,2305.8823529411766,forward_fill,2024
+Iceland,Historical,EV sales,Cars,BEV,Vehicles,14492.753623188406,forward_fill,2024
+Iceland,Historical,EV sales share,Cars,EV,percent,73.05797101449275,forward_fill,2024
+Iceland,Historical,EV stock share,Cars,EV,percent,23.14285714285714,forward_fill,2024
+Iceland,Historical,EV stock,Cars,PHEV,Vehicles,25473.684210526317,forward_fill,2024
+Iceland,Historical,EV sales,Cars,FCEV,Vehicles,1.05,forward_fill,2024
+Iceland,Historical,EV sales,Cars,PHEV,Vehicles,1680.0,forward_fill,2024
+Iceland,Historical,EV stock,Cars,FCEV,Vehicles,23.516129032258064,forward_fill,2024
+Iceland,Historical,EV stock,Cars,BEV,Vehicles,34571.42857142857,forward_fill,2024
+India,Projection-STEPS,EV stock,Cars,FCEV,Vehicles,3.0,forward_fill,2024
+India,Historical,EV charging points,EV,Publicly available fast,charging points,4100.0,forward_fill,2024
+India,Historical,EV charging points,EV,Publicly available slow,charging points,6800.0,forward_fill,2024
+India,Historical,Electricity demand,Buses,EV,GWh,829.5,forward_fill,2024
+India,Historical,Electricity demand,Vans,EV,GWh,43.050000000000004,forward_fill,2024
+India,Historical,Electricity demand,Cars,EV,GWh,2271621.592346129,forward_fill,2024
+India,Historical,Oil displacement Mbd,Buses,EV,Milion barrels per day,0.0082499999552975,forward_fill,2024
+India,Historical,Oil displacement Mbd,Vans,EV,Milion barrels per day,0.00020346154693765095,forward_fill,2024
+India,Historical,Oil displacement Mbd,Cars,EV,Milion barrels per day,0.005200000014156,forward_fill,2024
+India,Historical,"Oil displacement, million lge",Buses,EV,"Oil displacement, million lge",591.8032786885245,forward_fill,2024
+India,Historical,"Oil displacement, million lge",Vans,EV,"Oil displacement, million lge",11.266666666666667,forward_fill,2024
+India,Historical,"Oil displacement, million lge",Cars,EV,"Oil displacement, million lge",312.49999999999994,forward_fill,2024
+India,Historical,EV sales,Buses,FCEV,Vehicles,1.4,forward_fill,2024
+India,Historical,EV stock,Buses,FCEV,Vehicles,105.0,forward_fill,2024
+India,Historical,EV stock,Vans,BEV,Vehicles,7723.188405797102,forward_fill,2024
+India,Historical,EV sales,Vans,BEV,Vehicles,244.99999999999997,forward_fill,2024
+India,Historical,EV stock share,Cars,EV,percent,0.6406666510634988,forward_fill,2024
+India,Historical,EV sales share,Cars,EV,percent,3.3333332008785606,forward_fill,2024
+India,Historical,EV stock,Cars,BEV,Vehicles,312499.99999999994,forward_fill,2024
+India,Historical,EV sales,Cars,BEV,Vehicles,140083.33333333334,forward_fill,2024
+India,Historical,EV sales,Cars,PHEV,Vehicles,3169.5652173913045,forward_fill,2024
+India,Historical,EV stock,Cars,FCEV,Vehicles,3.0,forward_fill,2024
+India,Historical,EV stock,Cars,PHEV,Vehicles,1267.5,forward_fill,2024
+India,Historical,EV stock,Buses,BEV,Vehicles,22761.290322580648,forward_fill,2024
+India,Historical,EV sales,Buses,BEV,Vehicles,2645.0,forward_fill,2024
+India,Historical,EV stock share,Vans,EV,percent,0.0860113591525304,forward_fill,2024
+India,Historical,EV sales share,Vans,EV,percent,0.0433999992907047,forward_fill,2024
+India,Historical,EV sales share,Buses,EV,percent,7.458065163952764,forward_fill,2024
+India,Historical,EV stock share,Buses,EV,percent,1.099999994039535,forward_fill,2024
+Indonesia,Historical,EV charging points,EV,Publicly available fast,charging points,130.0,forward_fill,2024
+Indonesia,Historical,EV charging points,EV,Publicly available slow,charging points,580.0,forward_fill,2024
+Ireland,Historical,EV sales share,Cars,EV,percent,33.13636363636364,forward_fill,2024
+Ireland,Historical,EV sales,Cars,BEV,Vehicles,33062.5,forward_fill,2024
+Ireland,Historical,EV sales,Cars,PHEV,Vehicles,12987.012987012988,forward_fill,2024
+Israel,Historical,EV sales,Buses,BEV,Vehicles,421.875,forward_fill,2024
+Israel,Historical,EV stock share,Vans,EV,percent,0.4250000044703475,forward_fill,2024
+Israel,Historical,EV sales share,Vans,EV,percent,0.5217391737016716,forward_fill,2024
+Israel,Historical,EV stock share,Buses,EV,percent,4.224999627098454,forward_fill,2024
+Israel,Historical,EV sales share,Buses,EV,percent,12.100000000000001,forward_fill,2024
+Israel,Historical,EV sales share,Cars,EV,percent,30.083333333333336,forward_fill,2024
+Israel,Historical,EV stock share,Cars,EV,percent,7.055999359130886,forward_fill,2024
+Israel,Historical,EV stock,Cars,PHEV,Vehicles,81818.18181818182,forward_fill,2024
+Israel,Historical,EV sales,Cars,PHEV,Vehicles,16000.0,forward_fill,2024
+Israel,Historical,EV stock,Cars,BEV,Vehicles,188204.54545454547,forward_fill,2024
+Israel,Historical,EV stock,Vans,BEV,Vehicles,750.0,forward_fill,2024
+Israel,Historical,EV sales,Vans,BEV,Vehicles,93.10344827586208,forward_fill,2024
+Israel,Historical,EV sales,Cars,BEV,Vehicles,88925.92592592593,forward_fill,2024
+Israel,Historical,EV stock,Buses,BEV,Vehicles,1951.6129032258063,forward_fill,2024
+Israel,Historical,EV stock,Vans,PHEV,Vehicles,21.0,forward_fill,2024
+Israel,Historical,EV charging points,EV,Publicly available fast,charging points,1867.0370370370372,forward_fill,2024
+Israel,Historical,EV charging points,EV,Publicly available slow,charging points,7056.000000000001,forward_fill,2024
+Italy,Historical,EV charging points,EV,Publicly available fast,charging points,10093.846153846154,forward_fill,2024
+Italy,Historical,EV charging points,EV,Publicly available slow,charging points,51612.90322580645,forward_fill,2024
+Italy,Historical,EV sales,Buses,BEV,Vehicles,1400.8333333333333,forward_fill,2024
+Italy,Historical,EV sales share,Buses,EV,percent,15.609756460649354,forward_fill,2024
+Italy,Historical,EV sales share,Cars,EV,percent,9.841859620477567,forward_fill,2024
+Italy,Historical,EV stock share,Buses,EV,percent,1.4578314178099754,forward_fill,2024
+Italy,Historical,EV stock share,Vans,EV,percent,0.9166666699780357,forward_fill,2024
+Italy,Historical,EV sales share,Vans,EV,percent,5.879999465942405,forward_fill,2024
+Italy,Historical,EV stock,Buses,BEV,Vehicles,1265.8227848101267,forward_fill,2024
+Italy,Historical,EV sales,Buses,FCEV,Vehicles,14.700000000000001,forward_fill,2024
+Italy,Historical,EV sales,Cars,BEV,Vehicles,88897.95918367346,forward_fill,2024
+Italy,Historical,EV stock share,Cars,EV,percent,1.857142667381126,forward_fill,2024
+Italy,Historical,EV stock,Vans,BEV,Vehicles,33923.07692307692,forward_fill,2024
+Italy,Historical,EV sales,Vans,PHEV,Vehicles,1639.344262295082,forward_fill,2024
+Italy,Historical,EV stock,Vans,PHEV,Vehicles,4009.0909090909095,forward_fill,2024
+Italy,Historical,EV sales,Vans,BEV,Vehicles,12643.90243902439,forward_fill,2024
+Italy,Historical,EV stock,Buses,FCEV,Vehicles,15.076923076923077,forward_fill,2024
+Italy,Historical,EV stock,Cars,BEV,Vehicles,338823.5294117647,forward_fill,2024
+Italy,Historical,EV sales,Cars,FCEV,Vehicles,1.4,forward_fill,2024
+Italy,Historical,EV stock,Cars,FCEV,Vehicles,62.160714285714285,forward_fill,2024
+Italy,Historical,EV sales,Cars,PHEV,Vehicles,75384.61538461538,forward_fill,2024
+Italy,Historical,EV stock,Cars,PHEV,Vehicles,347222.2222222222,forward_fill,2024
+Japan,Historical,EV stock,Vans,BEV,Vehicles,10500.0,forward_fill,2024
+Japan,Historical,EV sales,Cars,FCEV,Vehicles,224.0,forward_fill,2024
+Japan,Historical,EV stock,Cars,BEV,Vehicles,400476.1904761905,forward_fill,2024
+Japan,Historical,EV sales,Cars,BEV,Vehicles,131254.2372881356,forward_fill,2024
+Japan,Historical,EV stock,Cars,FCEV,Vehicles,8211.842105263158,forward_fill,2024
+Japan,Historical,EV sales,Trucks,BEV,Vehicles,125.0,forward_fill,2024
+Japan,Historical,EV stock,Trucks,BEV,Vehicles,409.0909090909091,forward_fill,2024
+Japan,Historical,EV stock,Cars,PHEV,Vehicles,312500.0,forward_fill,2024
+Japan,Historical,EV sales,Cars,PHEV,Vehicles,71157.8947368421,forward_fill,2024
+Japan,Historical,EV charging points,EV,Publicly available fast,charging points,10971.42857142857,forward_fill,2024
+Japan,Historical,EV charging points,EV,Publicly available slow,charging points,23047.61904761905,forward_fill,2024
+Japan,Historical,EV sales share,Cars,EV,percent,4.6285712621650035,forward_fill,2024
+Japan,Historical,EV sales share,Vans,EV,percent,0.7396000246047962,forward_fill,2024
+Japan,Historical,EV stock share,Vans,EV,percent,0.09099999666213959,forward_fill,2024
+Japan,Historical,EV sales share,Buses,EV,percent,3.361111123252809,forward_fill,2024
+Japan,Historical,EV stock share,Buses,EV,percent,0.20929729233178365,forward_fill,2024
+Japan,Historical,EV sales,Vans,BEV,Vehicles,4900.0,forward_fill,2024
+Japan,Historical,EV stock share,Trucks,EV,percent,0.032500000670552504,forward_fill,2024
+Japan,Historical,EV sales share,Trucks,EV,percent,0.08750000037253,forward_fill,2024
+Japan,Historical,EV sales,Buses,BEV,Vehicles,172.5,forward_fill,2024
+Japan,Historical,EV stock,Buses,FCEV,Vehicles,1000.0,forward_fill,2024
+Japan,Historical,EV stock share,Cars,EV,percent,1.1024999557994302,forward_fill,2024
+Japan,Historical,EV stock,Buses,BEV,Vehicles,375.32467532467535,forward_fill,2024
+Korea,Historical,EV charging points,EV,Publicly available fast,charging points,21000.0,forward_fill,2024
+Korea,Historical,EV charging points,EV,Publicly available slow,charging points,180000.0,forward_fill,2024
+Korea,Historical,EV sales share,Cars,EV,percent,7.3423531184476944,forward_fill,2024
+Korea,Historical,EV stock share,Cars,EV,percent,3.388235468352942,forward_fill,2024
+Korea,Historical,EV sales share,Buses,EV,percent,2.425000071525575,forward_fill,2024
+Korea,Historical,EV stock share,Buses,EV,percent,0.30017856491387446,forward_fill,2024
+Korea,Historical,EV sales share,Vans,EV,percent,21.599999999999998,forward_fill,2024
+Korea,Historical,EV stock share,Vans,EV,percent,6.082757868182838,forward_fill,2024
+Korea,Historical,EV stock,Vans,BEV,Vehicles,177777.77777777778,forward_fill,2024
+Korea,Historical,EV stock,Cars,BEV,Vehicles,705333.3333333333,forward_fill,2024
+Korea,Historical,EV sales,Cars,BEV,Vehicles,120000.0,forward_fill,2024
+Korea,Historical,EV sales,Cars,FCEV,Vehicles,3010.0,forward_fill,2024
+Korea,Historical,EV stock,Cars,FCEV,Vehicles,39862.06896551725,forward_fill,2024
+Korea,Historical,EV sales,Cars,PHEV,Vehicles,13090.90909090909,forward_fill,2024
+Korea,Historical,EV stock,Cars,PHEV,Vehicles,61070.175438596496,forward_fill,2024
+Korea,Historical,EV sales,Buses,BEV,Vehicles,9765.625,forward_fill,2024
+Korea,Historical,EV stock,Buses,BEV,Vehicles,3723.076923076923,forward_fill,2024
+Korea,Historical,EV sales,Buses,FCEV,Vehicles,912.6666666666667,forward_fill,2024
+Korea,Historical,EV stock,Buses,FCEV,Vehicles,1508.9285714285713,forward_fill,2024
+Korea,Historical,EV sales,Vans,BEV,Vehicles,46694.444444444445,forward_fill,2024
+Latvia,Historical,EV sales share,Cars,EV,percent,14.938270901419978,forward_fill,2024
+Latvia,Historical,EV sales,Cars,PHEV,Vehicles,432.0,forward_fill,2024
+Latvia,Historical,EV sales,Cars,BEV,Vehicles,2627.272727272727,forward_fill,2024
+Lithuania,Historical,EV sales,Cars,BEV,Vehicles,3150.0,forward_fill,2024
+Lithuania,Historical,EV sales share,Cars,EV,percent,7.120253078602501,forward_fill,2024
+Luxembourg,Historical,EV sales share,Cars,EV,percent,42.666666666666664,forward_fill,2024
+Luxembourg,Historical,EV sales,Cars,PHEV,Vehicles,6063.157894736842,forward_fill,2024
+Luxembourg,Historical,EV sales,Cars,BEV,Vehicles,18906.25,forward_fill,2024
+Mexico,Historical,EV stock,Cars,PHEV,Vehicles,18285.714285714286,forward_fill,2024
+Mexico,Historical,EV sales,Cars,BEV,Vehicles,38409.09090909091,forward_fill,2024
+Mexico,Historical,EV stock,Cars,BEV,Vehicles,57600.0,forward_fill,2024
+Mexico,Historical,EV sales,Cars,PHEV,Vehicles,1540.0,forward_fill,2024
+Mexico,Historical,EV charging points,EV,Publicly available fast,charging points,76.0,forward_fill,2024
+Mexico,Historical,EV charging points,EV,Publicly available slow,charging points,2000.0,forward_fill,2024
+Mexico,Historical,EV sales share,Cars,EV,percent,1.8988762957145773,forward_fill,2024
+Mexico,Historical,EV stock share,Cars,EV,percent,0.22022471714164057,forward_fill,2024
+Netherlands,Historical,EV stock share,Trucks,EV,percent,2.27500006556511,forward_fill,2024
+Netherlands,Historical,EV stock,Buses,BEV,Vehicles,1828.5714285714284,forward_fill,2024
+Netherlands,Historical,EV sales,Buses,FCEV,Vehicles,6.3,forward_fill,2024
+Netherlands,Historical,EV stock,Buses,FCEV,Vehicles,74.47272727272727,forward_fill,2024
+Netherlands,Historical,EV stock,Buses,PHEV,Vehicles,94.09,forward_fill,2024
+Netherlands,Historical,EV sales,Vans,BEV,Vehicles,20000.0,forward_fill,2024
+Netherlands,Historical,EV sales,Buses,BEV,Vehicles,327.2727272727273,forward_fill,2024
+Netherlands,Historical,EV sales,Vans,PHEV,Vehicles,225.0,forward_fill,2024
+Netherlands,Historical,EV sales,Cars,FCEV,Vehicles,48.56321839080459,forward_fill,2024
+Netherlands,Historical,EV stock,Cars,BEV,Vehicles,586666.6666666666,forward_fill,2024
+Netherlands,Historical,EV sales,Cars,BEV,Vehicles,194252.8735632184,forward_fill,2024
+Netherlands,Historical,EV stock,Vans,FCEV,Vehicles,13.0,forward_fill,2024
+Netherlands,Historical,EV stock,Vans,PHEV,Vehicles,196.92307692307693,forward_fill,2024
+Netherlands,Historical,EV stock,Vans,BEV,Vehicles,37785.71428571428,forward_fill,2024
+Netherlands,Historical,EV charging points,EV,Publicly available fast,charging points,7823.2558139534885,forward_fill,2024
+Netherlands,Historical,EV charging points,EV,Publicly available slow,charging points,163333.33333333334,forward_fill,2024
+Netherlands,Historical,EV sales,Trucks,FCEV,Vehicles,5.6,forward_fill,2024
+Netherlands,Historical,EV stock,Trucks,BEV,Vehicles,6081.081081081082,forward_fill,2024
+Netherlands,Historical,EV stock,Trucks,FCEV,Vehicles,124.96153846153847,forward_fill,2024
+Netherlands,Historical,EV stock,Cars,PHEV,Vehicles,355789.47368421056,forward_fill,2024
+Netherlands,Historical,EV sales,Trucks,BEV,Vehicles,12000.0,forward_fill,2024
+Netherlands,Historical,EV stock,Cars,FCEV,Vehicles,640.6666666666667,forward_fill,2024
+Netherlands,Historical,EV sales,Cars,PHEV,Vehicles,128000.0,forward_fill,2024
+Netherlands,Historical,EV sales,Trucks,PHEV,Vehicles,39.76470588235294,forward_fill,2024
+Netherlands,Historical,EV stock,Trucks,PHEV,Vehicles,95.16071428571429,forward_fill,2024
+Netherlands,Historical,EV sales share,Trucks,EV,percent,45.2077947890986,forward_fill,2024
+Netherlands,Historical,EV stock share,Cars,EV,percent,11.481667194366452,forward_fill,2024
+Netherlands,Historical,EV sales share,Cars,EV,percent,47.11538461538462,forward_fill,2024
+Netherlands,Historical,EV stock share,Vans,EV,percent,3.723077221029647,forward_fill,2024
+Netherlands,Historical,EV sales share,Vans,EV,percent,21.818182133446054,forward_fill,2024
+Netherlands,Historical,EV stock share,Buses,EV,percent,20.25,forward_fill,2024
+Netherlands,Historical,EV sales share,Buses,EV,percent,38.44,forward_fill,2024
+New Zealand,Historical,EV stock share,Vans,EV,percent,0.32190474834031313,forward_fill,2024
+New Zealand,Historical,EV stock share,Buses,EV,percent,1.2499999813735487,forward_fill,2024
+New Zealand,Historical,EV sales share,Cars,EV,percent,17.818181818181817,forward_fill,2024
+New Zealand,Historical,EV sales share,Vans,EV,percent,2.045454501120509,forward_fill,2024
+New Zealand,Historical,EV sales share,Buses,EV,percent,4.506666336059583,forward_fill,2024
+New Zealand,Historical,EV charging points,EV,Publicly available fast,charging points,1540.8333333333333,forward_fill,2024
+New Zealand,Historical,EV charging points,EV,Publicly available slow,charging points,392.0,forward_fill,2024
+New Zealand,Historical,EV sales,Cars,BEV,Vehicles,35578.94736842105,forward_fill,2024
+New Zealand,Historical,EV stock,Cars,BEV,Vehicles,106521.73913043478,forward_fill,2024
+New Zealand,Historical,EV sales,Cars,PHEV,Vehicles,15652.173913043478,forward_fill,2024
+New Zealand,Historical,EV sales,Cars,FCEV,Vehicles,2.8,forward_fill,2024
+New Zealand,Historical,EV stock,Cars,PHEV,Vehicles,47368.42105263158,forward_fill,2024
+New Zealand,Historical,EV stock,Cars,FCEV,Vehicles,25.0,forward_fill,2024
+New Zealand,Historical,EV stock,Buses,BEV,Vehicles,471.1538461538462,forward_fill,2024
+New Zealand,Historical,EV stock,Buses,PHEV,Vehicles,1.0,forward_fill,2024
+New Zealand,Historical,EV stock,Vans,PHEV,Vehicles,104.64864864864866,forward_fill,2024
+New Zealand,Historical,EV sales,Vans,PHEV,Vehicles,10.5,forward_fill,2024
+New Zealand,Historical,EV sales,Vans,BEV,Vehicles,595.2380952380952,forward_fill,2024
+New Zealand,Historical,EV stock,Vans,BEV,Vehicles,2314.285714285714,forward_fill,2024
+New Zealand,Historical,EV sales,Buses,BEV,Vehicles,90.9090909090909,forward_fill,2024
+New Zealand,Historical,EV stock share,Cars,EV,percent,4.126315700710638,forward_fill,2024
+Norway,Historical,EV stock,Trucks,PHEV,Vehicles,0.7,forward_fill,2024
+Norway,Historical,EV stock,Cars,PHEV,Vehicles,220500.0,forward_fill,2024
+Norway,Historical,EV stock,Trucks,BEV,Vehicles,6545.454545454545,forward_fill,2024
+Norway,Historical,EV sales,Trucks,BEV,Vehicles,924.5283018867924,forward_fill,2024
+Norway,Historical,EV stock share,Cars,EV,percent,32.34615384615385,forward_fill,2024
+Norway,Historical,EV sales share,Cars,EV,percent,97.17977528089888,forward_fill,2024
+Norway,Historical,EV stock share,Trucks,EV,percent,7.538461558212166,forward_fill,2024
+Norway,Historical,EV sales share,Trucks,EV,percent,13.152174185715012,forward_fill,2024
+Norway,Historical,EV stock share,Buses,EV,percent,14.849999070167534,forward_fill,2024
+Norway,Historical,EV sales share,Vans,EV,percent,35.041666666666664,forward_fill,2024
+Norway,Historical,EV stock share,Vans,EV,percent,8.20487877926893,forward_fill,2024
+Norway,Historical,EV sales share,Buses,EV,percent,58.520833333333336,forward_fill,2024
+Norway,Historical,EV charging points,EV,Publicly available fast,charging points,13296.703296703296,forward_fill,2024
+Norway,Historical,EV charging points,EV,Publicly available slow,charging points,17066.666666666668,forward_fill,2024
+Norway,Historical,EV sales,Buses,BEV,Vehicles,940.6451612903226,forward_fill,2024
+Norway,Historical,EV stock,Buses,BEV,Vehicles,1734.9397590361446,forward_fill,2024
+Norway,Historical,EV sales,Vans,BEV,Vehicles,11062.857142857143,forward_fill,2024
+Norway,Historical,EV stock,Buses,PHEV,Vehicles,67.01449275362319,forward_fill,2024
+Norway,Historical,EV sales,Vans,PHEV,Vehicles,91.0,forward_fill,2024
+Norway,Historical,EV stock,Vans,FCEV,Vehicles,1.0,forward_fill,2024
+Norway,Historical,EV stock,Vans,BEV,Vehicles,42857.142857142855,forward_fill,2024
+Norway,Historical,EV stock,Vans,PHEV,Vehicles,871.2,forward_fill,2024
+Norway,Historical,EV stock,Cars,BEV,Vehicles,806949.1525423729,forward_fill,2024
+Norway,Historical,EV sales,Cars,BEV,Vehicles,71428.57142857143,forward_fill,2024
+Norway,Historical,EV sales,Cars,FCEV,Vehicles,4.199999999999999,forward_fill,2024
+Norway,Historical,EV stock,Cars,FCEV,Vehicles,323.46153846153845,forward_fill,2024
+Norway,Historical,EV sales,Cars,PHEV,Vehicles,7000.0,forward_fill,2024
+Poland,Historical,EV charging points,EV,Publicly available fast,charging points,2045.4545454545457,forward_fill,2024
+Poland,Historical,EV charging points,EV,Publicly available slow,charging points,4840.0,forward_fill,2024
+Poland,Historical,EV sales share,Cars,EV,percent,7.259999790191657,forward_fill,2024
+Poland,Historical,EV stock share,Vans,EV,percent,0.4430769195218074,forward_fill,2024
+Poland,Historical,EV sales share,Vans,EV,percent,8.022222233407295,forward_fill,2024
+Poland,Historical,EV stock share,Buses,EV,percent,2.4923076516777773,forward_fill,2024
+Poland,Historical,EV stock share,Cars,EV,percent,0.774516153223928,forward_fill,2024
+Poland,Historical,EV sales share,Buses,EV,percent,25.0,forward_fill,2024
+Poland,Historical,EV stock,Vans,PHEV,Vehicles,7.199999999999999,forward_fill,2024
+Poland,Historical,EV sales,Cars,FCEV,Vehicles,149.7608695652174,forward_fill,2024
+Poland,Historical,EV sales,Cars,PHEV,Vehicles,15363.636363636364,forward_fill,2024
+Poland,Historical,EV sales,Cars,BEV,Vehicles,20642.85714285714,forward_fill,2024
+Poland,Historical,EV stock,Cars,BEV,Vehicles,87225.8064516129,forward_fill,2024
+Poland,Historical,EV stock,Cars,FCEV,Vehicles,339.2307692307692,forward_fill,2024
+Poland,Historical,EV stock,Cars,PHEV,Vehicles,73633.33333333333,forward_fill,2024
+Poland,Historical,EV sales,Vans,BEV,Vehicles,5236.363636363636,forward_fill,2024
+Poland,Historical,EV stock,Buses,PHEV,Vehicles,50.94736842105263,forward_fill,2024
+Poland,Historical,EV sales,Buses,PHEV,Vehicles,7.5,forward_fill,2024
+Poland,Historical,EV stock,Vans,BEV,Vehicles,10851.612903225807,forward_fill,2024
+Poland,Historical,EV sales,Buses,BEV,Vehicles,720.0,forward_fill,2024
+Poland,Historical,EV stock,Buses,BEV,Vehicles,1756.0975609756097,forward_fill,2024
+Poland,Historical,EV sales,Buses,FCEV,Vehicles,35.7,forward_fill,2024
+Poland,Historical,EV stock,Buses,FCEV,Vehicles,35.7,forward_fill,2024
+Portugal,Historical,EV sales share,Cars,EV,percent,46.54545454545455,forward_fill,2024
+Portugal,Historical,EV stock share,Cars,EV,percent,6.0840002975463845,forward_fill,2024
+Portugal,Historical,EV sales share,Buses,EV,percent,244.52829308677929,forward_fill,2024
+Portugal,Historical,EV sales share,Vans,EV,percent,17.20000076293948,forward_fill,2024
+Portugal,Historical,EV stock share,Buses,EV,percent,7.623528794021353,forward_fill,2024
+Portugal,Historical,EV stock share,Vans,EV,percent,0.7363333003388519,forward_fill,2024
+Portugal,Historical,EV stock,Cars,BEV,Vehicles,153351.85185185185,forward_fill,2024
+Portugal,Historical,EV stock,Buses,FCEV,Vehicles,0.7,forward_fill,2024
+Portugal,Historical,EV stock,Vans,PHEV,Vehicles,9.0,forward_fill,2024
+Portugal,Historical,EV sales,Cars,FCEV,Vehicles,2.1,forward_fill,2024
+Portugal,Historical,EV sales,Cars,BEV,Vehicles,72000.0,forward_fill,2024
+Portugal,Historical,EV stock,Vans,BEV,Vehicles,6981.818181818182,forward_fill,2024
+Portugal,Historical,EV stock,Buses,PHEV,Vehicles,21.333333333333332,forward_fill,2024
+Portugal,Historical,EV sales,Cars,PHEV,Vehicles,45562.5,forward_fill,2024
+Portugal,Historical,EV sales,Vans,BEV,Vehicles,6250.0,forward_fill,2024
+Portugal,Historical,EV sales,Buses,BEV,Vehicles,1705.2631578947367,forward_fill,2024
+Portugal,Historical,EV stock,Buses,BEV,Vehicles,1299.6000000000001,forward_fill,2024
+Portugal,Historical,EV sales,Buses,FCEV,Vehicles,1.05,forward_fill,2024
+Portugal,Historical,EV stock,Cars,FCEV,Vehicles,3.0,forward_fill,2024
+Portugal,Historical,EV charging points,EV,Publicly available fast,charging points,9025.0,forward_fill,2024
+Portugal,Historical,EV charging points,EV,Publicly available slow,charging points,7839.999999999999,forward_fill,2024
+Portugal,Historical,EV stock,Cars,PHEV,Vehicles,123789.47368421052,forward_fill,2024
+Rest of the world,Historical,EV stock share,Cars,EV,percent,0.2882352809076891,forward_fill,2024
+Rest of the world,Historical,EV sales share,Cars,EV,percent,3.3582088715728977,forward_fill,2024
+Rest of the world,Historical,EV stock share,Buses,EV,percent,0.04753124970375205,forward_fill,2024
+Rest of the world,Historical,EV sales share,Buses,EV,percent,0.07699999958276779,forward_fill,2024
+Rest of the world,Historical,EV stock,Trucks,BEV,Vehicles,400.90909090909093,forward_fill,2024
+Rest of the world,Historical,EV sales,Trucks,FCEV,Vehicles,1.05,forward_fill,2024
+Rest of the world,Historical,EV stock,Trucks,FCEV,Vehicles,1.05,forward_fill,2024
+Rest of the world,Historical,EV stock,Cars,BEV,Vehicles,388172.0430107527,forward_fill,2024
+Rest of the world,Historical,EV stock,Cars,FCEV,Vehicles,5.0,forward_fill,2024
+Rest of the world,Historical,EV sales,Trucks,BEV,Vehicles,672.2222222222222,forward_fill,2024
+Rest of the world,Historical,EV stock,Cars,PHEV,Vehicles,100041.66666666669,forward_fill,2024
+Rest of the world,Historical,EV sales,Cars,PHEV,Vehicles,85569.62025316457,forward_fill,2024
+Rest of the world,Historical,Electricity demand,Buses,EV,GWh,1164.8529411764705,forward_fill,2024
+Rest of the world,Historical,Electricity demand,Trucks,EV,GWh,1675.36231884058,forward_fill,2024
+Rest of the world,Historical,Electricity demand,Vans,EV,GWh,3333.3333333333335,forward_fill,2024
+Rest of the world,Historical,Electricity demand,Cars,EV,GWh,31205.0,forward_fill,2024
+Rest of the world,Historical,Oil displacement Mbd,Buses,EV,Milion barrels per day,0.005338889287271813,forward_fill,2024
+Rest of the world,Historical,Oil displacement Mbd,Trucks,EV,Milion barrels per day,0.0037500000325975,forward_fill,2024
+Rest of the world,Historical,Oil displacement Mbd,Vans,EV,Milion barrels per day,0.015372342318118517,forward_fill,2024
+Rest of the world,Historical,Oil displacement Mbd,Cars,EV,Milion barrels per day,0.10083333449438214,forward_fill,2024
+Rest of the world,Historical,"Oil displacement, million lge",Buses,EV,"Oil displacement, million lge",294.5454545454545,forward_fill,2024
+Rest of the world,Historical,"Oil displacement, million lge",Trucks,EV,"Oil displacement, million lge",255.51612903225808,forward_fill,2024
+Rest of the world,Historical,"Oil displacement, million lge",Vans,EV,"Oil displacement, million lge",889.2592592592592,forward_fill,2024
+Rest of the world,Historical,"Oil displacement, million lge",Cars,EV,"Oil displacement, million lge",6023.529411764705,forward_fill,2024
+Rest of the world,Historical,EV sales,Cars,BEV,Vehicles,208333.3333333333,forward_fill,2024
+Rest of the world,Historical,EV sales,Vans,BEV,Vehicles,1571.4285714285716,forward_fill,2024
+Rest of the world,Historical,EV stock,Vans,BEV,Vehicles,4672.222222222223,forward_fill,2024
+Rest of the world,Historical,EV sales,Vans,FCEV,Vehicles,1.05,forward_fill,2024
+Rest of the world,Historical,EV stock,Vans,FCEV,Vehicles,1.05,forward_fill,2024
+Rest of the world,Historical,EV stock,Buses,PHEV,Vehicles,45.02127659574468,forward_fill,2024
+Rest of the world,Historical,EV sales,Buses,BEV,Vehicles,700.0,forward_fill,2024
+Rest of the world,Historical,EV stock,Buses,FCEV,Vehicles,5.070000247955321,forward_fill,2024
+Rest of the world,Historical,EV sales,Buses,FCEV,Vehicles,1.05,forward_fill,2024
+Rest of the world,Historical,EV stock,Buses,BEV,Vehicles,4180.645161290323,forward_fill,2024
+Romania,Historical,EV sales share,Cars,EV,percent,13.444444444444446,forward_fill,2024
+Romania,Historical,EV sales,Cars,BEV,Vehicles,18750.0,forward_fill,2024
+Seychelles,Historical,EV sales share,Cars,EV,percent,14.705881940452258,forward_fill,2024
+Seychelles,Historical,EV sales,Cars,BEV,Vehicles,270.27027027027026,forward_fill,2024
+Slovakia,Historical,EV sales share,Cars,EV,percent,10.056756312695626,forward_fill,2024
+Slovakia,Historical,EV sales,Cars,BEV,Vehicles,3778.5714285714284,forward_fill,2024
+Slovakia,Historical,EV sales,Cars,PHEV,Vehicles,5625.0,forward_fill,2024
+Slovenia,Historical,EV sales,Cars,BEV,Vehicles,8039.130434782608,forward_fill,2024
+Slovenia,Historical,EV sales share,Cars,EV,percent,19.51612963264617,forward_fill,2024
+Slovenia,Historical,EV sales,Cars,PHEV,Vehicles,1694.915254237288,forward_fill,2024
+South Africa,Historical,EV stock share,Cars,EV,percent,0.06914285425933317,forward_fill,2024
+South Africa,Historical,EV sales share,Cars,EV,percent,0.4947058486794132,forward_fill,2024
+South Africa,Historical,EV sales,Cars,PHEV,Vehicles,607.5,forward_fill,2024
+South Africa,Historical,EV stock,Cars,PHEV,Vehicles,2060.9756097560976,forward_fill,2024
+South Africa,Historical,EV stock,Cars,BEV,Vehicles,3457.142857142857,forward_fill,2024
+South Africa,Historical,EV stock,Cars,FCEV,Vehicles,3.0,forward_fill,2024
+South Africa,Historical,EV sales,Cars,BEV,Vehicles,1312.2,forward_fill,2024
+South Africa,Historical,EV charging points,EV,Publicly available fast,charging points,160.0,forward_fill,2024
+South Africa,Historical,EV charging points,EV,Publicly available slow,charging points,140.0,forward_fill,2024
+Spain,Historical,EV stock share,Buses,EV,percent,2.9454543255577277,forward_fill,2024
+Spain,Historical,EV sales share,Trucks,EV,percent,2.528089928274851,forward_fill,2024
+Spain,Historical,EV stock share,Cars,EV,percent,2.3936170273476898,forward_fill,2024
+Spain,Historical,EV sales share,Cars,EV,percent,16.179775974392673,forward_fill,2024
+Spain,Historical,EV stock share,Vans,EV,percent,1.249729739914328,forward_fill,2024
+Spain,Historical,EV stock share,Trucks,EV,percent,0.32499998807907,forward_fill,2024
+Spain,Historical,EV sales share,Buses,EV,percent,18.369565598230054,forward_fill,2024
+Spain,Historical,EV sales share,Vans,EV,percent,16.722580273615343,forward_fill,2024
+Spain,Historical,EV sales,Cars,BEV,Vehicles,98454.54545454546,forward_fill,2024
+Spain,Historical,EV stock,Vans,PHEV,Vehicles,220.5,forward_fill,2024
+Spain,Historical,EV sales,Vans,PHEV,Vehicles,3.5,forward_fill,2024
+Spain,Historical,EV sales,Vans,BEV,Vehicles,28571.428571428572,forward_fill,2024
+Spain,Historical,EV stock,Vans,BEV,Vehicles,41142.857142857145,forward_fill,2024
+Spain,Historical,EV stock,Buses,FCEV,Vehicles,47.5,forward_fill,2024
+Spain,Historical,EV sales,Buses,FCEV,Vehicles,28.16666666666667,forward_fill,2024
+Spain,Historical,EV stock,Buses,BEV,Vehicles,2360.655737704918,forward_fill,2024
+Spain,Historical,EV sales,Buses,PHEV,Vehicles,72.5,forward_fill,2024
+Spain,Historical,EV stock,Buses,PHEV,Vehicles,51.839999999999996,forward_fill,2024
+Spain,Historical,EV sales,Buses,BEV,Vehicles,1081.6000000000001,forward_fill,2024
+Spain,Historical,EV stock,Cars,FCEV,Vehicles,31.69565217391304,forward_fill,2024
+Spain,Historical,EV sales,Trucks,BEV,Vehicles,921.9047619047619,forward_fill,2024
+Spain,Historical,EV stock,Trucks,BEV,Vehicles,2450.0,forward_fill,2024
+Spain,Historical,EV sales,Cars,PHEV,Vehicles,86224.48979591836,forward_fill,2024
+Spain,Historical,EV stock,Cars,PHEV,Vehicles,307692.3076923077,forward_fill,2024
+Spain,Historical,EV sales,Cars,FCEV,Vehicles,4.0,forward_fill,2024
+Spain,Historical,EV stock,Cars,BEV,Vehicles,266666.6666666666,forward_fill,2024
+Spain,Historical,EV charging points,EV,Publicly available fast,charging points,19800.0,forward_fill,2024
+Spain,Historical,EV charging points,EV,Publicly available slow,charging points,36100.0,forward_fill,2024
+Sweden,Historical,EV sales share,Trucks,EV,percent,2.688372124588896,forward_fill,2024
+Sweden,Historical,EV stock share,Cars,EV,percent,13.908046281925204,forward_fill,2024
+Sweden,Historical,EV sales share,Cars,EV,percent,66.66666666666667,forward_fill,2024
+Sweden,Historical,EV stock share,Trucks,EV,percent,1.9599997997284002,forward_fill,2024
+Sweden,Historical,EV stock share,Buses,EV,percent,11.764705882352942,forward_fill,2024
+Sweden,Historical,EV sales share,Buses,EV,percent,36.76470588235294,forward_fill,2024
+Sweden,Historical,EV sales share,Vans,EV,percent,27.769230769230774,forward_fill,2024
+Sweden,Historical,EV stock share,Vans,EV,percent,5.3260870669424545,forward_fill,2024
+Sweden,Historical,EV sales,Cars,PHEV,Vehicles,55537.31343283582,forward_fill,2024
+Sweden,Historical,EV stock,Cars,FCEV,Vehicles,35.44615384615385,forward_fill,2024
+Sweden,Historical,EV sales,Trucks,BEV,Vehicles,247.35294117647058,forward_fill,2024
+Sweden,Historical,EV stock,Cars,PHEV,Vehicles,303750.0,forward_fill,2024
+Sweden,Historical,EV stock,Trucks,PHEV,Vehicles,6.125,forward_fill,2024
+Sweden,Historical,EV stock,Trucks,BEV,Vehicles,1689.655172413793,forward_fill,2024
+Sweden,Historical,EV stock,Cars,BEV,Vehicles,420500.0,forward_fill,2024
+Sweden,Historical,EV sales,Cars,FCEV,Vehicles,2.0,forward_fill,2024
+Sweden,Historical,EV sales,Buses,BEV,Vehicles,457.61904761904765,forward_fill,2024
+Sweden,Historical,EV sales,Cars,BEV,Vehicles,126041.66666666666,forward_fill,2024
+Sweden,Historical,EV stock,Vans,PHEV,Vehicles,440.2380952380952,forward_fill,2024
+Sweden,Historical,EV sales,Vans,BEV,Vehicles,15138.0,forward_fill,2024
+Sweden,Historical,EV stock,Vans,BEV,Vehicles,33923.07692307692,forward_fill,2024
+Sweden,Historical,EV stock,Buses,PHEV,Vehicles,15.399999999999999,forward_fill,2024
+Sweden,Historical,EV stock,Buses,BEV,Vehicles,1565.2173913043478,forward_fill,2024
+Sweden,Historical,EV stock,Buses,FCEV,Vehicles,25.0,forward_fill,2024
+Sweden,Historical,EV sales,Buses,FCEV,Vehicles,8.4,forward_fill,2024
+Sweden,Historical,EV sales,Vans,PHEV,Vehicles,5.25,forward_fill,2024
+Sweden,Historical,EV charging points,EV,Publicly available fast,charging points,7788.461538461539,forward_fill,2024
+Sweden,Historical,EV charging points,EV,Publicly available slow,charging points,60000.0,forward_fill,2024
+Switzerland,Historical,EV charging points,EV,Publicly available fast,charging points,3563.6363636363635,forward_fill,2024
+Switzerland,Historical,EV charging points,EV,Publicly available slow,charging points,16900.0,forward_fill,2024
+Switzerland,Historical,EV stock,Buses,BEV,Vehicles,322.6666666666667,forward_fill,2024
+Switzerland,Historical,EV sales,Buses,BEV,Vehicles,5390.0,forward_fill,2024
+Switzerland,Historical,EV stock,Buses,FCEV,Vehicles,11.25,forward_fill,2024
+Switzerland,Historical,EV stock,Vans,PHEV,Vehicles,190.0,forward_fill,2024
+Switzerland,Historical,EV sales,Vans,BEV,Vehicles,6337.5,forward_fill,2024
+Switzerland,Historical,EV stock,Buses,PHEV,Vehicles,35.0,forward_fill,2024
+Switzerland,Historical,EV stock,Vans,BEV,Vehicles,15384.615384615383,forward_fill,2024
+Switzerland,Historical,EV stock,Trucks,BEV,Vehicles,1284.4444444444443,forward_fill,2024
+Switzerland,Historical,EV stock,Trucks,FCEV,Vehicles,84.0,forward_fill,2024
+Switzerland,Historical,EV sales,Cars,BEV,Vehicles,70225.0,forward_fill,2024
+Switzerland,Historical,EV stock,Cars,BEV,Vehicles,249230.76923076922,forward_fill,2024
+Switzerland,Historical,EV sales,Cars,FCEV,Vehicles,18.9,forward_fill,2024
+Switzerland,Historical,EV stock,Cars,PHEV,Vehicles,129802.81690140844,forward_fill,2024
+Switzerland,Historical,EV sales,Trucks,BEV,Vehicles,802.2222222222223,forward_fill,2024
+Switzerland,Historical,EV sales,Cars,PHEV,Vehicles,27842.105263157893,forward_fill,2024
+Switzerland,Historical,EV stock,Cars,FCEV,Vehicles,274.2857142857143,forward_fill,2024
+Switzerland,Historical,EV stock share,Vans,EV,percent,3.3062498136423413,forward_fill,2024
+Switzerland,Historical,EV sales share,Vans,EV,percent,17.604165967139956,forward_fill,2024
+Switzerland,Historical,EV sales share,Cars,EV,percent,34.61538461538461,forward_fill,2024
+Switzerland,Historical,EV stock share,Cars,EV,percent,8.009524700052376,forward_fill,2024
+Switzerland,Historical,EV sales share,Buses,EV,percent,183.69565217391306,forward_fill,2024
+Switzerland,Historical,EV stock share,Buses,EV,percent,3.125,forward_fill,2024
+Switzerland,Historical,EV stock share,Trucks,EV,percent,2.3606558699532405,forward_fill,2024
+Switzerland,Historical,EV sales share,Trucks,EV,percent,13.722448074137496,forward_fill,2024
+Thailand,Historical,EV charging points,EV,Publicly available fast,charging points,770.0,forward_fill,2024
+Thailand,Historical,EV charging points,EV,Publicly available slow,charging points,1500.0,forward_fill,2024
+Turkiye,Historical,EV sales share,Cars,EV,percent,90.90908893868931,forward_fill,2024
+Turkiye,Historical,EV stock share,Cars,EV,percent,1.57499998807907,forward_fill,2024
+Turkiye,Historical,EV stock,Cars,PHEV,Vehicles,10439.130434782608,forward_fill,2024
+Turkiye,Historical,EV stock,Cars,BEV,Vehicles,423500.0,forward_fill,2024
+Turkiye,Historical,EV sales,Cars,PHEV,Vehicles,13500.0,forward_fill,2024
+Turkiye,Historical,EV sales,Cars,BEV,Vehicles,622285.7142857143,forward_fill,2024
+Turkiye,Historical,EV charging points,EV,Publicly available fast,charging points,3555.5555555555557,forward_fill,2024
+Turkiye,Historical,EV charging points,EV,Publicly available slow,charging points,27222.222222222223,forward_fill,2024
+United Arab Emirates,Historical,EV sales share,Cars,EV,percent,15.363636363636365,forward_fill,2024
+United Arab Emirates,Historical,EV sales,Cars,PHEV,Vehicles,8925.641025641025,forward_fill,2024
+United Arab Emirates,Historical,EV sales,Cars,BEV,Vehicles,35266.666666666664,forward_fill,2024
+United Kingdom,Historical,EV stock share,Buses,EV,percent,7.499999867545225,forward_fill,2024
+United Kingdom,Historical,EV sales share,Buses,EV,percent,44.46153846153846,forward_fill,2024
+United Kingdom,Historical,EV sales share,Cars,EV,percent,25.043478260869563,forward_fill,2024
+United Kingdom,Historical,EV stock share,Vans,EV,percent,2.1666665871937916,forward_fill,2024
+United Kingdom,Historical,EV sales share,Vans,EV,percent,6.814516338671906,forward_fill,2024
+United Kingdom,Historical,EV stock share,Cars,EV,percent,8.62068937167828,forward_fill,2024
+United Kingdom,Historical,EV charging points,EV,Publicly available fast,charging points,14492.753623188406,forward_fill,2024
+United Kingdom,Historical,EV charging points,EV,Publicly available slow,charging points,61633.333333333336,forward_fill,2024
+United Kingdom,Historical,EV stock share,Trucks,EV,percent,0.7392308077163294,forward_fill,2024
+United Kingdom,Historical,EV sales share,Trucks,EV,percent,6.627272817714163,forward_fill,2024
+United Kingdom,Historical,EV stock,Buses,BEV,Vehicles,5000.0,forward_fill,2024
+United Kingdom,Historical,EV sales,Buses,BEV,Vehicles,3840.909090909091,forward_fill,2024
+United Kingdom,Historical,EV sales,Cars,PHEV,Vehicles,196000.0,forward_fill,2024
+United Kingdom,Historical,EV stock,Cars,BEV,Vehicles,1746181.8181818181,forward_fill,2024
+United Kingdom,Historical,EV sales,Cars,FCEV,Vehicles,62.5,forward_fill,2024
+United Kingdom,Historical,EV stock,Vans,PHEV,Vehicles,3114.8148148148143,forward_fill,2024
+United Kingdom,Historical,EV sales,Cars,BEV,Vehicles,355925.9259259259,forward_fill,2024
+United Kingdom,Historical,EV sales,Vans,PHEV,Vehicles,77.0,forward_fill,2024
+United Kingdom,Historical,EV stock,Cars,FCEV,Vehicles,355.7894736842105,forward_fill,2024
+United Kingdom,Historical,EV stock,Cars,PHEV,Vehicles,900000.0,forward_fill,2024
+United Kingdom,Historical,EV sales,Trucks,BEV,Vehicles,3843.1372549019607,forward_fill,2024
+United Kingdom,Historical,EV stock,Trucks,BEV,Vehicles,5568.421052631579,forward_fill,2024
+United Kingdom,Historical,EV sales,Buses,FCEV,Vehicles,30.099999999999998,forward_fill,2024
+United Kingdom,Historical,EV stock,Buses,FCEV,Vehicles,875.6756756756757,forward_fill,2024
+United Kingdom,Historical,EV stock,Buses,PHEV,Vehicles,220.0,forward_fill,2024
+United Kingdom,Historical,EV stock,Vans,BEV,Vehicles,118564.10256410256,forward_fill,2024
+United Kingdom,Historical,EV sales,Vans,BEV,Vehicles,28470.58823529412,forward_fill,2024
+USA,Historical,EV sales share,Cars,EV,percent,12.19594578877081,forward_fill,2024
+USA,Historical,EV stock share,Buses,EV,percent,1.0992208463302435,forward_fill,2024
+USA,Historical,EV stock share,Cars,EV,percent,3.3923075086266503,forward_fill,2024
+USA,Historical,EV sales share,Buses,EV,percent,0.5389999866485597,forward_fill,2024
+USA,Historical,EV charging points,EV,Publicly available fast,charging points,66035.71428571428,forward_fill,2024
+USA,Historical,EV charging points,EV,Publicly available slow,charging points,196000.0,forward_fill,2024
+USA,Historical,Electricity demand,Buses,EV,GWh,600.7142857142857,forward_fill,2024
+USA,Historical,Electricity demand,Cars,EV,GWh,67222.22222222222,forward_fill,2024
+USA,Historical,EV stock,Buses,PHEV,Vehicles,550.0,forward_fill,2024
+USA,Historical,EV stock,Cars,BEV,Vehicles,5833333.333333333,forward_fill,2024
+USA,Historical,EV sales,Cars,BEV,Vehicles,1512500.0,forward_fill,2024
+USA,Historical,EV stock,Cars,PHEV,Vehicles,1857142.8571428573,forward_fill,2024
+USA,Historical,EV sales,Cars,FCEV,Vehicles,3333.3333333333335,forward_fill,2024
+USA,Historical,EV stock,Cars,FCEV,Vehicles,21600.0,forward_fill,2024
+USA,Historical,EV sales,Cars,PHEV,Vehicles,442631.57894736837,forward_fill,2024
+USA,Historical,"Oil displacement, million lge",Buses,EV,"Oil displacement, million lge",64.01612903225806,forward_fill,2024
+USA,Historical,"Oil displacement, million lge",Cars,EV,"Oil displacement, million lge",15175.806451612903,forward_fill,2024
+USA,Historical,Oil displacement Mbd,Buses,EV,Milion barrels per day,0.00109999999404,forward_fill,2024
+USA,Historical,Oil displacement Mbd,Cars,EV,Milion barrels per day,0.2627272796778619,forward_fill,2024
+USA,Historical,EV sales,Buses,BEV,Vehicles,525.0,forward_fill,2024
+USA,Historical,EV stock,Buses,BEV,Vehicles,7804.918032786884,forward_fill,2024
+USA,Historical,EV stock,Buses,FCEV,Vehicles,220.0,forward_fill,2024
+World,Historical,EV sales,Buses,FCEV,Vehicles,1905.8823529411766,forward_fill,2024
+World,Historical,EV stock,Buses,BEV,Vehicles,692622.9508196722,forward_fill,2024
+World,Historical,EV stock,Buses,FCEV,Vehicles,11468.181818181818,forward_fill,2024
+World,Historical,EV sales,Buses,BEV,Vehicles,39724.137931034486,forward_fill,2024
+World,Historical,EV stock,Trucks,FCEV,Vehicles,17042.253521126764,forward_fill,2024
+World,Historical,EV stock,Trucks,PHEV,Vehicles,1836.9565217391305,forward_fill,2024
+World,Historical,EV sales,Trucks,PHEV,Vehicles,462.85714285714283,forward_fill,2024
+World,Historical,EV stock share,Buses,EV,percent,3.927272575945903,forward_fill,2024
+World,Historical,EV sales share,Vans,EV,percent,6.050000172108399,forward_fill,2024
+World,Historical,EV stock,Cars,FCEV,Vehicles,76421.05263157895,forward_fill,2024
+World,Historical,EV stock,Cars,PHEV,Vehicles,18000000.0,forward_fill,2024
+World,Historical,EV sales,Cars,PHEV,Vehicles,6375862.068965518,forward_fill,2024
+World,Historical,EV stock,Trucks,BEV,Vehicles,403333.3333333334,forward_fill,2024
+World,Historical,EV sales,Trucks,BEV,Vehicles,72025.64102564103,forward_fill,2024
+World,Historical,EV sales,Trucks,FCEV,Vehicles,4628.571428571428,forward_fill,2024
+World,Historical,EV charging points,EV,Publicly available fast,charging points,2177777.777777778,forward_fill,2024
+World,Historical,EV charging points,EV,Publicly available slow,charging points,3472222.222222222,forward_fill,2024
+World,Historical,EV sales share,Buses,EV,percent,2.5289472445556727,forward_fill,2024
+World,Historical,Electricity demand,Buses,EV,GWh,13000.0,forward_fill,2024
+World,Historical,Electricity demand,Trucks,EV,GWh,10898.11320754717,forward_fill,2024
+World,Historical,Electricity demand,Vans,EV,GWh,15479.310344827585,forward_fill,2024
+World,Historical,Electricity demand,Cars,EV,GWh,213840.9090909091,forward_fill,2024
+World,Historical,Oil displacement Mbd,Buses,EV,Milion barrels per day,0.05039999842643714,forward_fill,2024
+World,Historical,Oil displacement Mbd,Trucks,EV,Milion barrels per day,0.05120000600815063,forward_fill,2024
+World,Historical,Oil displacement Mbd,Vans,EV,Milion barrels per day,0.07055999704599437,forward_fill,2024
+World,Historical,Oil displacement Mbd,Cars,EV,Milion barrels per day,1.260249905046077,forward_fill,2024
+World,Historical,"Oil displacement, million lge",Buses,EV,"Oil displacement, million lge",2976.190476190476,forward_fill,2024
+World,Historical,"Oil displacement, million lge",Trucks,EV,"Oil displacement, million lge",3008.3333333333335,forward_fill,2024
+World,Historical,"Oil displacement, million lge",Vans,EV,"Oil displacement, million lge",4464.285714285714,forward_fill,2024
+World,Historical,"Oil displacement, million lge",Cars,EV,"Oil displacement, million lge",73500.0,forward_fill,2024
+World,Historical,EV stock,Cars,BEV,Vehicles,43555555.55555556,forward_fill,2024
+World,Historical,EV sales,Cars,BEV,Vehicles,12363013.698630136,forward_fill,2024
+World,Historical,EV sales,Cars,FCEV,Vehicles,6230.0,forward_fill,2024
+World,Historical,EV sales,Vans,PHEV,Vehicles,5513.9240506329115,forward_fill,2024
+World,Historical,EV stock,Vans,PHEV,Vehicles,20454.545454545456,forward_fill,2024
+World,Historical,EV stock,Vans,FCEV,Vehicles,7876.923076923077,forward_fill,2024
+World,Historical,EV sales,Vans,FCEV,Vehicles,4938.2716049382725,forward_fill,2024
+World,Historical,EV stock,Vans,BEV,Vehicles,1898876.404494382,forward_fill,2024
+World,Historical,EV sales,Vans,BEV,Vehicles,682580.6451612903,forward_fill,2024
+World,Historical,EV stock,Buses,PHEV,Vehicles,40026.31578947369,forward_fill,2024
+World,Historical,EV sales,Buses,PHEV,Vehicles,1633.3333333333335,forward_fill,2024
+World,Historical,EV stock share,Trucks,EV,percent,0.43200001716613823,forward_fill,2024
+World,Historical,EV sales share,Trucks,EV,percent,1.119054104134148,forward_fill,2024
+World,Historical,EV stock share,Cars,EV,percent,4.8761908429550465,forward_fill,2024
+World,Historical,EV sales share,Cars,EV,percent,23.14285714285714,forward_fill,2024
+World,Historical,EV stock share,Vans,EV,percent,1.2041666863693135,forward_fill,2024

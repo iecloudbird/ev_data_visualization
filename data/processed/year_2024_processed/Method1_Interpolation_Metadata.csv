@@ -1,0 +1,462 @@
+region,category,parameter,mode,powertrain,unit,value_2023,value_2024,value_2025,fill_method,growth_2023_2024_pct,growth_2024_2025_pct,note
+China,Projection-STEPS,EV sales,Trucks,PHEV,Vehicles,320.0,1560.0,2800.0,interpolation,387.5,79.49,Simple average of 2023 and 2025 values
+China,Projection-STEPS,EV stock,Trucks,PHEV,Vehicles,1200.0,5400.0,9600.0,interpolation,350.0,77.78,Simple average of 2023 and 2025 values
+China,Projection-STEPS,EV stock,Cars,FCEV,Vehicles,760.0,4380.0,8000.0,interpolation,476.32,82.65,Simple average of 2023 and 2025 values
+China,Projection-STEPS,EV stock,Trucks,FCEV,Vehicles,10000.0,17500.0,25000.0,interpolation,75.0,42.86,Simple average of 2023 and 2025 values
+China,Projection-STEPS,EV sales,Trucks,FCEV,Vehicles,3400.0,6200.0,9000.0,interpolation,82.35,45.16,Simple average of 2023 and 2025 values
+China,Projection-STEPS,EV stock,Trucks,BEV,Vehicles,300000.0,410000.0,520000.0,interpolation,36.67,26.83,Simple average of 2023 and 2025 values
+China,Projection-STEPS,EV sales,Trucks,BEV,Vehicles,38000.0,104000.0,170000.0,interpolation,173.68,63.46,Simple average of 2023 and 2025 values
+China,Projection-STEPS,EV stock,Cars,PHEV,Vehicles,5800000.0,8900000.0,12000000.0,interpolation,53.45,34.83,Simple average of 2023 and 2025 values
+China,Projection-STEPS,EV sales,Cars,PHEV,Vehicles,2700000.0,3050000.0,3400000.0,interpolation,12.96,11.48,Simple average of 2023 and 2025 values
+China,Projection-STEPS,EV sales,Cars,FCEV,Vehicles,520.0,4260.0,8000.0,interpolation,719.23,87.79,Simple average of 2023 and 2025 values
+China,Projection-STEPS,EV stock,Cars,BEV,Vehicles,16000000.0,23000000.0,30000000.0,interpolation,43.75,30.43,Simple average of 2023 and 2025 values
+China,Projection-STEPS,EV sales,Cars,BEV,Vehicles,5400000.0,6500000.0,7600000.0,interpolation,20.37,16.92,Simple average of 2023 and 2025 values
+China,Projection-STEPS,EV stock,Vans,PHEV,Vehicles,1700.0,15850.0,30000.0,interpolation,832.35,89.27,Simple average of 2023 and 2025 values
+China,Projection-STEPS,EV stock,Vans,BEV,Vehicles,680000.0,940000.0,1200000.0,interpolation,38.24,27.66,Simple average of 2023 and 2025 values
+China,Projection-STEPS,EV sales,Vans,FCEV,Vehicles,1900.0,5650.0,9400.0,interpolation,197.37,66.37,Simple average of 2023 and 2025 values
+China,Projection-STEPS,EV stock,Vans,FCEV,Vehicles,2700.0,9350.0,16000.0,interpolation,246.3,71.12,Simple average of 2023 and 2025 values
+China,Projection-STEPS,EV sales,Vans,BEV,Vehicles,240000.0,315000.0,390000.0,interpolation,31.25,23.81,Simple average of 2023 and 2025 values
+China,Projection-STEPS,EV stock,Buses,PHEV,Vehicles,37000.0,36000.0,35000.0,interpolation,-2.7,-2.78,Simple average of 2023 and 2025 values
+China,Projection-STEPS,EV sales,Buses,PHEV,Vehicles,1300.0,790.0,280.0,interpolation,-39.23,-64.56,Simple average of 2023 and 2025 values
+China,Projection-STEPS,EV stock,Buses,FCEV,Vehicles,6600.0,12800.0,19000.0,interpolation,93.94,48.44,Simple average of 2023 and 2025 values
+China,Projection-STEPS,EV sales,Buses,FCEV,Vehicles,1200.0,4100.0,7000.0,interpolation,241.67,70.73,Simple average of 2023 and 2025 values
+China,Projection-STEPS,EV stock,Buses,BEV,Vehicles,600000.0,730000.0,860000.0,interpolation,21.67,17.81,Simple average of 2023 and 2025 values
+China,Projection-STEPS,EV sales,Buses,BEV,Vehicles,29000.0,109500.0,190000.0,interpolation,277.59,73.52,Simple average of 2023 and 2025 values
+China,Projection-STEPS,EV stock share,Trucks,EV,percent,1.0,1.5,2.0,interpolation,50.0,33.33,Simple average of 2023 and 2025 values
+China,Projection-STEPS,EV sales share,Trucks,EV,percent,2.79999995231628,5.39999997615814,8.0,interpolation,92.86,48.15,Simple average of 2023 and 2025 values
+China,Projection-STEPS,EV stock share,Cars,EV,percent,7.59999990463257,10.799999952316284,14.0,interpolation,42.11,29.63,Simple average of 2023 and 2025 values
+China,Projection-STEPS,EV sales share,Cars,EV,percent,38.0,43.5,49.0,interpolation,14.47,12.64,Simple average of 2023 and 2025 values
+China,Projection-STEPS,EV stock share,Vans,EV,percent,3.59999990463257,4.799999952316285,6.0,interpolation,33.33,25.0,Simple average of 2023 and 2025 values
+China,Projection-STEPS,EV sales share,Vans,EV,percent,12.0,18.5,25.0,interpolation,54.17,35.14,Simple average of 2023 and 2025 values
+China,Projection-STEPS,EV stock share,Buses,EV,percent,25.0,28.5,32.0,interpolation,14.0,12.28,Simple average of 2023 and 2025 values
+China,Projection-STEPS,EV sales share,Buses,EV,percent,50.0,50.0,50.0,interpolation,0.0,0.0,Simple average of 2023 and 2025 values
+China,Projection-APS,EV charging points,EV,Publicly available fast,charging points,1200000.0,1650000.0,2100000.0,interpolation,37.5,27.27,Simple average of 2023 and 2025 values
+China,Projection-APS,EV charging points,EV,Publicly available slow,charging points,1500000.0,2050000.0,2600000.0,interpolation,36.67,26.83,Simple average of 2023 and 2025 values
+China,Projection-APS,EV stock share,Trucks,EV,percent,1.0,1.5,2.0,interpolation,50.0,33.33,Simple average of 2023 and 2025 values
+China,Projection-APS,EV sales share,Trucks,EV,percent,2.79999995231628,5.39999997615814,8.0,interpolation,92.86,48.15,Simple average of 2023 and 2025 values
+China,Projection-APS,EV stock share,Cars,EV,percent,7.59999990463257,10.799999952316284,14.0,interpolation,42.11,29.63,Simple average of 2023 and 2025 values
+China,Projection-APS,EV sales share,Cars,EV,percent,38.0,43.5,49.0,interpolation,14.47,12.64,Simple average of 2023 and 2025 values
+China,Projection-APS,EV stock share,Vans,EV,percent,3.59999990463257,4.799999952316285,6.0,interpolation,33.33,25.0,Simple average of 2023 and 2025 values
+China,Projection-APS,EV sales share,Vans,EV,percent,12.0,18.5,25.0,interpolation,54.17,35.14,Simple average of 2023 and 2025 values
+China,Projection-APS,EV stock,Cars,FCEV,Vehicles,760.0,14880.0,29000.0,interpolation,1857.89,94.89,Simple average of 2023 and 2025 values
+China,Projection-APS,EV sales,Cars,FCEV,Vehicles,520.0,13760.0,27000.0,interpolation,2546.15,96.22,Simple average of 2023 and 2025 values
+China,Projection-APS,EV stock,Cars,BEV,Vehicles,16000000.0,23500000.0,31000000.0,interpolation,46.88,31.91,Simple average of 2023 and 2025 values
+China,Projection-APS,EV sales,Cars,BEV,Vehicles,5400000.0,6850000.0,8300000.0,interpolation,26.85,21.17,Simple average of 2023 and 2025 values
+China,Projection-APS,EV stock,Vans,PHEV,Vehicles,1700.0,14850.0,28000.0,interpolation,773.53,88.55,Simple average of 2023 and 2025 values
+China,Projection-APS,EV sales,Vans,FCEV,Vehicles,1900.0,5350.0,8800.0,interpolation,181.58,64.49,Simple average of 2023 and 2025 values
+China,Projection-APS,EV stock,Vans,FCEV,Vehicles,2700.0,9350.0,16000.0,interpolation,246.3,71.12,Simple average of 2023 and 2025 values
+China,Projection-APS,EV stock,Vans,BEV,Vehicles,680000.0,940000.0,1200000.0,interpolation,38.24,27.66,Simple average of 2023 and 2025 values
+China,Projection-APS,EV sales,Vans,BEV,Vehicles,240000.0,305000.0,370000.0,interpolation,27.08,21.31,Simple average of 2023 and 2025 values
+China,Projection-APS,EV stock,Buses,PHEV,Vehicles,37000.0,36000.0,35000.0,interpolation,-2.7,-2.78,Simple average of 2023 and 2025 values
+China,Projection-APS,EV sales,Buses,PHEV,Vehicles,1300.0,790.0,280.0,interpolation,-39.23,-64.56,Simple average of 2023 and 2025 values
+China,Projection-APS,EV stock,Buses,FCEV,Vehicles,6600.0,12800.0,19000.0,interpolation,93.94,48.44,Simple average of 2023 and 2025 values
+China,Projection-APS,EV sales,Buses,FCEV,Vehicles,1200.0,4100.0,7000.0,interpolation,241.67,70.73,Simple average of 2023 and 2025 values
+China,Projection-APS,EV stock,Buses,BEV,Vehicles,600000.0,730000.0,860000.0,interpolation,21.67,17.81,Simple average of 2023 and 2025 values
+China,Projection-APS,EV sales,Buses,BEV,Vehicles,29000.0,109500.0,190000.0,interpolation,277.59,73.52,Simple average of 2023 and 2025 values
+China,Projection-STEPS,EV charging points,EV,Publicly available fast,charging points,1200000.0,1650000.0,2100000.0,interpolation,37.5,27.27,Simple average of 2023 and 2025 values
+China,Projection-STEPS,EV charging points,EV,Publicly available slow,charging points,1500000.0,2050000.0,2600000.0,interpolation,36.67,26.83,Simple average of 2023 and 2025 values
+China,Projection-APS,Electricity demand,Buses,EV,GWh,9700.0,13350.0,17000.0,interpolation,37.63,27.34,Simple average of 2023 and 2025 values
+China,Projection-APS,Electricity demand,Trucks,EV,GWh,5200.0,7450.0,9700.0,interpolation,43.27,30.2,Simple average of 2023 and 2025 values
+China,Projection-APS,Electricity demand,Vans,EV,GWh,1200.0,1800.0,2400.0,interpolation,50.0,33.33,Simple average of 2023 and 2025 values
+China,Projection-APS,Electricity demand,Cars,EV,GWh,38000.0,62000.0,86000.0,interpolation,63.16,38.71,Simple average of 2023 and 2025 values
+China,Projection-APS,Oil displacement Mbd,Buses,EV,Milion barrels per day,0.028000000864267,0.039000000804662496,0.050000000745058,interpolation,39.29,28.21,Simple average of 2023 and 2025 values
+China,Projection-APS,Oil displacement Mbd,Trucks,EV,Milion barrels per day,0.021999999880791,0.0309999994933605,0.03999999910593,interpolation,40.91,29.03,Simple average of 2023 and 2025 values
+China,Projection-APS,Oil displacement Mbd,Vans,EV,Milion barrels per day,0.009800000116229,0.014399999752640499,0.018999999389052,interpolation,46.94,31.94,Simple average of 2023 and 2025 values
+China,Projection-APS,Oil displacement Mbd,Cars,EV,Milion barrels per day,0.310000002384186,0.455000013113022,0.600000023841858,interpolation,46.77,31.87,Simple average of 2023 and 2025 values
+China,Projection-APS,"Oil displacement, million lge",Buses,EV,"Oil displacement, million lge",1700.0,2350.0,3000.0,interpolation,38.24,27.66,Simple average of 2023 and 2025 values
+China,Projection-APS,"Oil displacement, million lge",Trucks,EV,"Oil displacement, million lge",1300.0,1850.0,2400.0,interpolation,42.31,29.73,Simple average of 2023 and 2025 values
+China,Projection-APS,"Oil displacement, million lge",Vans,EV,"Oil displacement, million lge",590.0,845.0,1100.0,interpolation,43.22,30.18,Simple average of 2023 and 2025 values
+China,Projection-APS,"Oil displacement, million lge",Cars,EV,"Oil displacement, million lge",19000.0,27500.0,36000.0,interpolation,44.74,30.91,Simple average of 2023 and 2025 values
+China,Projection-STEPS,Oil displacement Mbd,Buses,EV,Milion barrels per day,0.028000000864267,0.039000000804662496,0.050000000745058,interpolation,39.29,28.21,Simple average of 2023 and 2025 values
+China,Projection-STEPS,Oil displacement Mbd,Trucks,EV,Milion barrels per day,0.021999999880791,0.0315000005066395,0.041000001132488,interpolation,43.18,30.16,Simple average of 2023 and 2025 values
+China,Projection-STEPS,Oil displacement Mbd,Vans,EV,Milion barrels per day,0.009800000116229,0.014399999752640499,0.018999999389052,interpolation,46.94,31.94,Simple average of 2023 and 2025 values
+China,Projection-STEPS,Oil displacement Mbd,Cars,EV,Milion barrels per day,0.310000002384186,0.4600000083446505,0.610000014305115,interpolation,48.39,32.61,Simple average of 2023 and 2025 values
+China,Projection-STEPS,"Oil displacement, million lge",Buses,EV,"Oil displacement, million lge",1700.0,2350.0,3000.0,interpolation,38.24,27.66,Simple average of 2023 and 2025 values
+China,Projection-STEPS,"Oil displacement, million lge",Trucks,EV,"Oil displacement, million lge",1300.0,1900.0,2500.0,interpolation,46.15,31.58,Simple average of 2023 and 2025 values
+China,Projection-STEPS,"Oil displacement, million lge",Vans,EV,"Oil displacement, million lge",590.0,895.0,1200.0,interpolation,51.69,34.08,Simple average of 2023 and 2025 values
+China,Projection-STEPS,"Oil displacement, million lge",Cars,EV,"Oil displacement, million lge",19000.0,27500.0,36000.0,interpolation,44.74,30.91,Simple average of 2023 and 2025 values
+China,Projection-APS,EV sales,Trucks,PHEV,Vehicles,320.0,1510.0,2700.0,interpolation,371.88,78.81,Simple average of 2023 and 2025 values
+China,Projection-APS,EV stock,Trucks,PHEV,Vehicles,1200.0,5350.0,9500.0,interpolation,345.83,77.57,Simple average of 2023 and 2025 values
+China,Projection-APS,EV stock,Trucks,FCEV,Vehicles,10000.0,18000.0,26000.0,interpolation,80.0,44.44,Simple average of 2023 and 2025 values
+China,Projection-APS,EV sales,Trucks,FCEV,Vehicles,3400.0,6650.0,9900.0,interpolation,95.59,48.87,Simple average of 2023 and 2025 values
+China,Projection-APS,EV stock,Trucks,BEV,Vehicles,300000.0,405000.0,510000.0,interpolation,35.0,25.93,Simple average of 2023 and 2025 values
+China,Projection-APS,EV sales,Trucks,BEV,Vehicles,38000.0,94000.0,150000.0,interpolation,147.37,59.57,Simple average of 2023 and 2025 values
+China,Projection-APS,EV stock,Cars,PHEV,Vehicles,5800000.0,8900000.0,12000000.0,interpolation,53.45,34.83,Simple average of 2023 and 2025 values
+China,Projection-APS,EV sales,Cars,PHEV,Vehicles,2700000.0,2650000.0,2600000.0,interpolation,-1.85,-1.89,Simple average of 2023 and 2025 values
+China,Projection-APS,EV stock share,Buses,EV,percent,25.0,28.5,32.0,interpolation,14.0,12.28,Simple average of 2023 and 2025 values
+China,Projection-APS,EV sales share,Buses,EV,percent,50.0,50.0,50.0,interpolation,0.0,0.0,Simple average of 2023 and 2025 values
+China,Projection-STEPS,Electricity demand,Buses,EV,GWh,9700.0,13350.0,17000.0,interpolation,37.63,27.34,Simple average of 2023 and 2025 values
+China,Projection-STEPS,Electricity demand,Trucks,EV,GWh,5200.0,7600.0,10000.0,interpolation,46.15,31.58,Simple average of 2023 and 2025 values
+China,Projection-STEPS,Electricity demand,Vans,EV,GWh,1200.0,1800.0,2400.0,interpolation,50.0,33.33,Simple average of 2023 and 2025 values
+China,Projection-STEPS,Electricity demand,Cars,EV,GWh,38000.0,63000.0,88000.0,interpolation,65.79,39.68,Simple average of 2023 and 2025 values
+Europe,Projection-APS,EV sales,Vans,PHEV,Vehicles,2400.0,13200.0,24000.0,interpolation,450.0,81.82,Simple average of 2023 and 2025 values
+Europe,Projection-APS,EV stock,Vans,BEV,Vehicles,420000.0,695000.0,970000.0,interpolation,65.48,39.57,Simple average of 2023 and 2025 values
+Europe,Projection-APS,EV sales,Vans,BEV,Vehicles,150000.0,240000.0,330000.0,interpolation,60.0,37.5,Simple average of 2023 and 2025 values
+Europe,Projection-APS,EV stock,Buses,PHEV,Vehicles,1200.0,2550.0,3900.0,interpolation,112.5,52.94,Simple average of 2023 and 2025 values
+Europe,Projection-APS,EV sales,Buses,PHEV,Vehicles,160.0,980.0,1800.0,interpolation,512.5,83.67,Simple average of 2023 and 2025 values
+Europe,Projection-APS,EV stock,Buses,FCEV,Vehicles,560.0,1830.0,3100.0,interpolation,226.79,69.4,Simple average of 2023 and 2025 values
+Europe,Projection-APS,EV sales,Buses,FCEV,Vehicles,210.0,905.0,1600.0,interpolation,330.95,76.8,Simple average of 2023 and 2025 values
+Europe,Projection-APS,EV stock,Buses,BEV,Vehicles,22000.0,46000.0,70000.0,interpolation,109.09,52.17,Simple average of 2023 and 2025 values
+Europe,Projection-APS,EV sales,Buses,BEV,Vehicles,8300.0,16150.0,24000.0,interpolation,94.58,48.61,Simple average of 2023 and 2025 values
+Europe,Projection-APS,EV sales,Trucks,PHEV,Vehicles,38.0,919.0,1800.0,interpolation,2318.42,95.87,Simple average of 2023 and 2025 values
+Europe,Projection-APS,EV stock,Trucks,FCEV,Vehicles,150.0,625.0,1100.0,interpolation,316.67,76.0,Simple average of 2023 and 2025 values
+Europe,Projection-APS,EV sales,Trucks,FCEV,Vehicles,19.0,84.5,150.0,interpolation,344.74,77.51,Simple average of 2023 and 2025 values
+Europe,Projection-APS,EV stock,Trucks,BEV,Vehicles,18000.0,44500.0,71000.0,interpolation,147.22,59.55,Simple average of 2023 and 2025 values
+Europe,Projection-APS,EV sales,Trucks,BEV,Vehicles,11000.0,17500.0,24000.0,interpolation,59.09,37.14,Simple average of 2023 and 2025 values
+Europe,Projection-APS,EV stock,Cars,PHEV,Vehicles,4500000.0,5650000.0,6800000.0,interpolation,25.56,20.35,Simple average of 2023 and 2025 values
+Europe,Projection-APS,EV sales,Cars,PHEV,Vehicles,1100000.0,1100000.0,1100000.0,interpolation,0.0,0.0,Simple average of 2023 and 2025 values
+Europe,Projection-APS,EV stock,Cars,FCEV,Vehicles,5500.0,9250.0,13000.0,interpolation,68.18,40.54,Simple average of 2023 and 2025 values
+Europe,Projection-APS,EV stock,Trucks,PHEV,Vehicles,100.0,1100.0,2100.0,interpolation,1000.0,90.91,Simple average of 2023 and 2025 values
+Europe,Projection-APS,EV sales,Cars,FCEV,Vehicles,820.0,3310.0,5800.0,interpolation,303.66,75.23,Simple average of 2023 and 2025 values
+Europe,Projection-APS,EV stock,Cars,BEV,Vehicles,6700000.0,9850000.0,13000000.0,interpolation,47.01,31.98,Simple average of 2023 and 2025 values
+Europe,Projection-APS,EV sales,Cars,BEV,Vehicles,2200000.0,2900000.0,3600000.0,interpolation,31.82,24.14,Simple average of 2023 and 2025 values
+Europe,Projection-APS,EV stock,Vans,PHEV,Vehicles,12000.0,26500.0,41000.0,interpolation,120.83,54.72,Simple average of 2023 and 2025 values
+Europe,Projection-APS,EV stock,Vans,FCEV,Vehicles,380.0,5190.0,10000.0,interpolation,1265.79,92.68,Simple average of 2023 and 2025 values
+Europe,Projection-APS,EV sales,Vans,FCEV,Vehicles,58.0,4079.0,8100.0,interpolation,6932.76,98.58,Simple average of 2023 and 2025 values
+Europe,Projection-STEPS,EV charging points,EV,Publicly available fast,charging points,110000.0,145000.0,180000.0,interpolation,31.82,24.14,Simple average of 2023 and 2025 values
+Europe,Projection-STEPS,EV charging points,EV,Publicly available slow,charging points,590000.0,735000.0,880000.0,interpolation,24.58,19.73,Simple average of 2023 and 2025 values
+Europe,Projection-APS,Electricity demand,Buses,EV,GWh,1500.0,2600.0,3700.0,interpolation,73.33,42.31,Simple average of 2023 and 2025 values
+Europe,Projection-APS,Electricity demand,Trucks,EV,GWh,1700.0,2950.0,4200.0,interpolation,73.53,42.37,Simple average of 2023 and 2025 values
+Europe,Projection-APS,Electricity demand,Vans,EV,GWh,4100.0,6050.0,8000.0,interpolation,47.56,32.23,Simple average of 2023 and 2025 values
+Europe,Projection-APS,Electricity demand,Cars,EV,GWh,29000.0,42000.0,55000.0,interpolation,44.83,30.95,Simple average of 2023 and 2025 values
+Europe,Projection-APS,Oil displacement Mbd,Buses,EV,Milion barrels per day,0.006000000052154,0.010000000242144001,0.014000000432134,interpolation,66.67,40.0,Simple average of 2023 and 2025 values
+Europe,Projection-APS,Oil displacement Mbd,Trucks,EV,Milion barrels per day,0.007000000216067,0.0120000005699695,0.017000000923872,interpolation,71.43,41.67,Simple average of 2023 and 2025 values
+Europe,Projection-APS,Oil displacement Mbd,Vans,EV,Milion barrels per day,0.020999999716878,0.0300000002607705,0.039000000804663,interpolation,42.86,30.0,Simple average of 2023 and 2025 values
+Europe,Projection-APS,Oil displacement Mbd,Cars,EV,Milion barrels per day,0.170000001788139,0.2400000020861625,0.310000002384186,interpolation,41.18,29.17,Simple average of 2023 and 2025 values
+Europe,Projection-APS,"Oil displacement, million lge",Buses,EV,"Oil displacement, million lge",350.0,590.0,830.0,interpolation,68.57,40.68,Simple average of 2023 and 2025 values
+Europe,Projection-APS,"Oil displacement, million lge",Trucks,EV,"Oil displacement, million lge",410.0,705.0,1000.0,interpolation,71.95,41.84,Simple average of 2023 and 2025 values
+Europe,Projection-APS,"Oil displacement, million lge",Vans,EV,"Oil displacement, million lge",1200.0,1750.0,2300.0,interpolation,45.83,31.43,Simple average of 2023 and 2025 values
+Europe,Projection-APS,"Oil displacement, million lge",Cars,EV,"Oil displacement, million lge",10000.0,14000.0,18000.0,interpolation,40.0,28.57,Simple average of 2023 and 2025 values
+Europe,Projection-APS,EV charging points,EV,Publicly available fast,charging points,110000.0,145000.0,180000.0,interpolation,31.82,24.14,Simple average of 2023 and 2025 values
+Europe,Projection-APS,EV charging points,EV,Publicly available slow,charging points,590000.0,735000.0,880000.0,interpolation,24.58,19.73,Simple average of 2023 and 2025 values
+Europe,Projection-STEPS,Oil displacement Mbd,Buses,EV,Milion barrels per day,0.006000000052154,0.010000000242144001,0.014000000432134,interpolation,66.67,40.0,Simple average of 2023 and 2025 values
+Europe,Projection-STEPS,Oil displacement Mbd,Trucks,EV,Milion barrels per day,0.007000000216067,0.0124999997206035,0.01799999922514,interpolation,78.57,44.0,Simple average of 2023 and 2025 values
+Europe,Projection-STEPS,Oil displacement Mbd,Vans,EV,Milion barrels per day,0.020999999716878,0.0300000002607705,0.039000000804663,interpolation,42.86,30.0,Simple average of 2023 and 2025 values
+Europe,Projection-STEPS,Oil displacement Mbd,Cars,EV,Milion barrels per day,0.170000001788139,0.244999997317791,0.319999992847443,interpolation,44.12,30.61,Simple average of 2023 and 2025 values
+Europe,Projection-STEPS,"Oil displacement, million lge",Buses,EV,"Oil displacement, million lge",350.0,570.0,790.0,interpolation,62.86,38.6,Simple average of 2023 and 2025 values
+Europe,Projection-STEPS,"Oil displacement, million lge",Trucks,EV,"Oil displacement, million lge",410.0,705.0,1000.0,interpolation,71.95,41.84,Simple average of 2023 and 2025 values
+Europe,Projection-STEPS,"Oil displacement, million lge",Vans,EV,"Oil displacement, million lge",1200.0,1750.0,2300.0,interpolation,45.83,31.43,Simple average of 2023 and 2025 values
+Europe,Projection-STEPS,"Oil displacement, million lge",Cars,EV,"Oil displacement, million lge",10000.0,14000.0,18000.0,interpolation,40.0,28.57,Simple average of 2023 and 2025 values
+Europe,Projection-APS,EV stock share,Trucks,EV,percent,0.239999994635582,0.54500000923872,0.850000023841858,interpolation,127.08,55.96,Simple average of 2023 and 2025 values
+Europe,Projection-APS,EV sales share,Trucks,EV,percent,1.60000002384186,3.80000001192093,6.0,interpolation,137.5,57.89,Simple average of 2023 and 2025 values
+Europe,Projection-APS,EV sales share,Cars,EV,percent,21.0,26.0,31.0,interpolation,23.81,19.23,Simple average of 2023 and 2025 values
+Europe,Projection-APS,EV stock share,Vans,EV,percent,1.10000002384186,2.05000001192093,3.0,interpolation,86.36,46.34,Simple average of 2023 and 2025 values
+Europe,Projection-APS,EV sales share,Vans,EV,percent,7.19999980926514,11.09999990463257,15.0,interpolation,54.17,35.14,Simple average of 2023 and 2025 values
+Europe,Projection-APS,EV stock share,Buses,EV,percent,1.60000002384186,2.80000001192093,4.0,interpolation,75.0,42.86,Simple average of 2023 and 2025 values
+Europe,Projection-APS,EV stock share,Cars,EV,percent,3.79999995231628,5.39999997615814,7.0,interpolation,42.11,29.63,Simple average of 2023 and 2025 values
+Europe,Projection-APS,EV sales share,Buses,EV,percent,14.0,20.5,27.0,interpolation,46.43,31.71,Simple average of 2023 and 2025 values
+Europe,Projection-STEPS,EV sales share,Trucks,EV,percent,1.60000002384186,3.30000001192093,5.0,interpolation,106.25,51.52,Simple average of 2023 and 2025 values
+Europe,Projection-STEPS,EV stock share,Trucks,EV,percent,0.239999994635582,0.539999984204769,0.839999973773956,interpolation,125.0,55.56,Simple average of 2023 and 2025 values
+Europe,Projection-STEPS,EV stock share,Cars,EV,percent,3.79999995231628,5.39999997615814,7.0,interpolation,42.11,29.63,Simple average of 2023 and 2025 values
+Europe,Projection-STEPS,EV sales share,Cars,EV,percent,21.0,26.0,31.0,interpolation,23.81,19.23,Simple average of 2023 and 2025 values
+Europe,Projection-STEPS,EV stock share,Vans,EV,percent,1.10000002384186,1.5500000119209298,2.0,interpolation,40.91,29.03,Simple average of 2023 and 2025 values
+Europe,Projection-STEPS,EV sales share,Vans,EV,percent,7.19999980926514,10.59999990463257,14.0,interpolation,47.22,32.08,Simple average of 2023 and 2025 values
+Europe,Projection-STEPS,EV sales share,Buses,EV,percent,14.0,18.5,23.0,interpolation,32.14,24.32,Simple average of 2023 and 2025 values
+Europe,Projection-STEPS,EV stock share,Buses,EV,percent,1.60000002384186,2.80000001192093,4.0,interpolation,75.0,42.86,Simple average of 2023 and 2025 values
+Europe,Projection-STEPS,EV sales,Trucks,PHEV,Vehicles,38.0,359.0,680.0,interpolation,844.74,89.42,Simple average of 2023 and 2025 values
+Europe,Projection-STEPS,EV stock,Trucks,PHEV,Vehicles,100.0,550.0,1000.0,interpolation,450.0,81.82,Simple average of 2023 and 2025 values
+Europe,Projection-STEPS,EV stock,Trucks,FCEV,Vehicles,150.0,560.0,970.0,interpolation,273.33,73.21,Simple average of 2023 and 2025 values
+Europe,Projection-STEPS,EV sales,Trucks,FCEV,Vehicles,19.0,24.0,29.0,interpolation,26.32,20.83,Simple average of 2023 and 2025 values
+Europe,Projection-STEPS,EV stock,Trucks,BEV,Vehicles,18000.0,44500.0,71000.0,interpolation,147.22,59.55,Simple average of 2023 and 2025 values
+Europe,Projection-STEPS,EV sales,Trucks,BEV,Vehicles,11000.0,18000.0,25000.0,interpolation,63.64,38.89,Simple average of 2023 and 2025 values
+Europe,Projection-STEPS,EV stock,Cars,PHEV,Vehicles,4500000.0,5850000.0,7200000.0,interpolation,30.0,23.08,Simple average of 2023 and 2025 values
+Europe,Projection-STEPS,EV sales,Cars,PHEV,Vehicles,1100000.0,1300000.0,1500000.0,interpolation,18.18,15.38,Simple average of 2023 and 2025 values
+Europe,Projection-STEPS,EV stock,Cars,FCEV,Vehicles,5500.0,5700.0,5900.0,interpolation,3.64,3.51,Simple average of 2023 and 2025 values
+Europe,Projection-STEPS,EV sales,Cars,FCEV,Vehicles,820.0,2310.0,3800.0,interpolation,181.71,64.5,Simple average of 2023 and 2025 values
+Europe,Projection-STEPS,EV stock,Buses,PHEV,Vehicles,1200.0,2300.0,3400.0,interpolation,91.67,47.83,Simple average of 2023 and 2025 values
+Europe,Projection-STEPS,EV sales,Buses,PHEV,Vehicles,160.0,730.0,1300.0,interpolation,356.25,78.08,Simple average of 2023 and 2025 values
+Europe,Projection-STEPS,EV stock,Buses,FCEV,Vehicles,560.0,1330.0,2100.0,interpolation,137.5,57.89,Simple average of 2023 and 2025 values
+Europe,Projection-STEPS,EV sales,Buses,FCEV,Vehicles,210.0,445.0,680.0,interpolation,111.9,52.81,Simple average of 2023 and 2025 values
+Europe,Projection-STEPS,EV stock,Buses,BEV,Vehicles,22000.0,44000.0,66000.0,interpolation,100.0,50.0,Simple average of 2023 and 2025 values
+Europe,Projection-STEPS,EV sales,Buses,BEV,Vehicles,8300.0,14650.0,21000.0,interpolation,76.51,43.34,Simple average of 2023 and 2025 values
+Europe,Projection-STEPS,EV stock,Cars,BEV,Vehicles,6700000.0,9350000.0,12000000.0,interpolation,39.55,28.34,Simple average of 2023 and 2025 values
+Europe,Projection-STEPS,EV sales,Cars,BEV,Vehicles,2200000.0,2750000.0,3300000.0,interpolation,25.0,20.0,Simple average of 2023 and 2025 values
+Europe,Projection-STEPS,EV stock,Vans,PHEV,Vehicles,12000.0,25000.0,38000.0,interpolation,108.33,52.0,Simple average of 2023 and 2025 values
+Europe,Projection-STEPS,EV sales,Vans,PHEV,Vehicles,2400.0,11700.0,21000.0,interpolation,387.5,79.49,Simple average of 2023 and 2025 values
+Europe,Projection-STEPS,EV stock,Vans,BEV,Vehicles,420000.0,685000.0,950000.0,interpolation,63.1,38.69,Simple average of 2023 and 2025 values
+Europe,Projection-STEPS,EV sales,Vans,BEV,Vehicles,150000.0,230000.0,310000.0,interpolation,53.33,34.78,Simple average of 2023 and 2025 values
+Europe,Projection-STEPS,EV stock,Vans,FCEV,Vehicles,380.0,5090.0,9800.0,interpolation,1239.47,92.53,Simple average of 2023 and 2025 values
+Europe,Projection-STEPS,EV sales,Vans,FCEV,Vehicles,58.0,3829.0,7600.0,interpolation,6501.72,98.49,Simple average of 2023 and 2025 values
+Europe,Projection-STEPS,Electricity demand,Buses,EV,GWh,1500.0,2450.0,3400.0,interpolation,63.33,38.78,Simple average of 2023 and 2025 values
+Europe,Projection-STEPS,Electricity demand,Trucks,EV,GWh,1700.0,3000.0,4300.0,interpolation,76.47,43.33,Simple average of 2023 and 2025 values
+Europe,Projection-STEPS,Electricity demand,Vans,EV,GWh,4100.0,5950.0,7800.0,interpolation,45.12,31.09,Simple average of 2023 and 2025 values
+Europe,Projection-STEPS,Electricity demand,Cars,EV,GWh,29000.0,42500.0,56000.0,interpolation,46.55,31.76,Simple average of 2023 and 2025 values
+India,Projection-APS,EV sales share,Cars,EV,percent,2.0,5.5,9.0,interpolation,175.0,63.64,Simple average of 2023 and 2025 values
+India,Projection-APS,EV stock share,Cars,EV,percent,0.310000002384186,0.655000001192093,1.0,interpolation,111.29,52.67,Simple average of 2023 and 2025 values
+India,Projection-APS,EV stock share,Vans,EV,percent,0.086999997496605,0.2085000053048135,0.330000013113022,interpolation,139.66,58.27,Simple average of 2023 and 2025 values
+India,Projection-APS,EV sales share,Vans,EV,percent,0.061999998986721,2.5309999994933605,5.0,interpolation,3982.26,97.55,Simple average of 2023 and 2025 values
+India,Projection-APS,EV stock share,Buses,EV,percent,0.439999997615814,1.219999998807907,2.0,interpolation,177.27,63.93,Simple average of 2023 and 2025 values
+India,Projection-APS,EV sales share,Buses,EV,percent,6.80000019073486,9.90000009536743,13.0,interpolation,45.59,31.31,Simple average of 2023 and 2025 values
+India,Projection-APS,EV stock,Cars,PHEV,Vehicles,390.0,5195.0,10000.0,interpolation,1232.05,92.49,Simple average of 2023 and 2025 values
+India,Projection-APS,EV sales,Cars,PHEV,Vehicles,270.0,4935.0,9600.0,interpolation,1727.78,94.53,Simple average of 2023 and 2025 values
+India,Projection-APS,EV stock,Cars,BEV,Vehicles,150000.0,410000.0,670000.0,interpolation,173.33,63.41,Simple average of 2023 and 2025 values
+India,Projection-APS,EV sales,Cars,BEV,Vehicles,82000.0,236000.0,390000.0,interpolation,187.8,65.25,Simple average of 2023 and 2025 values
+India,Projection-APS,EV stock,Cars,FCEV,Vehicles,3.0,23.5,44.0,interpolation,683.33,87.23,Simple average of 2023 and 2025 values
+India,Projection-STEPS,EV sales,Cars,PHEV,Vehicles,270.0,2235.0,4200.0,interpolation,727.78,87.92,Simple average of 2023 and 2025 values
+India,Projection-STEPS,EV stock,Cars,PHEV,Vehicles,390.0,2295.0,4200.0,interpolation,488.46,83.01,Simple average of 2023 and 2025 values
+India,Projection-STEPS,EV stock,Cars,BEV,Vehicles,150000.0,370000.0,590000.0,interpolation,146.67,59.46,Simple average of 2023 and 2025 values
+India,Projection-STEPS,EV sales,Cars,BEV,Vehicles,82000.0,201000.0,320000.0,interpolation,145.12,59.2,Simple average of 2023 and 2025 values
+India,Projection-STEPS,EV stock,Vans,BEV,Vehicles,7300.0,14150.0,21000.0,interpolation,93.84,48.41,Simple average of 2023 and 2025 values
+India,Projection-STEPS,EV sales,Buses,FCEV,Vehicles,2.0,216.0,430.0,interpolation,10700.0,99.07,Simple average of 2023 and 2025 values
+India,Projection-STEPS,EV stock,Buses,FCEV,Vehicles,100.0,455.0,810.0,interpolation,355.0,78.02,Simple average of 2023 and 2025 values
+India,Projection-STEPS,EV sales,Vans,BEV,Vehicles,350.0,5675.0,11000.0,interpolation,1521.43,93.83,Simple average of 2023 and 2025 values
+India,Projection-STEPS,EV stock,Buses,BEV,Vehicles,8400.0,26200.0,44000.0,interpolation,211.9,67.94,Simple average of 2023 and 2025 values
+India,Projection-STEPS,EV sales,Buses,BEV,Vehicles,2300.0,8150.0,14000.0,interpolation,254.35,71.78,Simple average of 2023 and 2025 values
+India,Projection-STEPS,EV stock share,Buses,EV,percent,0.439999997615814,1.219999998807907,2.0,interpolation,177.27,63.93,Simple average of 2023 and 2025 values
+India,Projection-STEPS,EV sales share,Buses,EV,percent,6.80000019073486,8.40000009536743,10.0,interpolation,23.53,19.05,Simple average of 2023 and 2025 values
+India,Projection-STEPS,EV stock share,Cars,EV,percent,0.310000002384186,0.655000001192093,1.0,interpolation,111.29,52.67,Simple average of 2023 and 2025 values
+India,Projection-STEPS,EV sales share,Cars,EV,percent,2.0,4.5,7.0,interpolation,125.0,55.56,Simple average of 2023 and 2025 values
+India,Projection-STEPS,EV stock share,Vans,EV,percent,0.086999997496605,0.173499993979931,0.259999990463257,interpolation,99.43,49.86,Simple average of 2023 and 2025 values
+India,Projection-STEPS,EV sales share,Vans,EV,percent,0.061999998986721,1.5309999994933605,3.0,interpolation,2369.35,95.95,Simple average of 2023 and 2025 values
+India,Projection-STEPS,Electricity demand,Buses,EV,GWh,790.0,1245.0,1700.0,interpolation,57.59,36.55,Simple average of 2023 and 2025 values
+India,Projection-STEPS,Electricity demand,Vans,EV,GWh,41.0,95.5,150.0,interpolation,132.93,57.07,Simple average of 2023 and 2025 values
+India,Projection-STEPS,Electricity demand,Cars,EV,GWh,410.0,1005.0,1600.0,interpolation,145.12,59.2,Simple average of 2023 and 2025 values
+India,Projection-STEPS,Oil displacement Mbd,Buses,EV,Milion barrels per day,0.003299999982119,0.0053000000771135,0.007300000172108,interpolation,60.61,37.74,Simple average of 2023 and 2025 values
+India,Projection-STEPS,Oil displacement Mbd,Vans,EV,Milion barrels per day,0.000230000005104,0.000520000001416,0.000809999997728,interpolation,126.09,55.77,Simple average of 2023 and 2025 values
+India,Projection-STEPS,Oil displacement Mbd,Cars,EV,Milion barrels per day,0.002600000007078,0.0062999998917805,0.009999999776483,interpolation,142.31,58.73,Simple average of 2023 and 2025 values
+India,Projection-STEPS,"Oil displacement, million lge",Buses,EV,"Oil displacement, million lge",190.0,305.0,420.0,interpolation,60.53,37.7,Simple average of 2023 and 2025 values
+India,Projection-STEPS,"Oil displacement, million lge",Vans,EV,"Oil displacement, million lge",13.0,30.0,47.0,interpolation,130.77,56.67,Simple average of 2023 and 2025 values
+India,Projection-STEPS,"Oil displacement, million lge",Cars,EV,"Oil displacement, million lge",150.0,365.0,580.0,interpolation,143.33,58.9,Simple average of 2023 and 2025 values
+India,Projection-APS,EV stock,Vans,BEV,Vehicles,7300.0,16650.0,26000.0,interpolation,128.08,56.16,Simple average of 2023 and 2025 values
+India,Projection-APS,EV sales,Vans,BEV,Vehicles,350.0,8175.0,16000.0,interpolation,2235.71,95.72,Simple average of 2023 and 2025 values
+India,Projection-APS,EV sales,Buses,FCEV,Vehicles,2.0,281.0,560.0,interpolation,13950.0,99.29,Simple average of 2023 and 2025 values
+India,Projection-APS,EV stock,Buses,FCEV,Vehicles,100.0,520.0,940.0,interpolation,420.0,80.77,Simple average of 2023 and 2025 values
+India,Projection-APS,EV stock,Buses,BEV,Vehicles,8400.0,28200.0,48000.0,interpolation,235.71,70.21,Simple average of 2023 and 2025 values
+India,Projection-APS,EV sales,Buses,BEV,Vehicles,2300.0,10650.0,19000.0,interpolation,363.04,78.4,Simple average of 2023 and 2025 values
+India,Projection-APS,EV charging points,EV,Publicly available fast,charging points,4100.0,4750.0,5400.0,interpolation,15.85,13.68,Simple average of 2023 and 2025 values
+India,Projection-APS,EV charging points,EV,Publicly available slow,charging points,6800.0,33900.0,61000.0,interpolation,398.53,79.94,Simple average of 2023 and 2025 values
+India,Projection-APS,Oil displacement Mbd,Buses,EV,Milion barrels per day,0.003299999982119,0.0057000000961125,0.008100000210106,interpolation,72.73,42.11,Simple average of 2023 and 2025 values
+India,Projection-APS,Oil displacement Mbd,Vans,EV,Milion barrels per day,0.000250000011874,0.000604999993811,0.000959999975748,interpolation,142.0,58.68,Simple average of 2023 and 2025 values
+India,Projection-APS,Oil displacement Mbd,Cars,EV,Milion barrels per day,0.002600000007078,0.0067999999737364996,0.010999999940395,interpolation,161.54,61.76,Simple average of 2023 and 2025 values
+India,Projection-APS,"Oil displacement, million lge",Buses,EV,"Oil displacement, million lge",190.0,325.0,460.0,interpolation,71.05,41.54,Simple average of 2023 and 2025 values
+India,Projection-APS,"Oil displacement, million lge",Vans,EV,"Oil displacement, million lge",14.0,34.5,55.0,interpolation,146.43,59.42,Simple average of 2023 and 2025 values
+India,Projection-APS,"Oil displacement, million lge",Cars,EV,"Oil displacement, million lge",150.0,405.0,660.0,interpolation,170.0,62.96,Simple average of 2023 and 2025 values
+India,Projection-STEPS,EV charging points,EV,Publicly available fast,charging points,4100.0,4300.0,4500.0,interpolation,4.88,4.65,Simple average of 2023 and 2025 values
+India,Projection-STEPS,EV charging points,EV,Publicly available slow,charging points,6800.0,28400.0,50000.0,interpolation,317.65,76.06,Simple average of 2023 and 2025 values
+India,Projection-APS,Electricity demand,Buses,EV,GWh,790.0,1345.0,1900.0,interpolation,70.25,41.26,Simple average of 2023 and 2025 values
+India,Projection-APS,Electricity demand,Vans,EV,GWh,44.0,112.0,180.0,interpolation,154.55,60.71,Simple average of 2023 and 2025 values
+India,Projection-APS,Electricity demand,Cars,EV,GWh,410.0,1105.0,1800.0,interpolation,169.51,62.9,Simple average of 2023 and 2025 values
+Rest of the world,Projection-APS,Oil displacement Mbd,Buses,EV,Milion barrels per day,0.003100000089034,0.009049999876879,0.014999999664724,interpolation,191.94,65.75,Simple average of 2023 and 2025 values
+Rest of the world,Projection-APS,Oil displacement Mbd,Trucks,EV,Milion barrels per day,0.001500000013039,0.0051000000676145,0.00870000012219,interpolation,240.0,70.59,Simple average of 2023 and 2025 values
+Rest of the world,Projection-APS,Oil displacement Mbd,Vans,EV,Milion barrels per day,0.008600000292063,0.018300000578165,0.028000000864267,interpolation,112.79,53.01,Simple average of 2023 and 2025 values
+Rest of the world,Projection-APS,Oil displacement Mbd,Cars,EV,Milion barrels per day,0.054999999701977,0.0924999974668025,0.129999995231628,interpolation,68.18,40.54,Simple average of 2023 and 2025 values
+Rest of the world,Projection-APS,"Oil displacement, million lge",Buses,EV,"Oil displacement, million lge",180.0,525.0,870.0,interpolation,191.67,65.71,Simple average of 2023 and 2025 values
+Rest of the world,Projection-APS,"Oil displacement, million lge",Trucks,EV,"Oil displacement, million lge",89.0,294.5,500.0,interpolation,230.9,69.78,Simple average of 2023 and 2025 values
+Rest of the world,Projection-APS,"Oil displacement, million lge",Vans,EV,"Oil displacement, million lge",500.0,1050.0,1600.0,interpolation,110.0,52.38,Simple average of 2023 and 2025 values
+Rest of the world,Projection-APS,"Oil displacement, million lge",Cars,EV,"Oil displacement, million lge",3200.0,5350.0,7500.0,interpolation,67.19,40.19,Simple average of 2023 and 2025 values
+Rest of the world,Projection-APS,EV charging points,EV,Publicly available fast,charging points,38000.0,109000.0,180000.0,interpolation,186.84,65.14,Simple average of 2023 and 2025 values
+Rest of the world,Projection-APS,EV charging points,EV,Publicly available slow,charging points,240000.0,360000.0,480000.0,interpolation,50.0,33.33,Simple average of 2023 and 2025 values
+Rest of the world,Projection-APS,Electricity demand,Buses,EV,GWh,900.0,2550.0,4200.0,interpolation,183.33,64.71,Simple average of 2023 and 2025 values
+Rest of the world,Projection-APS,Electricity demand,Trucks,EV,GWh,330.0,1165.0,2000.0,interpolation,253.03,71.67,Simple average of 2023 and 2025 values
+Rest of the world,Projection-APS,Electricity demand,Vans,EV,GWh,1000.0,2600.0,4200.0,interpolation,160.0,61.54,Simple average of 2023 and 2025 values
+Rest of the world,Projection-APS,Electricity demand,Cars,EV,GWh,7900.0,14450.0,21000.0,interpolation,82.91,45.33,Simple average of 2023 and 2025 values
+Rest of the world,Projection-STEPS,EV charging points,EV,Publicly available fast,charging points,38000.0,84000.0,130000.0,interpolation,121.05,54.76,Simple average of 2023 and 2025 values
+Rest of the world,Projection-STEPS,EV charging points,EV,Publicly available slow,charging points,240000.0,335000.0,430000.0,interpolation,39.58,28.36,Simple average of 2023 and 2025 values
+Rest of the world,Projection-APS,EV sales,Trucks,FCEV,Vehicles,41.0,325.5,610.0,interpolation,693.9,87.4,Simple average of 2023 and 2025 values
+Rest of the world,Projection-APS,EV stock,Trucks,PHEV,Vehicles,13.0,2756.5,5500.0,interpolation,21103.85,99.53,Simple average of 2023 and 2025 values
+Rest of the world,Projection-APS,EV stock,Trucks,FCEV,Vehicles,36.0,373.0,710.0,interpolation,936.11,90.35,Simple average of 2023 and 2025 values
+Rest of the world,Projection-APS,EV stock,Trucks,BEV,Vehicles,5500.0,19750.0,34000.0,interpolation,259.09,72.15,Simple average of 2023 and 2025 values
+Rest of the world,Projection-APS,EV sales,Trucks,BEV,Vehicles,3300.0,11650.0,20000.0,interpolation,253.03,71.67,Simple average of 2023 and 2025 values
+Rest of the world,Projection-APS,EV stock,Cars,PHEV,Vehicles,740000.0,1120000.0,1500000.0,interpolation,51.35,33.93,Simple average of 2023 and 2025 values
+Rest of the world,Projection-APS,EV sales,Cars,PHEV,Vehicles,200000.0,325000.0,450000.0,interpolation,62.5,38.46,Simple average of 2023 and 2025 values
+Rest of the world,Projection-APS,EV stock,Cars,FCEV,Vehicles,42000.0,76000.0,110000.0,interpolation,80.95,44.74,Simple average of 2023 and 2025 values
+Rest of the world,Projection-APS,EV sales,Cars,FCEV,Vehicles,4600.0,36300.0,68000.0,interpolation,689.13,87.33,Simple average of 2023 and 2025 values
+Rest of the world,Projection-APS,EV stock,Cars,BEV,Vehicles,1700000.0,3050000.0,4400000.0,interpolation,79.41,44.26,Simple average of 2023 and 2025 values
+Rest of the world,Projection-APS,EV sales,Cars,BEV,Vehicles,690000.0,1145000.0,1600000.0,interpolation,65.94,39.74,Simple average of 2023 and 2025 values
+Rest of the world,Projection-APS,EV stock,Vans,PHEV,Vehicles,150.0,32075.0,64000.0,interpolation,21283.33,99.53,Simple average of 2023 and 2025 values
+Rest of the world,Projection-APS,EV sales,Vans,PHEV,Vehicles,4100.0,25550.0,47000.0,interpolation,523.17,83.95,Simple average of 2023 and 2025 values
+Rest of the world,Projection-APS,EV stock,Vans,FCEV,Vehicles,10.0,6005.0,12000.0,interpolation,59950.0,99.83,Simple average of 2023 and 2025 values
+Rest of the world,Projection-APS,EV sales,Vans,FCEV,Vehicles,1.0,3650.5,7300.0,interpolation,364950.0,99.97,Simple average of 2023 and 2025 values
+Rest of the world,Projection-APS,EV stock,Vans,BEV,Vehicles,150000.0,330000.0,510000.0,interpolation,120.0,54.55,Simple average of 2023 and 2025 values
+Rest of the world,Projection-APS,EV sales,Vans,BEV,Vehicles,57000.0,143500.0,230000.0,interpolation,151.75,60.28,Simple average of 2023 and 2025 values
+Rest of the world,Projection-APS,EV stock,Buses,PHEV,Vehicles,49.0,7024.5,14000.0,interpolation,14235.71,99.3,Simple average of 2023 and 2025 values
+Rest of the world,Projection-STEPS,EV sales,Cars,BEV,Vehicles,690000.0,995000.0,1300000.0,interpolation,44.2,30.65,Simple average of 2023 and 2025 values
+Rest of the world,Projection-STEPS,EV stock,Vans,PHEV,Vehicles,150.0,13575.0,27000.0,interpolation,8950.0,98.9,Simple average of 2023 and 2025 values
+Rest of the world,Projection-STEPS,EV sales,Vans,PHEV,Vehicles,4100.0,6550.0,9000.0,interpolation,59.76,37.4,Simple average of 2023 and 2025 values
+Rest of the world,Projection-STEPS,EV stock,Vans,FCEV,Vehicles,10.0,6005.0,12000.0,interpolation,59950.0,99.83,Simple average of 2023 and 2025 values
+Rest of the world,Projection-STEPS,EV sales,Vans,FCEV,Vehicles,1.0,3600.5,7200.0,interpolation,359950.0,99.97,Simple average of 2023 and 2025 values
+Rest of the world,Projection-STEPS,EV stock,Vans,BEV,Vehicles,150000.0,310000.0,470000.0,interpolation,106.67,51.61,Simple average of 2023 and 2025 values
+Rest of the world,Projection-STEPS,EV sales,Vans,BEV,Vehicles,57000.0,118500.0,180000.0,interpolation,107.89,51.9,Simple average of 2023 and 2025 values
+Rest of the world,Projection-STEPS,EV stock,Buses,PHEV,Vehicles,49.0,7524.5,15000.0,interpolation,15256.12,99.35,Simple average of 2023 and 2025 values
+Rest of the world,Projection-STEPS,EV stock,Buses,FCEV,Vehicles,1200.0,4650.0,8100.0,interpolation,287.5,74.19,Simple average of 2023 and 2025 values
+Rest of the world,Projection-STEPS,EV sales,Buses,FCEV,Vehicles,370.0,2385.0,4400.0,interpolation,544.59,84.49,Simple average of 2023 and 2025 values
+Rest of the world,Projection-STEPS,EV stock,Buses,BEV,Vehicles,17000.0,39000.0,61000.0,interpolation,129.41,56.41,Simple average of 2023 and 2025 values
+Rest of the world,Projection-STEPS,EV sales,Buses,BEV,Vehicles,7600.0,15300.0,23000.0,interpolation,101.32,50.33,Simple average of 2023 and 2025 values
+Rest of the world,Projection-STEPS,EV sales share,Trucks,EV,percent,0.129999995231628,0.25,0.370000004768372,interpolation,92.31,48.0,Simple average of 2023 and 2025 values
+Rest of the world,Projection-STEPS,EV stock share,Trucks,EV,percent,0.016000000759959,0.0450000008568165,0.074000000953674,interpolation,181.25,64.44,Simple average of 2023 and 2025 values
+Rest of the world,Projection-STEPS,EV stock share,Cars,EV,percent,0.579999983310699,0.7899999916553495,1.0,interpolation,36.21,26.58,Simple average of 2023 and 2025 values
+Rest of the world,Projection-STEPS,EV sales share,Cars,EV,percent,3.90000009536743,5.450000047683715,7.0,interpolation,39.74,28.44,Simple average of 2023 and 2025 values
+Rest of the world,Projection-STEPS,EV stock share,Vans,EV,percent,0.189999997615814,0.405000001192093,0.620000004768372,interpolation,113.16,53.09,Simple average of 2023 and 2025 values
+Rest of the world,Projection-STEPS,EV sales share,Vans,EV,percent,1.20000004768372,2.10000002384186,3.0,interpolation,75.0,42.86,Simple average of 2023 and 2025 values
+Rest of the world,Projection-STEPS,EV sales share,Buses,EV,percent,0.560000002384186,1.280000001192093,2.0,interpolation,128.57,56.25,Simple average of 2023 and 2025 values
+Rest of the world,Projection-STEPS,EV stock share,Buses,EV,percent,0.129999995231628,0.365000009536743,0.600000023841858,interpolation,180.77,64.38,Simple average of 2023 and 2025 values
+Rest of the world,Projection-APS,EV sales share,Trucks,EV,percent,0.129999995231628,0.425000011920929,0.72000002861023,interpolation,226.92,69.41,Simple average of 2023 and 2025 values
+Rest of the world,Projection-APS,EV stock share,Cars,EV,percent,0.579999983310699,0.7899999916553495,1.0,interpolation,36.21,26.58,Simple average of 2023 and 2025 values
+Rest of the world,Projection-APS,EV sales share,Cars,EV,percent,3.90000009536743,6.450000047683715,9.0,interpolation,65.38,39.53,Simple average of 2023 and 2025 values
+Rest of the world,Projection-APS,EV stock share,Vans,EV,percent,0.189999997615814,0.455000013113022,0.72000002861023,interpolation,139.47,58.24,Simple average of 2023 and 2025 values
+Rest of the world,Projection-APS,EV stock share,Trucks,EV,percent,0.016000000759959,0.0630000000819565,0.109999999403954,interpolation,293.75,74.6,Simple average of 2023 and 2025 values
+Rest of the world,Projection-STEPS,EV sales,Trucks,FCEV,Vehicles,41.0,64.0,87.0,interpolation,56.1,35.94,Simple average of 2023 and 2025 values
+Rest of the world,Projection-STEPS,EV stock,Trucks,BEV,Vehicles,5500.0,15750.0,26000.0,interpolation,186.36,65.08,Simple average of 2023 and 2025 values
+Rest of the world,Projection-STEPS,EV sales,Trucks,BEV,Vehicles,3300.0,8150.0,13000.0,interpolation,146.97,59.51,Simple average of 2023 and 2025 values
+Rest of the world,Projection-STEPS,EV stock,Cars,PHEV,Vehicles,740000.0,1070000.0,1400000.0,interpolation,44.59,30.84,Simple average of 2023 and 2025 values
+Rest of the world,Projection-STEPS,EV sales,Cars,PHEV,Vehicles,200000.0,285000.0,370000.0,interpolation,42.5,29.82,Simple average of 2023 and 2025 values
+Rest of the world,Projection-STEPS,EV stock,Cars,FCEV,Vehicles,42000.0,54000.0,66000.0,interpolation,28.57,22.22,Simple average of 2023 and 2025 values
+Rest of the world,Projection-STEPS,EV sales,Cars,FCEV,Vehicles,4600.0,15300.0,26000.0,interpolation,232.61,69.93,Simple average of 2023 and 2025 values
+Rest of the world,Projection-STEPS,EV stock,Cars,BEV,Vehicles,1700000.0,2850000.0,4000000.0,interpolation,67.65,40.35,Simple average of 2023 and 2025 values
+Rest of the world,Projection-STEPS,EV stock,Trucks,PHEV,Vehicles,13.0,50.5,88.0,interpolation,288.46,74.26,Simple average of 2023 and 2025 values
+Rest of the world,Projection-STEPS,EV stock,Trucks,FCEV,Vehicles,36.0,113.0,190.0,interpolation,213.89,68.14,Simple average of 2023 and 2025 values
+Rest of the world,Projection-STEPS,Electricity demand,Buses,EV,GWh,890.0,1995.0,3100.0,interpolation,124.16,55.39,Simple average of 2023 and 2025 values
+Rest of the world,Projection-STEPS,Electricity demand,Trucks,EV,GWh,340.0,770.0,1200.0,interpolation,126.47,55.84,Simple average of 2023 and 2025 values
+Rest of the world,Projection-STEPS,Electricity demand,Vans,EV,GWh,1000.0,2100.0,3200.0,interpolation,110.0,52.38,Simple average of 2023 and 2025 values
+Rest of the world,Projection-STEPS,Electricity demand,Cars,EV,GWh,7900.0,13950.0,20000.0,interpolation,76.58,43.37,Simple average of 2023 and 2025 values
+Rest of the world,Projection-STEPS,Oil displacement Mbd,Buses,EV,Milion barrels per day,0.003100000089034,0.007050000014714499,0.010999999940395,interpolation,127.42,56.03,Simple average of 2023 and 2025 values
+Rest of the world,Projection-STEPS,Oil displacement Mbd,Trucks,EV,Milion barrels per day,0.001500000013039,0.0033500000135975,0.005200000014156,interpolation,123.33,55.22,Simple average of 2023 and 2025 values
+Rest of the world,Projection-STEPS,Oil displacement Mbd,Vans,EV,Milion barrels per day,0.008500000461936,0.01575000025332,0.023000000044704,interpolation,85.29,46.03,Simple average of 2023 and 2025 values
+Rest of the world,Projection-STEPS,Oil displacement Mbd,Cars,EV,Milion barrels per day,0.054999999701977,0.08749999850988399,0.119999997317791,interpolation,59.09,37.14,Simple average of 2023 and 2025 values
+Rest of the world,Projection-STEPS,"Oil displacement, million lge",Buses,EV,"Oil displacement, million lge",180.0,400.0,620.0,interpolation,122.22,55.0,Simple average of 2023 and 2025 values
+Rest of the world,Projection-STEPS,"Oil displacement, million lge",Trucks,EV,"Oil displacement, million lge",89.0,194.5,300.0,interpolation,118.54,54.24,Simple average of 2023 and 2025 values
+Rest of the world,Projection-STEPS,"Oil displacement, million lge",Vans,EV,"Oil displacement, million lge",490.0,895.0,1300.0,interpolation,82.65,45.25,Simple average of 2023 and 2025 values
+Rest of the world,Projection-STEPS,"Oil displacement, million lge",Cars,EV,"Oil displacement, million lge",3200.0,5150.0,7100.0,interpolation,60.94,37.86,Simple average of 2023 and 2025 values
+Rest of the world,Projection-APS,EV sales share,Vans,EV,percent,1.20000004768372,3.10000002384186,5.0,interpolation,158.33,61.29,Simple average of 2023 and 2025 values
+Rest of the world,Projection-APS,EV sales share,Buses,EV,percent,0.560000002384186,1.780000001192093,3.0,interpolation,217.86,68.54,Simple average of 2023 and 2025 values
+Rest of the world,Projection-APS,EV stock share,Buses,EV,percent,0.129999995231628,0.45499998331069946,0.779999971389771,interpolation,250.0,71.43,Simple average of 2023 and 2025 values
+Rest of the world,Projection-APS,EV sales,Buses,FCEV,Vehicles,370.0,2835.0,5300.0,interpolation,666.22,86.95,Simple average of 2023 and 2025 values
+Rest of the world,Projection-APS,EV stock,Buses,BEV,Vehicles,17000.0,50500.0,84000.0,interpolation,197.06,66.34,Simple average of 2023 and 2025 values
+Rest of the world,Projection-APS,EV stock,Buses,FCEV,Vehicles,1200.0,5100.0,9000.0,interpolation,325.0,76.47,Simple average of 2023 and 2025 values
+Rest of the world,Projection-APS,EV sales,Buses,BEV,Vehicles,7600.0,27300.0,47000.0,interpolation,259.21,72.16,Simple average of 2023 and 2025 values
+USA,Projection-APS,Oil displacement Mbd,Buses,EV,Milion barrels per day,0.00109999999404,0.0038499999791385,0.006599999964237,interpolation,250.0,71.43,Simple average of 2023 and 2025 values
+USA,Projection-APS,Oil displacement Mbd,Cars,EV,Milion barrels per day,0.170000001788139,0.25999999791383754,0.349999994039536,interpolation,52.94,34.62,Simple average of 2023 and 2025 values
+USA,Projection-APS,"Oil displacement, million lge",Buses,EV,"Oil displacement, million lge",63.0,221.5,380.0,interpolation,251.59,71.56,Simple average of 2023 and 2025 values
+USA,Projection-APS,"Oil displacement, million lge",Cars,EV,"Oil displacement, million lge",9700.0,14850.0,20000.0,interpolation,53.09,34.68,Simple average of 2023 and 2025 values
+USA,Projection-APS,EV charging points,EV,Publicly available fast,charging points,43000.0,71500.0,100000.0,interpolation,66.28,39.86,Simple average of 2023 and 2025 values
+USA,Projection-APS,EV charging points,EV,Publicly available slow,charging points,140000.0,210000.0,280000.0,interpolation,50.0,33.33,Simple average of 2023 and 2025 values
+USA,Projection-APS,Electricity demand,Buses,EV,GWh,290.0,1045.0,1800.0,interpolation,260.34,72.25,Simple average of 2023 and 2025 values
+USA,Projection-APS,Electricity demand,Cars,EV,GWh,22000.0,36500.0,51000.0,interpolation,65.91,39.73,Simple average of 2023 and 2025 values
+USA,Projection-STEPS,EV charging points,EV,Publicly available fast,charging points,43000.0,71500.0,100000.0,interpolation,66.28,39.86,Simple average of 2023 and 2025 values
+USA,Projection-STEPS,EV charging points,EV,Publicly available slow,charging points,140000.0,210000.0,280000.0,interpolation,50.0,33.33,Simple average of 2023 and 2025 values
+USA,Projection-APS,EV stock share,Buses,EV,percent,0.920000016689301,2.4600000083446503,4.0,interpolation,167.39,62.6,Simple average of 2023 and 2025 values
+USA,Projection-APS,EV sales share,Buses,EV,percent,0.769999980926514,5.884999990463257,11.0,interpolation,664.29,86.92,Simple average of 2023 and 2025 values
+USA,Projection-APS,EV stock share,Cars,EV,percent,2.09999990463257,3.049999952316285,4.0,interpolation,45.24,31.15,Simple average of 2023 and 2025 values
+USA,Projection-APS,EV sales share,Cars,EV,percent,9.5,14.75,20.0,interpolation,55.26,35.59,Simple average of 2023 and 2025 values
+USA,Projection-STEPS,EV stock share,Buses,EV,percent,0.920000016689301,2.4600000083446503,4.0,interpolation,167.39,62.6,Simple average of 2023 and 2025 values
+USA,Projection-STEPS,EV sales share,Buses,EV,percent,0.769999980926514,5.884999990463257,11.0,interpolation,664.29,86.92,Simple average of 2023 and 2025 values
+USA,Projection-STEPS,EV sales share,Cars,EV,percent,9.5,14.75,20.0,interpolation,55.26,35.59,Simple average of 2023 and 2025 values
+USA,Projection-STEPS,EV stock share,Cars,EV,percent,2.09999990463257,3.049999952316285,4.0,interpolation,45.24,31.15,Simple average of 2023 and 2025 values
+USA,Projection-APS,EV stock,Cars,PHEV,Vehicles,1300000.0,1700000.0,2100000.0,interpolation,30.77,23.53,Simple average of 2023 and 2025 values
+USA,Projection-APS,EV sales,Cars,PHEV,Vehicles,290000.0,380000.0,470000.0,interpolation,31.03,23.68,Simple average of 2023 and 2025 values
+USA,Projection-APS,EV stock,Cars,FCEV,Vehicles,18000.0,21500.0,25000.0,interpolation,19.44,16.28,Simple average of 2023 and 2025 values
+USA,Projection-APS,EV sales,Cars,FCEV,Vehicles,3000.0,3400.0,3800.0,interpolation,13.33,11.76,Simple average of 2023 and 2025 values
+USA,Projection-APS,EV stock,Cars,BEV,Vehicles,3500000.0,5550000.0,7600000.0,interpolation,58.57,36.94,Simple average of 2023 and 2025 values
+USA,Projection-APS,EV stock,Buses,BEV,Vehicles,6900.0,16450.0,26000.0,interpolation,138.41,58.05,Simple average of 2023 and 2025 values
+USA,Projection-APS,EV sales,Buses,BEV,Vehicles,750.0,6875.0,13000.0,interpolation,816.67,89.09,Simple average of 2023 and 2025 values
+USA,Projection-APS,EV sales,Cars,BEV,Vehicles,1100000.0,1850000.0,2600000.0,interpolation,68.18,40.54,Simple average of 2023 and 2025 values
+USA,Projection-APS,EV stock,Buses,PHEV,Vehicles,550.0,2175.0,3800.0,interpolation,295.45,74.71,Simple average of 2023 and 2025 values
+USA,Projection-APS,EV stock,Buses,FCEV,Vehicles,220.0,810.0,1400.0,interpolation,268.18,72.84,Simple average of 2023 and 2025 values
+USA,Projection-STEPS,EV sales,Cars,PHEV,Vehicles,290000.0,425000.0,560000.0,interpolation,46.55,31.76,Simple average of 2023 and 2025 values
+USA,Projection-STEPS,EV stock,Cars,PHEV,Vehicles,1300000.0,1750000.0,2200000.0,interpolation,34.62,25.71,Simple average of 2023 and 2025 values
+USA,Projection-STEPS,EV stock,Cars,FCEV,Vehicles,18000.0,20000.0,22000.0,interpolation,11.11,10.0,Simple average of 2023 and 2025 values
+USA,Projection-STEPS,EV sales,Cars,FCEV,Vehicles,3000.0,3400.0,3800.0,interpolation,13.33,11.76,Simple average of 2023 and 2025 values
+USA,Projection-STEPS,EV stock,Cars,BEV,Vehicles,3500000.0,5500000.0,7500000.0,interpolation,57.14,36.36,Simple average of 2023 and 2025 values
+USA,Projection-STEPS,EV sales,Cars,BEV,Vehicles,1100000.0,1800000.0,2500000.0,interpolation,63.64,38.89,Simple average of 2023 and 2025 values
+USA,Projection-STEPS,EV stock,Buses,PHEV,Vehicles,550.0,2225.0,3900.0,interpolation,304.55,75.28,Simple average of 2023 and 2025 values
+USA,Projection-STEPS,EV stock,Buses,FCEV,Vehicles,220.0,810.0,1400.0,interpolation,268.18,72.84,Simple average of 2023 and 2025 values
+USA,Projection-STEPS,EV sales,Buses,BEV,Vehicles,750.0,6875.0,13000.0,interpolation,816.67,89.09,Simple average of 2023 and 2025 values
+USA,Projection-STEPS,EV stock,Buses,BEV,Vehicles,6900.0,16450.0,26000.0,interpolation,138.41,58.05,Simple average of 2023 and 2025 values
+USA,Projection-STEPS,Electricity demand,Buses,EV,GWh,290.0,1045.0,1800.0,interpolation,260.34,72.25,Simple average of 2023 and 2025 values
+USA,Projection-STEPS,Electricity demand,Cars,EV,GWh,22000.0,37000.0,52000.0,interpolation,68.18,40.54,Simple average of 2023 and 2025 values
+USA,Projection-STEPS,Oil displacement Mbd,Buses,EV,Milion barrels per day,0.00109999999404,0.0038499999791385,0.006599999964237,interpolation,250.0,71.43,Simple average of 2023 and 2025 values
+USA,Projection-STEPS,Oil displacement Mbd,Cars,EV,Milion barrels per day,0.170000001788139,0.25999999791383754,0.349999994039536,interpolation,52.94,34.62,Simple average of 2023 and 2025 values
+USA,Projection-STEPS,"Oil displacement, million lge",Buses,EV,"Oil displacement, million lge",63.0,221.5,380.0,interpolation,251.59,71.56,Simple average of 2023 and 2025 values
+USA,Projection-STEPS,"Oil displacement, million lge",Cars,EV,"Oil displacement, million lge",9700.0,14850.0,20000.0,interpolation,53.09,34.68,Simple average of 2023 and 2025 values
+World,Projection-APS,EV sales,Trucks,BEV,Vehicles,53000.0,151500.0,250000.0,interpolation,185.85,65.02,Simple average of 2023 and 2025 values
+World,Projection-APS,EV stock,Cars,PHEV,Vehicles,12000000.0,17000000.0,22000000.0,interpolation,41.67,29.41,Simple average of 2023 and 2025 values
+World,Projection-APS,EV sales,Cars,PHEV,Vehicles,4300000.0,4500000.0,4700000.0,interpolation,4.65,4.44,Simple average of 2023 and 2025 values
+World,Projection-APS,EV stock,Cars,FCEV,Vehicles,66000.0,118000.0,170000.0,interpolation,78.79,44.07,Simple average of 2023 and 2025 values
+World,Projection-APS,EV sales,Cars,FCEV,Vehicles,8900.0,59450.0,110000.0,interpolation,567.98,85.03,Simple average of 2023 and 2025 values
+World,Projection-APS,EV stock,Cars,BEV,Vehicles,28000000.0,42000000.0,56000000.0,interpolation,50.0,33.33,Simple average of 2023 and 2025 values
+World,Projection-APS,EV sales,Cars,BEV,Vehicles,9500000.0,13250000.0,17000000.0,interpolation,39.47,28.3,Simple average of 2023 and 2025 values
+World,Projection-APS,EV stock,Vans,PHEV,Vehicles,15000.0,82500.0,150000.0,interpolation,450.0,81.82,Simple average of 2023 and 2025 values
+World,Projection-APS,EV sales,Trucks,PHEV,Vehicles,360.0,9680.0,19000.0,interpolation,2588.89,96.28,Simple average of 2023 and 2025 values
+World,Projection-APS,EV stock,Trucks,FCEV,Vehicles,11000.0,22000.0,33000.0,interpolation,100.0,50.0,Simple average of 2023 and 2025 values
+World,Projection-APS,EV sales,Trucks,FCEV,Vehicles,3600.0,9300.0,15000.0,interpolation,158.33,61.29,Simple average of 2023 and 2025 values
+World,Projection-APS,EV stock,Trucks,BEV,Vehicles,330000.0,500000.0,670000.0,interpolation,51.52,34.0,Simple average of 2023 and 2025 values
+World,Projection-APS,EV stock,Trucks,PHEV,Vehicles,1300.0,13650.0,26000.0,interpolation,950.0,90.48,Simple average of 2023 and 2025 values
+World,Projection-APS,EV sales,Vans,PHEV,Vehicles,6600.0,53300.0,100000.0,interpolation,707.58,87.62,Simple average of 2023 and 2025 values
+World,Projection-APS,EV stock,Vans,FCEV,Vehicles,3200.0,25600.0,48000.0,interpolation,700.0,87.5,Simple average of 2023 and 2025 values
+World,Projection-APS,EV sales,Vans,FCEV,Vehicles,2000.0,17500.0,33000.0,interpolation,775.0,88.57,Simple average of 2023 and 2025 values
+World,Projection-APS,EV stock,Vans,BEV,Vehicles,1300000.0,2100000.0,2900000.0,interpolation,61.54,38.1,Simple average of 2023 and 2025 values
+World,Projection-APS,EV sales,Vans,BEV,Vehicles,460000.0,780000.0,1100000.0,interpolation,69.57,41.03,Simple average of 2023 and 2025 values
+World,Projection-APS,EV stock,Buses,PHEV,Vehicles,39000.0,48000.0,57000.0,interpolation,23.08,18.75,Simple average of 2023 and 2025 values
+World,Projection-APS,EV sales,Buses,PHEV,Vehicles,1400.0,6700.0,12000.0,interpolation,378.57,79.1,Simple average of 2023 and 2025 values
+World,Projection-APS,EV stock,Buses,FCEV,Vehicles,8700.0,21350.0,34000.0,interpolation,145.4,59.25,Simple average of 2023 and 2025 values
+World,Projection-APS,EV sales,Buses,FCEV,Vehicles,1800.0,8400.0,15000.0,interpolation,366.67,78.57,Simple average of 2023 and 2025 values
+World,Projection-APS,EV stock,Buses,BEV,Vehicles,650000.0,875000.0,1100000.0,interpolation,34.62,25.71,Simple average of 2023 and 2025 values
+World,Projection-APS,EV sales,Buses,BEV,Vehicles,48000.0,169000.0,290000.0,interpolation,252.08,71.6,Simple average of 2023 and 2025 values
+World,Projection-STEPS,EV stock share,Trucks,EV,percent,0.360000014305115,0.5200000107288361,0.680000007152557,interpolation,44.44,30.77,Simple average of 2023 and 2025 values
+World,Projection-STEPS,EV charging points,EV,Publicly available fast,charging points,1400000.0,1950000.0,2500000.0,interpolation,39.29,28.21,Simple average of 2023 and 2025 values
+World,Projection-STEPS,EV charging points,EV,Publicly available slow,charging points,2500000.0,3400000.0,4300000.0,interpolation,36.0,26.47,Simple average of 2023 and 2025 values
+World,Projection-STEPS,EV sales share,Trucks,EV,percent,0.910000026226044,1.955000013113022,3.0,interpolation,114.84,53.45,Simple average of 2023 and 2025 values
+World,Projection-STEPS,EV stock share,Cars,EV,percent,3.20000004768372,4.60000002384186,6.0,interpolation,43.75,30.43,Simple average of 2023 and 2025 values
+World,Projection-STEPS,EV sales share,Cars,EV,percent,18.0,21.5,25.0,interpolation,19.44,16.28,Simple average of 2023 and 2025 values
+World,Projection-STEPS,EV stock share,Vans,EV,percent,0.850000023841858,1.425000011920929,2.0,interpolation,67.65,40.35,Simple average of 2023 and 2025 values
+World,Projection-STEPS,EV sales share,Buses,EV,percent,3.09999990463257,7.049999952316285,11.0,interpolation,127.42,56.03,Simple average of 2023 and 2025 values
+World,Projection-STEPS,EV stock share,Buses,EV,percent,3.59999990463257,4.799999952316285,6.0,interpolation,33.33,25.0,Simple average of 2023 and 2025 values
+World,Projection-STEPS,EV sales share,Vans,EV,percent,4.40000009536743,6.700000047683715,9.0,interpolation,52.27,34.33,Simple average of 2023 and 2025 values
+World,Projection-APS,EV stock share,Trucks,EV,percent,0.360000014305115,0.5450000166893005,0.730000019073486,interpolation,51.39,33.94,Simple average of 2023 and 2025 values
+World,Projection-APS,EV sales share,Trucks,EV,percent,0.910000026226044,2.455000013113022,4.0,interpolation,169.78,62.93,Simple average of 2023 and 2025 values
+World,Projection-APS,EV stock share,Cars,EV,percent,3.20000004768372,4.60000002384186,6.0,interpolation,43.75,30.43,Simple average of 2023 and 2025 values
+World,Projection-APS,EV sales share,Cars,EV,percent,18.0,22.0,26.0,interpolation,22.22,18.18,Simple average of 2023 and 2025 values
+World,Projection-APS,EV sales share,Buses,EV,percent,3.09999990463257,8.049999952316284,13.0,interpolation,159.68,61.49,Simple average of 2023 and 2025 values
+World,Projection-APS,EV stock share,Vans,EV,percent,0.850000023841858,1.425000011920929,2.0,interpolation,67.65,40.35,Simple average of 2023 and 2025 values
+World,Projection-APS,EV sales share,Vans,EV,percent,4.40000009536743,7.200000047683715,10.0,interpolation,63.64,38.89,Simple average of 2023 and 2025 values
+World,Projection-APS,EV stock share,Buses,EV,percent,3.59999990463257,4.799999952316285,6.0,interpolation,33.33,25.0,Simple average of 2023 and 2025 values
+World,Projection-STEPS,EV stock,Trucks,BEV,Vehicles,330000.0,490000.0,650000.0,interpolation,48.48,32.65,Simple average of 2023 and 2025 values
+World,Projection-STEPS,EV sales,Trucks,BEV,Vehicles,53000.0,136500.0,220000.0,interpolation,157.55,61.17,Simple average of 2023 and 2025 values
+World,Projection-STEPS,EV stock,Cars,PHEV,Vehicles,12000000.0,17500000.0,23000000.0,interpolation,45.83,31.43,Simple average of 2023 and 2025 values
+World,Projection-STEPS,EV sales,Cars,PHEV,Vehicles,4300000.0,5050000.0,5800000.0,interpolation,17.44,14.85,Simple average of 2023 and 2025 values
+World,Projection-STEPS,EV stock,Cars,FCEV,Vehicles,66000.0,83000.0,100000.0,interpolation,25.76,20.48,Simple average of 2023 and 2025 values
+World,Projection-STEPS,EV sales,Cars,FCEV,Vehicles,8900.0,25450.0,42000.0,interpolation,185.96,65.03,Simple average of 2023 and 2025 values
+World,Projection-STEPS,EV stock,Cars,BEV,Vehicles,28000000.0,41500000.0,55000000.0,interpolation,48.21,32.53,Simple average of 2023 and 2025 values
+World,Projection-STEPS,EV sales,Cars,BEV,Vehicles,9500000.0,12250000.0,15000000.0,interpolation,28.95,22.45,Simple average of 2023 and 2025 values
+World,Projection-STEPS,EV stock,Trucks,PHEV,Vehicles,1300.0,6150.0,11000.0,interpolation,373.08,78.86,Simple average of 2023 and 2025 values
+World,Projection-STEPS,EV sales,Trucks,PHEV,Vehicles,360.0,2080.0,3800.0,interpolation,477.78,82.69,Simple average of 2023 and 2025 values
+World,Projection-STEPS,EV stock,Trucks,FCEV,Vehicles,11000.0,20000.0,29000.0,interpolation,81.82,45.0,Simple average of 2023 and 2025 values
+World,Projection-STEPS,EV sales,Trucks,FCEV,Vehicles,3600.0,7300.0,11000.0,interpolation,102.78,50.68,Simple average of 2023 and 2025 values
+World,Projection-STEPS,EV stock,Vans,PHEV,Vehicles,15000.0,57500.0,100000.0,interpolation,283.33,73.91,Simple average of 2023 and 2025 values
+World,Projection-STEPS,EV sales,Vans,PHEV,Vehicles,6600.0,30800.0,55000.0,interpolation,366.67,78.57,Simple average of 2023 and 2025 values
+World,Projection-STEPS,EV stock,Vans,FCEV,Vehicles,3200.0,25100.0,47000.0,interpolation,684.38,87.25,Simple average of 2023 and 2025 values
+World,Projection-STEPS,EV sales,Vans,FCEV,Vehicles,2000.0,17500.0,33000.0,interpolation,775.0,88.57,Simple average of 2023 and 2025 values
+World,Projection-STEPS,EV stock,Vans,BEV,Vehicles,1300000.0,2050000.0,2800000.0,interpolation,57.69,36.59,Simple average of 2023 and 2025 values
+World,Projection-STEPS,EV sales,Vans,BEV,Vehicles,460000.0,730000.0,1000000.0,interpolation,58.7,36.99,Simple average of 2023 and 2025 values
+World,Projection-STEPS,EV stock,Buses,PHEV,Vehicles,39000.0,48500.0,58000.0,interpolation,24.36,19.59,Simple average of 2023 and 2025 values
+World,Projection-STEPS,EV sales,Buses,PHEV,Vehicles,1400.0,6700.0,12000.0,interpolation,378.57,79.1,Simple average of 2023 and 2025 values
+World,Projection-STEPS,EV stock,Buses,FCEV,Vehicles,8700.0,20350.0,32000.0,interpolation,133.91,57.25,Simple average of 2023 and 2025 values
+World,Projection-STEPS,EV sales,Buses,FCEV,Vehicles,1800.0,7400.0,13000.0,interpolation,311.11,75.68,Simple average of 2023 and 2025 values
+World,Projection-STEPS,EV stock,Buses,BEV,Vehicles,650000.0,875000.0,1100000.0,interpolation,34.62,25.71,Simple average of 2023 and 2025 values
+World,Projection-STEPS,EV sales,Buses,BEV,Vehicles,48000.0,154000.0,260000.0,interpolation,220.83,68.83,Simple average of 2023 and 2025 values
+World,Projection-APS,EV charging points,EV,Publicly available fast,charging points,1400000.0,2050000.0,2700000.0,interpolation,46.43,31.71,Simple average of 2023 and 2025 values
+World,Projection-APS,EV charging points,EV,Publicly available slow,charging points,2500000.0,3400000.0,4300000.0,interpolation,36.0,26.47,Simple average of 2023 and 2025 values
+World,Projection-STEPS,Electricity demand,Buses,EV,GWh,13000.0,20000.0,27000.0,interpolation,53.85,35.0,Simple average of 2023 and 2025 values
+World,Projection-STEPS,Electricity demand,Trucks,EV,GWh,7600.0,12800.0,18000.0,interpolation,68.42,40.62,Simple average of 2023 and 2025 values
+World,Projection-STEPS,Electricity demand,Vans,EV,GWh,6700.0,10850.0,15000.0,interpolation,61.94,38.25,Simple average of 2023 and 2025 values
+World,Projection-STEPS,Electricity demand,Cars,EV,GWh,97000.0,158500.0,220000.0,interpolation,63.4,38.8,Simple average of 2023 and 2025 values
+World,Projection-APS,Electricity demand,Buses,EV,GWh,13000.0,21000.0,29000.0,interpolation,61.54,38.1,Simple average of 2023 and 2025 values
+World,Projection-APS,Electricity demand,Trucks,EV,GWh,7600.0,13800.0,20000.0,interpolation,81.58,44.93,Simple average of 2023 and 2025 values
+World,Projection-APS,Electricity demand,Vans,EV,GWh,6700.0,11350.0,16000.0,interpolation,69.4,40.97,Simple average of 2023 and 2025 values
+World,Projection-APS,Electricity demand,Cars,EV,GWh,97000.0,158500.0,220000.0,interpolation,63.4,38.8,Simple average of 2023 and 2025 values
+World,Projection-STEPS,Oil displacement Mbd,Buses,EV,Milion barrels per day,0.041999999433756,0.0649999994784595,0.087999999523163,interpolation,54.76,35.38,Simple average of 2023 and 2025 values
+World,Projection-STEPS,Oil displacement Mbd,Trucks,EV,Milion barrels per day,0.032000001519919,0.051999999210239,0.071999996900559,interpolation,62.5,38.46,Simple average of 2023 and 2025 values
+World,Projection-STEPS,Oil displacement Mbd,Vans,EV,Milion barrels per day,0.041999999433756,0.067500000819564,0.093000002205372,interpolation,60.71,37.78,Simple average of 2023 and 2025 values
+World,Projection-STEPS,Oil displacement Mbd,Cars,EV,Milion barrels per day,0.709999978542328,1.054999977350234,1.39999997615814,interpolation,48.59,32.7,Simple average of 2023 and 2025 values
+World,Projection-STEPS,"Oil displacement, million lge",Buses,EV,"Oil displacement, million lge",2500.0,3850.0,5200.0,interpolation,54.0,35.06,Simple average of 2023 and 2025 values
+World,Projection-STEPS,"Oil displacement, million lge",Trucks,EV,"Oil displacement, million lge",1900.0,3050.0,4200.0,interpolation,60.53,37.7,Simple average of 2023 and 2025 values
+World,Projection-STEPS,"Oil displacement, million lge",Vans,EV,"Oil displacement, million lge",2500.0,3950.0,5400.0,interpolation,58.0,36.71,Simple average of 2023 and 2025 values
+World,Projection-STEPS,"Oil displacement, million lge",Cars,EV,"Oil displacement, million lge",42000.0,62000.0,82000.0,interpolation,47.62,32.26,Simple average of 2023 and 2025 values
+World,Projection-APS,Oil displacement Mbd,Buses,EV,Milion barrels per day,0.041999999433756,0.0679999981075525,0.093999996781349,interpolation,61.9,38.24,Simple average of 2023 and 2025 values
+World,Projection-APS,Oil displacement Mbd,Trucks,EV,Milion barrels per day,0.032000001519919,0.0580000001937155,0.083999998867512,interpolation,81.25,44.83,Simple average of 2023 and 2025 values
+World,Projection-APS,Oil displacement Mbd,Vans,EV,Milion barrels per day,0.041999999433756,0.06999999843537799,0.097999997437,interpolation,66.67,40.0,Simple average of 2023 and 2025 values
+World,Projection-APS,Oil displacement Mbd,Cars,EV,Milion barrels per day,0.709999978542328,1.054999977350234,1.39999997615814,interpolation,48.59,32.7,Simple average of 2023 and 2025 values
+World,Projection-APS,"Oil displacement, million lge",Buses,EV,"Oil displacement, million lge",2500.0,4000.0,5500.0,interpolation,60.0,37.5,Simple average of 2023 and 2025 values
+World,Projection-APS,"Oil displacement, million lge",Trucks,EV,"Oil displacement, million lge",1900.0,3400.0,4900.0,interpolation,78.95,44.12,Simple average of 2023 and 2025 values
+World,Projection-APS,"Oil displacement, million lge",Vans,EV,"Oil displacement, million lge",2500.0,4100.0,5700.0,interpolation,64.0,39.02,Simple average of 2023 and 2025 values
+World,Projection-APS,"Oil displacement, million lge",Cars,EV,"Oil displacement, million lge",42000.0,62000.0,82000.0,interpolation,47.62,32.26,Simple average of 2023 and 2025 values
