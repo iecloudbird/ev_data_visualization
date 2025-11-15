@@ -1,11 +1,26 @@
 # Requirements for ev_data_visualization
-# Recommended packages for working with the notebooks and datasets
-# Pin versions if you want reproducible installs; these are left unpinned for flexibility.
-pandas
-plotly
-jupyter
-scipy
-statsmodels
-numpy
-folium
-global_land_mask
+# Pin versions for reproducible installs
+
+# Core Data Processing
+pandas==2.1.4
+numpy==1.26.2
+
+# Visualization
+plotly==5.18.0
+
+# Dash Application (for interactive dashboard)
+dash==2.14.2
+dash-core-components==2.0.0
+dash-html-components==2.0.0
+dash-table==5.0.0
+
+# Statistical Analysis
+scipy==1.11.4
+statsmodels==0.14.1
+
+# Jupyter Notebooks (for development/analysis)
+jupyter==1.0.0
+
+# Map Visualizations (for notebooks)
+folium==0.15.1
+global_land_mask==1.0.0

@@ -1,0 +1,344 @@
+/* Tesla-Inspired Theme for EV Analytics Dashboard */
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gotham', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+    background-color: #F4F4F4;
+    color: #171A20;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Tab Navigation - Tesla Style */
+.custom-tabs {
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #E0E0E0;
+    border-radius: 12px 12px 0 0;
+    overflow: hidden;
+}
+
+.custom-tabs-container {
+    border: none !important;
+}
+
+.custom-tab {
+    background-color: #FFFFFF !important;
+    border: none !important;
+    border-bottom: 3px solid transparent !important;
+    color: #5C5E62 !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    padding: 16px 32px !important;
+    text-transform: none !important;
+    letter-spacing: 0.3px !important;
+    transition: all 0.3s ease !important;
+}
+
+.custom-tab:hover {
+    color: #171A20 !important;
+    background-color: #F9F9F9 !important;
+}
+
+.custom-tab--selected {
+    background-color: #FFFFFF !important;
+    border-bottom: 3px solid #E31937 !important;
+    color: #171A20 !important;
+}
+
+/* Chart Containers */
+.chart-container {
+    background-color: #171A20;
+    border-radius: 16px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #2A2A2A;
+}
+
+/* Dropdown - Tesla Style */
+.tesla-dropdown .Select-control {
+    background-color: #FFFFFF !important;
+    border: 1px solid #D8D8D8 !important;
+    border-radius: 4px !important;
+    font-size: 13px !important;
+    padding: 4px !important;
+    transition: all 0.2s ease !important;
+}
+
+.tesla-dropdown .Select-control:hover {
+    border-color: #171A20 !important;
+}
+
+.tesla-dropdown .Select-control:focus {
+    border-color: #E31937 !important;
+    box-shadow: 0 0 0 3px rgba(227, 25, 55, 0.1) !important;
+}
+
+.tesla-dropdown .Select-placeholder {
+    color: #999 !important;
+    font-size: 13px !important;
+}
+
+.tesla-dropdown .Select-value-label {
+    color: #171A20 !important;
+    font-size: 13px !important;
+}
+
+.tesla-dropdown .Select-menu-outer {
+    background-color: #FFFFFF !important;
+    border: 1px solid #D8D8D8 !important;
+    border-radius: 4px !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+    margin-top: 4px !important;
+}
+
+.tesla-dropdown .Select-option {
+    background-color: #FFFFFF !important;
+    color: #171A20 !important;
+    font-size: 13px !important;
+    padding: 10px 12px !important;
+    transition: all 0.15s ease !important;
+}
+
+.tesla-dropdown .Select-option:hover {
+    background-color: #F4F4F4 !important;
+}
+
+.tesla-dropdown .Select-option.is-selected {
+    background-color: #E31937 !important;
+    color: #FFFFFF !important;
+}
+
+/* Radio Items - Tesla Style */
+.tesla-radio {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 12px !important;
+}
+
+.tesla-radio label {
+    display: flex !important;
+    align-items: center !important;
+    font-size: 13px !important;
+    color: #5C5E62 !important;
+    cursor: pointer !important;
+    padding: 10px 12px !important;
+    border-radius: 4px !important;
+    transition: all 0.2s ease !important;
+    background-color: #F9F9F9 !important;
+    border: 1px solid #E0E0E0 !important;
+}
+
+.tesla-radio label:hover {
+    background-color: #F4F4F4 !important;
+    border-color: #171A20 !important;
+}
+
+.tesla-radio input[type="radio"] {
+    margin-right: 10px !important;
+    accent-color: #E31937 !important;
+    width: 16px !important;
+    height: 16px !important;
+}
+
+.tesla-radio input[type="radio"]:checked+label {
+    background-color: #FFF5F6 !important;
+    border-color: #E31937 !important;
+    color: #171A20 !important;
+    font-weight: 600 !important;
+}
+
+/* Slider - Tesla Style */
+.tesla-slider {
+    margin: 20px 0 !important;
+}
+
+.tesla-slider .rc-slider-track {
+    background-color: #E31937 !important;
+    height: 4px !important;
+}
+
+.tesla-slider .rc-slider-rail {
+    background-color: #E0E0E0 !important;
+    height: 4px !important;
+}
+
+.tesla-slider .rc-slider-handle {
+    border: 2px solid #E31937 !important;
+    background-color: #FFFFFF !important;
+    width: 18px !important;
+    height: 18px !important;
+    margin-top: -7px !important;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15) !important;
+    transition: all 0.2s ease !important;
+}
+
+.tesla-slider .rc-slider-handle:hover,
+.tesla-slider .rc-slider-handle:active,
+.tesla-slider .rc-slider-handle:focus {
+    border-color: #B31530 !important;
+    box-shadow: 0 0 0 6px rgba(227, 25, 55, 0.15) !important;
+    transform: scale(1.1) !important;
+}
+
+.tesla-slider .rc-slider-mark-text {
+    color: #5C5E62 !important;
+    font-size: 10px !important;
+    font-weight: 500 !important;
+}
+
+.tesla-slider .rc-slider-mark-text-active {
+    color: #171A20 !important;
+    font-weight: 600 !important;
+}
+
+.tesla-slider .rc-slider-dot {
+    display: none !important;
+}
+
+/* Tooltip */
+.rc-slider-tooltip-inner {
+    background-color: #171A20 !important;
+    color: #FFFFFF !important;
+    border-radius: 4px !important;
+    padding: 6px 10px !important;
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2) !important;
+}
+
+.rc-slider-tooltip-arrow {
+    border-top-color: #171A20 !important;
+}
+
+/* Plotly Chart Customizations */
+.js-plotly-plot .plotly .modebar {
+    display: none !important;
+}
+
+.js-plotly-plot .plotly .main-svg {
+    border-radius: 4px !important;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #F4F4F4;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #D8D8D8;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #B8B8B8;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .custom-tab {
+        padding: 14px 20px !important;
+        font-size: 13px !important;
+    }
+
+    .chart-container {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .custom-tab {
+        padding: 12px 16px !important;
+        font-size: 12px !important;
+    }
+}
+
+/* Loading Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.chart-container {
+    animation: fadeIn 0.4s ease-out;
+}
+
+/* Focus States for Accessibility */
+button:focus,
+input:focus,
+select:focus {
+    outline: 2px solid #E31937;
+    outline-offset: 2px;
+}
+
+/* High Contrast Mode Support */
+@media (prefers-contrast: high) {
+    .custom-tab--selected {
+        border-bottom-width: 4px !important;
+    }
+
+    .tesla-slider .rc-slider-handle {
+        border-width: 3px !important;
+    }
+}
+
+/* Dark Mode Support (Future Enhancement) */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #000000;
+        color: #FFFFFF;
+    }
+
+    .chart-container {
+        background-color: #1A1A1A;
+        border-color: #2A2A2A;
+    }
+
+    .custom-tabs {
+        background-color: #000000;
+        border-bottom-color: #2A2A2A;
+    }
+
+    .custom-tab {
+        background-color: #000000 !important;
+        color: #CCCCCC !important;
+    }
+
+    .custom-tab--selected {
+        background-color: #000000 !important;
+        color: #FFFFFF !important;
+    }
+}
+
+/* Print Styles */
+@media print {
+
+    .custom-tabs,
+    #control-panel-content {
+        display: none !important;
+    }
+
+    .chart-container {
+        page-break-inside: avoid;
+        box-shadow: none;
+        border: 1px solid #000;
+    }
+}
