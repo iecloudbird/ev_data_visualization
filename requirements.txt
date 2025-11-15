@@ -7,6 +7,7 @@ numpy==1.26.2
 
 # Visualization
 plotly==5.18.0
+matplotlib==3.8.3
 
 # Dash Application (for interactive dashboard)
 dash==2.14.2
