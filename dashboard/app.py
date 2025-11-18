@@ -23,7 +23,6 @@ from dashboard.components.charts import (
     create_timeseries_chart,
     create_pie_charts,
     create_powertrain_comparison,
-    create_correlation_scatter,
     create_kpi_card_data
 )
 
@@ -76,11 +75,6 @@ CHART_DESCRIPTIONS = {
         'description': 'Analysis of charging infrastructure adequacy across regions, categorized by the ratio of EVs per charging station. Well-served regions have ≤50 EVs per station, while insufficient infrastructure shows >200 EVs per station. This metric is crucial for identifying infrastructure bottlenecks.',
         'controls': ['year-slider']
     },
-    'correlation': {
-        'title': 'EV Stock vs. Charging Infrastructure Correlation',
-        'description': 'Scatter plot examining the relationship between EV adoption and charging infrastructure deployment. Each point represents a region, revealing whether infrastructure development keeps pace with EV growth. The trend line shows the overall correlation strength.',
-        'controls': ['year-slider']
-    }
 }
 
 # Layout
@@ -182,17 +176,6 @@ app.layout = html.Div([
                                 src='/assets/ev_stations_map.html',
                                 style={'width': '100%', 'height': '600px', 'border': 'none', 'borderRadius': '4px'}
                             )
-                        ], className='chart-container'),
-                        
-                        # Chart 3: Correlation Scatter
-                        html.Div([
-                            html.Div([
-                                html.H3(CHART_DESCRIPTIONS['correlation']['title'],
-                                       style={'fontSize': '20px', 'fontWeight': '600', 'margin': '0', 'color': '#FFFFFF'}),
-                                html.P(CHART_DESCRIPTIONS['correlation']['description'],
-                                      style={'fontSize': '13px', 'color': '#B8B8B8', 'margin': '8px 0 0 0', 'lineHeight': '1.6'})
-                            ], style={'marginBottom': '20px'}),
-                            dcc.Graph(id='correlation-scatter', config={'displayModeBar': False})
                         ], className='chart-container'),
                         
                     ])
@@ -490,16 +473,6 @@ def update_powertrain_comparison(selected_regions):
     if not selected_regions:
         selected_regions = top_regions[:5]
     return create_powertrain_comparison(powertrain_data, selected_regions)
-
-
-@app.callback(
-    Output('correlation-scatter', 'figure'),
-    Input('year-slider-overview', 'value')
-)
-def update_correlation_scatter(year):
-    """Update correlation scatter plot."""
-    year = year if year else year_max
-    return create_correlation_scatter(ev_data, year)
 
 
 # Run server

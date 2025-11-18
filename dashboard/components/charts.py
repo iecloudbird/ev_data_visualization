@@ -99,6 +99,8 @@ def create_timeseries_chart(df, selected_regions, metric='total_ev_stock'):
     """
     # Filter for selected regions
     df_filtered = df[df['region'].isin(selected_regions)].copy()
+
+    df_filtered = df_filtered[df_filtered['region'] != 'EU27']
     
     # Sort for proper line rendering
     df_filtered = df_filtered.sort_values(['region', 'year'])
@@ -193,11 +195,10 @@ def create_pie_charts(df, selected_year):
     
     # Create subplots
     fig = make_subplots(
-        rows=1, cols=2,
-        specs=[[{'type':'pie'}, {'type':'pie'}]],
+        rows=1, cols=1,
+        specs=[[{'type':'pie'}]],
         subplot_titles=(
             f'Charging Infrastructure Distribution (Top 10 Regions)',
-            'Infrastructure Adequacy Categories'
         )
     )
     
@@ -210,32 +211,6 @@ def create_pie_charts(df, selected_year):
             hovertemplate='<b>%{label}</b><br>Charging Points: %{value:,.0f}<br>Share: %{percent}<extra></extra>'
         ),
         row=1, col=1
-    )
-    
-    # Pie 2: Adequacy categories
-    category_counts = df['infrastructure_category'].value_counts()
-    
-    # Tesla color mapping for categories
-    color_map = {
-        'Well Served (≤50 EVs/station)': '#28A745',  # Green
-        'Adequate (51-100 EVs/station)': '#5C5E62',  # Tesla Gray
-        'Strained (101-200 EVs/station)': '#FFC107',  # Amber
-        'Insufficient (>200 EVs/station)': '#E31937',  # Tesla Red
-        'No Data': '#D8D8D8'
-    }
-    
-    colors = [color_map.get(cat, '#D8D8D8') for cat in category_counts.index]
-    
-    fig.add_trace(
-        go.Pie(
-            labels=category_counts.index,
-            values=category_counts.values,
-            name='Adequacy',
-            marker=dict(colors=colors, line=dict(color='#FFFFFF', width=2)),
-            hovertemplate='<b>%{label}</b><br>Regions: %{value}<br>Share: %{percent}<extra></extra>',
-            textfont=dict(size=11, family='"Gotham", Arial, sans-serif')
-        ),
-        row=1, col=2
     )
     
     fig.update_layout(
@@ -330,91 +305,6 @@ def create_powertrain_comparison(df, selected_regions):
     fig.update_yaxes(type='log')
     
     return fig
-
-
-def create_correlation_scatter(df, selected_year):
-    """
-    Create scatter plot showing correlation between infrastructure and adoption.
-    
-    Args:
-        df: DataFrame with infrastructure and EV stock data
-        selected_year: Year to analyze
-    
-    Returns:
-        Plotly figure object
-    """
-    # Filter for selected year
-    df_year = df[df['year'] == selected_year].copy()
-    
-    # Remove aggregates and regions with missing data
-    df_year = df_year[
-        ~df_year['region'].isin(['World', 'Rest of the world', 'Europe']) &
-        (df_year['total_stations'] > 0) &
-        (df_year['total_ev_stock'] > 0)
-    ]
-    
-    # Calculate stations per 1000 EVs for better scale
-    df_year['stations_per_1000_evs'] = (df_year['total_stations'] / df_year['total_ev_stock']) * 1000
-    
-    fig = px.scatter(
-        df_year,
-        x='stations_per_1000_evs',
-        y='total_ev_stock',
-        size='total_stations',
-        color='total_ev_stock',  # Color by EV stock for gradient
-        hover_name='region',
-        hover_data={
-            'stations_per_1000_evs': ':.2f',
-            'total_ev_stock': ':,.0f',
-            'total_stations': ':,.0f'
-        },
-        title=None,
-        labels={
-            'stations_per_1000_evs': 'Charging Stations per 1000 EVs',
-            'total_ev_stock': 'Total EV Stock',
-            'region': 'Region'
-        },
-        log_y=True,
-        color_continuous_scale=[[0, '#5C5E62'], [0.5, '#8C8C8C'], [1, '#E31937']]  # Tesla gradient
-    )
-    
-    fig.update_layout(
-        height=500,
-        showlegend=False,
-        margin=dict(l=60, r=20, t=20, b=60),
-        paper_bgcolor='#FFFFFF',
-        plot_bgcolor='#F9F9F9',
-        font=dict(family='"Gotham", Arial, sans-serif', size=11, color='#171A20'),
-        xaxis=dict(
-            showgrid=True,
-            gridcolor='#E0E0E0',
-            linecolor='#E0E0E0',
-            title_font=dict(size=11, color='#5C5E62')
-        ),
-        yaxis=dict(
-            showgrid=True,
-            gridcolor='#E0E0E0',
-            linecolor='#E0E0E0',
-            title_font=dict(size=11, color='#5C5E62')
-        ),
-        coloraxis_colorbar=dict(
-            title=dict(text='EV Stock', font=dict(size=10)),
-            thickness=12,
-            len=0.6,
-            x=1.02
-        )
-    )
-    
-    # Update markers
-    fig.update_traces(
-        marker=dict(
-            line=dict(width=0.5, color='#FFFFFF'),
-            opacity=0.7
-        )
-    )
-    
-    return fig
-
 
 def create_kpi_card_data(stats):
     """
