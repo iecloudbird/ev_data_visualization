@@ -191,7 +191,7 @@ def create_pie_charts(df, selected_year):
     top_regions = df.nlargest(10, 'ev_charging_points')
     
     # Remove aggregates
-    top_regions = top_regions[~top_regions['region'].isin(['World', 'Rest of the world'])]
+    top_regions = top_regions[~top_regions['region'].isin(['World', 'Rest of the world', 'EU27'])]  # ADD 'EU27' HERE
     
     # Create subplots
     fig = make_subplots(
@@ -231,8 +231,7 @@ def create_pie_charts(df, selected_year):
         marker=dict(line=dict(color='#FFFFFF', width=2)),
         textposition='inside',
         textinfo='percent+label'
-    )
-    
+    )    
     return fig
 
 
@@ -250,6 +249,7 @@ def create_powertrain_comparison(df, selected_regions):
     # Filter for selected regions and exclude very early years
     df_filtered = df[
         (df['region'].isin(selected_regions)) &
+        (df['region'] != 'EU27') &  # ADD THIS LINE
         (df['year'] >= 2015) &
         (df['year'] < 2024)
     ].copy()
