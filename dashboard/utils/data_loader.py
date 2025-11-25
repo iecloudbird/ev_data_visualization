@@ -32,9 +32,9 @@ class EVDataLoader:
         return self._cache['merged'].copy()
     
     def load_stations_dataset(self):
-        """Load the enhanced charging stations dataset with caching."""
+        """Load the merged global charging stations dataset with caching."""
         if 'stations' not in self._cache:
-            file_path = self.data_dir / 'stations_enhanced.csv'
+            file_path = self.data_dir / 'merged_charging_station' / 'ev_stations_merged_global.csv'
             df = pd.read_csv(file_path)
             self._cache['stations'] = df
         return self._cache['stations'].copy()

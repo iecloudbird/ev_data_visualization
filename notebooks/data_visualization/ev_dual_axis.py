@@ -8,13 +8,10 @@ import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 from pathlib import Path
-from datetime import datetime
 from scipy import stats
-import warnings
 
-warnings.filterwarnings('ignore')
-
-BASE_DIR = Path(__file__).parent.parent
+# Set BASE_DIR to project root
+BASE_DIR = Path(__file__).parent.parent.parent
 DATA_DIR = BASE_DIR / 'data' / 'processed'
 OUTPUT_DIR = BASE_DIR / 'output'
 OUTPUT_DIR.mkdir(exist_ok=True)

@@ -5,7 +5,7 @@ from pathlib import Path
 
 warnings.filterwarnings('ignore')
 
-BASE_DIR = Path(__file__).parent
+BASE_DIR = Path(__file__).parent.parent.parent
 DATA_DIR = BASE_DIR / 'data'
 PROCESSED_DIR = DATA_DIR / 'processed'
 METRICS_DIR = PROCESSED_DIR / 'metrics'
@@ -15,16 +15,33 @@ merged_df = pd.read_csv(PROCESSED_DIR / 'merged_dataset.csv')
 
 iea_full = pd.read_csv(PROCESSED_DIR / 'IEA_Global_EV_Data_2024_filled.csv')
 
-stations_df = pd.read_csv(PROCESSED_DIR / 'stations_enhanced.csv')
+# Load merged global stations dataset
+stations_df = pd.read_csv(PROCESSED_DIR / 'merged_charging_station' / 'ev_stations_merged_global.csv')
+
+# Aggregate station count per country
+station_country_agg = stations_df.groupby('country').agg({
+    'id': 'count',
+    'operator': lambda x: x.nunique(),
+    'status': lambda x: (x == 'Operational').mean(),
+    'num_connectors': 'mean'
+}).rename(columns={
+    'id': 'total_stations',
+    'operator': 'unique_operators',
+    'status': 'operational_ratio',
+    'num_connectors': 'avg_connectors'
+}).reset_index()
+
 ev_stock_agg = merged_df[
     merged_df['powertrain'].isin(['BEV', 'PHEV'])
 ].groupby(['region', 'year', 'category', 'mode']).agg({
     'ev_stock': 'sum',
     'total_stations': 'first',
-    'fast_charger_ratio': 'first',
-    'always_available_ratio': 'first',
     'stations_per_million_evs': 'first'
 }).reset_index()
+
+# Add missing columns as NaN for compatibility
+for col in ['fast_charger_ratio', 'always_available_ratio']:
+    ev_stock_agg[col] = np.nan
 
 ev_stock_agg['stations_per_1000_evs'] = np.where(
     ev_stock_agg['ev_stock'] > 0,
@@ -134,108 +151,11 @@ market_share_pivot = market_share_pivot.rename(columns={
     'market_share_pct_PHEV': 'phev_market_share_pct'
 })
 
-if 'cost_per_full_charge' not in stations_df.columns:
-    stations_df['cost_per_full_charge'] = stations_df['Cost (USD/kWh)'] * 60
-
-cost_data = stations_df.dropna(subset=['country', 'cost_per_full_charge']).copy()
-
-regional_costs = cost_data.groupby('country').agg({
-    'cost_per_full_charge': ['mean', 'median', 'std', 'min', 'max'],
-    'Cost (USD/kWh)': ['mean', 'median'],
-    'Station ID': 'count'
-}).reset_index()
-
-regional_costs.columns = ['_'.join(col).strip('_') if col[1] else col[0] 
-                          for col in regional_costs.columns.values]
-
-regional_costs = regional_costs.rename(columns={
-    'country': 'country',
-    'cost_per_full_charge_mean': 'avg_cost_per_full_charge',
-    'cost_per_full_charge_median': 'median_cost_per_full_charge',
-    'cost_per_full_charge_std': 'std_cost_per_full_charge',
-    'cost_per_full_charge_min': 'min_cost_per_full_charge',
-    'cost_per_full_charge_max': 'max_cost_per_full_charge',
-    'Cost (USD/kWh)_mean': 'avg_cost_per_kwh',
-    'Cost (USD/kWh)_median': 'median_cost_per_kwh',
-    'Station ID_count': 'num_stations'
-})
-
-regional_costs = regional_costs.sort_values('avg_cost_per_full_charge')
-
-latest_year = merged_df['year'].max()
-latest_data = merged_df[
-    (merged_df['year'] == latest_year) &
-    (merged_df['powertrain'].isin(['BEV', 'PHEV'])) &
-    (merged_df['mode'] == 'Cars')
-].groupby('region').agg({
-    'ev_stock': 'sum',
-    'ev_sales': 'sum',
-    'ev_sales_share': 'first',
-    'total_stations': 'first',
-    'fast_charger_ratio': 'first'
-}).reset_index()
-
-world_data = latest_data[latest_data['region'] == 'World'].iloc[0]
-
-global_summary = {
-    'metric': [
-        'Total EV Stock (Global)',
-        'Total Charging Stations (Global)',
-        'EV Sales Share (Global)',
-        'Fast Charger Ratio (Global)',
-    ],
-    'value': [
-        f"{world_data['ev_stock']:,.0f}",
-        f"{world_data['total_stations']:,.0f}",
-        f"{world_data['ev_sales_share']:.2f}%",
-        f"{world_data['fast_charger_ratio']*100:.1f}%" if pd.notna(world_data['fast_charger_ratio']) else 'N/A',
-    ],
-    'year': [latest_year] * 4
-}
-
-global_summary_df = pd.DataFrame(global_summary)
-
-regional_leaders = latest_data[
-    ~latest_data['region'].isin(['World', 'Europe', 'Rest of the world', 'EU27'])
-].nlargest(10, 'ev_stock')[[
-    'region', 'ev_stock', 'ev_sales', 'ev_sales_share', 'total_stations'
-]]
-
-recent_years = [2021, 2022, 2023]
-world_growth = growth_metrics[
-    (growth_metrics['region'] == 'World') &
-    (growth_metrics['mode'] == 'Cars') &
-    (growth_metrics['year'].isin(recent_years))
-]
-
-avg_growth_summary = {
-    'metric': [
-        'Avg YoY EV Sales Growth (2021-2023)',
-        'Avg YoY EV Stock Growth (2021-2023)',
-        'Avg YoY Stations Growth (2021-2023)'
-    ],
-    'value': [
-        f"{world_growth['ev_sales_yoy_growth'].mean():.1f}%",
-        f"{world_growth['ev_stock_yoy_growth'].mean():.1f}%",
-        f"{world_growth['total_stations_yoy_growth'].mean():.1f}%"
-    ]
-}
-
-avg_growth_df = pd.DataFrame(avg_growth_summary)
-
-dashboard_summary = pd.concat([
-    global_summary_df[['metric', 'value']],
-    avg_growth_df
-], ignore_index=True)
-
 output_files = {
     'stations_per_ev_ratio.csv': stations_ratio,
     'yoy_growth_rates.csv': growth_metrics,
     'infrastructure_adequacy.csv': infrastructure_adequacy,
-    'bev_phev_market_share.csv': market_share_pivot,
-    'regional_charging_costs.csv': regional_costs,
-    'dashboard_summary.csv': dashboard_summary,
-    'regional_leaders.csv': regional_leaders
+    'bev_phev_market_share.csv': market_share_pivot
 }
 
 for filename, dataframe in output_files.items():
