@@ -1,18 +1,69 @@
-Notes:
+# Notebooks
 
-1. On Government policy making impact on EV market
+This folder contains Jupyter notebooks for the EV data analysis pipeline.
 
-[IEA Policy Explorer](https://www.iea.org/data-and-statistics/data-tools/global-ev-policy-explorer)
+## Pipeline Overview
 
-On India 2019 EV Sales rise: likely because of this policy legislation [India National Legislation Per kWh subsidy for electric two-wheeler increased to INR 15 000/kWh from earlier subsidy of INR 10 000/kWh, with a 50% local content requirement. 2019 2/3W India, Department of Heavy Industries]
+The notebooks follow an end-to-end pipeline:
 
-Grok interpretation: https://x.com/i/grok/share/MWDLZ8bdKXufgcE26y2jAZjJc
+```
+Ingestion -> Cleaning -> Wrangling -> EDA/Analysis -> Visualization
+```
 
-2. On new EV charging datasets
+## Execution Order
 
-INTL: https://www.kaggle.com/datasets/risheepanchal/global-ev-charging-stations-dataset
-CN: https://www.cnopendata.com/data/m/poi/POI-cdz.html [Found relevant dataset, just Australia left but not a big issue for now]
-AUS:
+Run notebooks in this order:
 
-[Notebook demo on Kaggle NEW DATASETS](https://www.kaggle.com/code/shean1107/notebooke9e7d52f3f))
-Comment: China & Australia EV charging station distribution doesn't match with sales data (they should be way more than that.)
+1. `data_cleaning/dp_fill_2024.ipynb` - Fill missing 2024 data
+2. `data_wrangling/merge_ev_stations.ipynb` - Merge charging station datasets
+3. `data_wrangling/transform_data.ipynb` - Transform to wide format
+4. `merge_datasets.ipynb` - Combine EV and station data
+5. `ev.ipynb` - Main EDA and visualization
+6. `data_visualization/ev_stations_map.ipynb` - Interactive map
+
+## Notebook Descriptions
+
+| Notebook                  | Stage         | Purpose                                              | Input                                                        | Output                                                            |
+| ------------------------- | ------------- | ---------------------------------------------------- | ------------------------------------------------------------ | ----------------------------------------------------------------- |
+| `dp_fill_2024.ipynb`      | Cleaning      | Fill Year 2024 gaps using interpolation/forward-fill | `raw/IEA Global EV Data 2024.csv`                            | `processed/IEA_Global_EV_Data_2024_filled.csv`                    |
+| `merge_ev_stations.ipynb` | Wrangling     | Merge international + Chinese station data           | `raw/ev_stations_2025.csv`, Chinese dataset                  | `processed/merged_charging_station/ev_stations_merged_global.csv` |
+| `transform_data.ipynb`    | Wrangling     | Pivot long-to-wide format                            | `raw/IEA Global EV Data 2024.csv`                            | `processed/iea_wide_format.csv`                                   |
+| `merge_datasets.ipynb`    | Integration   | Join EV data with station stats                      | `processed/IEA_Global_EV_Data_2024_filled.csv`, station data | `processed/merged_dataset.csv`                                    |
+| `ev.ipynb`                | EDA           | Time-series, choropleth, sunburst charts             | Processed CSVs                                               | Inline visualizations                                             |
+| `ev_stations_map.ipynb`   | Visualization | Interactive Folium map                               | `ev_stations_merged_global.csv`                              | `output/ev_stations_global_map.html`                              |
+
+## Pipeline Flow
+
+```
+RAW DATA
+    |
+    v
+[dp_fill_2024.ipynb] --> IEA_Global_EV_Data_2024_filled.csv
+    |
+[merge_ev_stations.ipynb] --> ev_stations_merged_global.csv
+    |
+[transform_data.ipynb] --> iea_wide_format.csv
+    |
+    v
+[merge_datasets.ipynb] --> merged_dataset.csv
+    |
+    v
+[ev.ipynb] --> Charts & Analysis
+    |
+[ev_stations_map.ipynb] --> Interactive HTML Map
+```
+
+## Folder Structure
+
+```
+notebooks/
+  ev.ipynb                    # Main EDA notebook
+  merge_datasets.ipynb        # Data integration
+  data_cleaning/
+    dp_fill_2024.ipynb        # Year 2024 data filling
+  data_wrangling/
+    merge_ev_stations.ipynb   # Station data merge
+    transform_data.ipynb      # Format transformation
+  data_visualization/
+    ev_stations_map.ipynb     # Interactive map
+```
