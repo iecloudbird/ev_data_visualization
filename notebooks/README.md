@@ -2,24 +2,34 @@
 
 This folder contains Jupyter notebooks for the EV data analysis pipeline.
 
-## Pipeline Overview
+## Quick Start
 
-The notebooks follow an end-to-end pipeline:
+After downloading raw data (see `data/README.md`), run notebooks in the following order:
 
-```
-Ingestion -> Cleaning -> Wrangling -> EDA/Analysis -> Visualization
-```
+### Phase 1: Data Preparation (Cleaning & Wrangling)
 
-## Execution Order
+1. **`data_cleaning/dp_fill_2024.ipynb`** - Fill missing 2024 data in IEA dataset
+2. **`data_wrangling/merge_ev_stations.ipynb`** - Merge international + China charging stations
+3. **`data_wrangling/transform_data.ipynb`** - Transform IEA data to wide format
+4. **`merge_datasets.ipynb`** - Combine EV sales data with station statistics
 
-Run notebooks in this order:
+### Phase 2: Core Analysis & Visualization
 
-1. `data_cleaning/dp_fill_2024.ipynb` - Fill missing 2024 data
-2. `data_wrangling/merge_ev_stations.ipynb` - Merge charging station datasets
-3. `data_wrangling/transform_data.ipynb` - Transform to wide format
-4. `merge_datasets.ipynb` - Combine EV and station data
-5. `ev.ipynb` - Main EDA and visualization
-6. `data_visualization/ev_stations_map.ipynb` - Interactive map
+Once data preparation is complete, run these main notebooks:
+
+5. **`ev.ipynb`** ⭐ **MAIN NOTEBOOK** - Comprehensive EDA with interactive charts:
+
+   - Time-series analysis (EV adoption trends 2010-2023)
+   - Geographic heatmaps (regional distribution)
+   - Infrastructure analysis (charging stations vs EVs)
+   - Powertrain comparisons (BEV vs PHEV)
+   - Linked dashboard views
+
+6. **`data_visualization/ev_stations_map.ipynb`** ⭐ **MAIN VISUALIZATION** - Interactive global map:
+   - 12,002 charging stations with marker clustering
+   - Rich popups with station details
+   - Status indicators and operator icons
+   - Exports to standalone HTML
 
 ## Notebook Descriptions
 
@@ -35,22 +45,42 @@ Run notebooks in this order:
 ## Pipeline Flow
 
 ```
-RAW DATA
-    |
-    v
-[dp_fill_2024.ipynb] --> IEA_Global_EV_Data_2024_filled.csv
-    |
-[merge_ev_stations.ipynb] --> ev_stations_merged_global.csv
-    |
-[transform_data.ipynb] --> iea_wide_format.csv
-    |
-    v
-[merge_datasets.ipynb] --> merged_dataset.csv
-    |
-    v
-[ev.ipynb] --> Charts & Analysis
-    |
-[ev_stations_map.ipynb] --> Interactive HTML Map
+RAW DATA (downloaded manually)
+    ├── IEA Global EV Data 2024.csv
+    ├── ev_stations_2025.csv
+    └── CnOpenData全国充电站分布数据（样本数据）.xlsx
+         |
+         v
+    PHASE 1: CLEANING & WRANGLING
+         |
+    ┌────┴────────────────────────────┐
+    |                                  |
+[dp_fill_2024]              [merge_ev_stations]
+    |                                  |
+    v                                  v
+IEA_filled.csv            ev_stations_merged_global.csv
+    |                                  |
+[transform_data]                      |
+    |                                  |
+    v                                  |
+iea_wide_format.csv                   |
+    |                                  |
+    └──────────┬───────────────────────┘
+               v
+       [merge_datasets]
+               |
+               v
+       merged_dataset.csv
+               |
+         ┌─────┴─────┐
+         v           v
+    PHASE 2: MAIN ANALYSIS
+         |           |
+    [ev.ipynb]  [ev_stations_map.ipynb]
+         |           |
+         v           v
+   Dashboards    Interactive Map
+   & Charts      (HTML output)
 ```
 
 ## Folder Structure
