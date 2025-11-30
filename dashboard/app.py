@@ -15,6 +15,7 @@ from dash import dcc, html, Input, Output, State, callback_context
 from dash.exceptions import PreventUpdate
 import pandas as pd
 import plotly.graph_objects as go
+import plotly.express as px
 
 # Import custom modules
 from dashboard.utils.data_loader import EVDataLoader
@@ -23,7 +24,9 @@ from dashboard.components.charts import (
     create_timeseries_chart,
     create_pie_charts,
     create_powertrain_comparison,
-    create_kpi_card_data
+    create_kpi_card_data,
+    create_infrastructure_pie_2023,
+    create_powertrain_sunburst_2023
 )
 
 # Initialize app
@@ -52,28 +55,33 @@ print(f"✓ Data loaded: {len(ev_data)} records | {year_min}-{year_max}")
 CHART_DESCRIPTIONS = {
     'overview_map': {
         'title': 'Global EV Stock Distribution',
-        'description': 'Interactive choropleth map showing the distribution of electric vehicles across different regions. Darker colors indicate higher EV adoption rates. This visualization helps identify leading markets and emerging opportunities in EV adoption worldwide.',
+        'description': 'Interactive choropleth map showing the distribution of electric vehicles across countries. Enhanced blue gradient highlights regional EV adoption patterns. China, USA, and Europe dominate the global EV market.',
         'controls': ['year-slider']
     },
     'overview_stations': {
         'title': 'EV Charging Infrastructure Network',
-        'description': 'Interactive map displaying the global network of EV charging stations. Each marker represents a charging station with details about location, operator, and operational status. Zoom in to explore station density in specific regions.',
+        'description': 'Interactive map displaying 12,002 charging stations worldwide with marker clustering. Each station shows operator, location, and status. Zoom in to explore density patterns in specific regions.',
         'controls': []
     },
     'trends_timeseries': {
-        'title': 'EV Adoption Trends Over Time',
-        'description': 'Historical trends showing the growth of electric vehicle stock and charging infrastructure. Compare multiple regions to identify leaders in EV adoption and infrastructure development. The exponential growth pattern demonstrates the rapid acceleration of electric mobility.',
-        'controls': ['region-selector', 'metric-selector']
-    },
-    'trends_powertrain': {
-        'title': 'Powertrain Technology Distribution',
-        'description': 'Comparative analysis of different electric powertrain technologies (BEV vs PHEV) across regions. Battery Electric Vehicles (BEV) are fully electric, while Plug-in Hybrid Electric Vehicles (PHEV) combine electric and combustion engines. This chart reveals regional preferences and technology adoption patterns.',
+        'title': 'Global EV Stock Growth by Region (2010–2023)',
+        'description': 'Time series with policy annotations showing key drivers: China NEV subsidies (2014, 2018), EU CO₂ standards (2019), and COVID impact (2020). The growth era (2018-2023) is highlighted. Log scale reveals exponential adoption patterns.',
         'controls': ['region-selector']
     },
-    'infrastructure_pie': {
-        'title': 'Infrastructure Adequacy Analysis',
-        'description': 'Analysis of charging infrastructure adequacy across regions, categorized by the ratio of EVs per charging station. Well-served regions have ≤50 EVs per station, while insufficient infrastructure shows >200 EVs per station. This metric is crucial for identifying infrastructure bottlenecks.',
-        'controls': ['year-slider']
+    'trends_powertrain': {
+        'title': 'Yearly Total EV Stock by Powertrain (2015–2023)',
+        'description': 'Grouped bar chart comparing BEV (Battery Electric) vs PHEV (Plug-in Hybrid) yearly totals globally. BEV dominance accelerates from 2020 onwards, reflecting market preference for fully electric vehicles.',
+        'controls': ['region-selector']
+    },
+    'breakdown_pie': {
+        'title': 'Charging Infrastructure Distribution (2023)',
+        'description': 'Top 5 regions by charging points plus "Others". Based on 2023 infrastructure data; controls removed due to non-yearly granularity.',
+        'controls': []
+    },
+    'breakdown_sunburst': {
+        'title': 'EV Stock Hierarchy: Region → Powertrain (2023)',
+        'description': 'Sunburst showing 2023 EV stock split by top 4 regions and powertrain. Others grouped for readability.',
+        'controls': []
     },
 }
 
@@ -212,21 +220,32 @@ app.layout = html.Div([
                     ])
                 ]),
                 
-                dcc.Tab(label='Infrastructure', value='tab-infrastructure',
+                dcc.Tab(label='Breakdown', value='tab-breakdown',
                        className='custom-tab',
                        selected_className='custom-tab--selected',
                        children=[
                     html.Div([
                         
-                        # Chart: Pie Charts
+                        # Chart 1: Infrastructure Pie (2023)
                         html.Div([
                             html.Div([
-                                html.H3(CHART_DESCRIPTIONS['infrastructure_pie']['title'],
+                                html.H3(CHART_DESCRIPTIONS['breakdown_pie']['title'],
                                        style={'fontSize': '20px', 'fontWeight': '600', 'margin': '0', 'color': '#FFFFFF'}),
-                                html.P(CHART_DESCRIPTIONS['infrastructure_pie']['description'],
+                                html.P(CHART_DESCRIPTIONS['breakdown_pie']['description'],
                                       style={'fontSize': '13px', 'color': '#B8B8B8', 'margin': '8px 0 0 0', 'lineHeight': '1.6'})
                             ], style={'marginBottom': '20px'}),
-                            dcc.Graph(id='pie-charts', config={'displayModeBar': False})
+                            dcc.Graph(id='infrastructure-pie', config={'displayModeBar': False})
+                        ], className='chart-container'),
+
+                        # Chart 2: Powertrain Sunburst (2023)
+                        html.Div([
+                            html.Div([
+                                html.H3(CHART_DESCRIPTIONS['breakdown_sunburst']['title'],
+                                       style={'fontSize': '20px', 'fontWeight': '600', 'margin': '0', 'color': '#FFFFFF'}),
+                                html.P(CHART_DESCRIPTIONS['breakdown_sunburst']['description'],
+                                      style={'fontSize': '13px', 'color': '#B8B8B8', 'margin': '8px 0 0 0', 'lineHeight': '1.6'})
+                            ], style={'marginBottom': '20px'}),
+                            dcc.Graph(id='powertrain-sunburst', config={'displayModeBar': False})
                         ], className='chart-container'),
                         
                     ])
@@ -263,17 +282,6 @@ app.layout = html.Div([
     dcc.Store(id='year-store', data=year_max),  # Store for year value
     dcc.Store(id='region-store', data=top_regions[:5]),  # Store for regions
     dcc.Store(id='metric-store', data='total_ev_stock'),  # Store for metric
-    
-    # Hidden slider to avoid callback errors (will be shown in sidebar when Infrastructure tab is active)
-    html.Div([
-        dcc.Slider(
-            id='year-slider-infrastructure',
-            min=year_min,
-            max=year_max,
-            value=year_max,
-            step=1
-        )
-    ], style={'display': 'none'})
     
 ], style={
     'fontFamily': '"Gotham", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif',
@@ -336,8 +344,9 @@ def update_kpi_cards(year_overview):
      Output('current-tab', 'children')],
     [Input('main-tabs', 'value'),
      Input('choropleth-map', 'hoverData'),
-     Input('timeseries-chart', 'hoverData'),
-     Input('pie-charts', 'hoverData')]
+    Input('timeseries-chart', 'hoverData'),
+    Input('infrastructure-pie', 'hoverData'),
+    Input('powertrain-sunburst', 'hoverData')]
 )
 def update_sidebar_controls(active_tab, *args):
     """Update sidebar with contextual controls based on active tab."""
@@ -372,51 +381,26 @@ def update_sidebar_controls(active_tab, *args):
         ])
         
     elif active_tab == 'tab-trends':
-        # Region selector and metric for trends
+        # Region selector for trends (no metric selector - finalized chart shows EV stock with policy annotations)
         controls.extend([
             html.Label('Regions', style={'fontSize': '12px', 'fontWeight': '600', 'color': '#171A20', 'marginBottom': '10px', 'display': 'block', 'textTransform': 'uppercase', 'letterSpacing': '0.5px'}),
             dcc.Dropdown(
                 id='region-selector',
                 options=[{'label': region, 'value': region} for region in available_regions],
-                value=top_regions[:5],
+                value=top_regions[:8],
                 multi=True,
                 placeholder='Select regions...',
                 className='tesla-dropdown',
                 style={'marginBottom': '25px'}
             ),
-            
-            html.Label('Metric', style={'fontSize': '12px', 'fontWeight': '600', 'color': '#171A20', 'marginBottom': '10px', 'display': 'block', 'textTransform': 'uppercase', 'letterSpacing': '0.5px'}),
-            dcc.RadioItems(
-                id='metric-selector',
-                options=[
-                    {'label': 'EV Stock', 'value': 'total_ev_stock'},
-                    {'label': 'Charging Stations', 'value': 'total_stations'},
-                    {'label': 'Stations per EV', 'value': 'stations_per_ev'}
-                ],
-                value='total_ev_stock',
-                className='tesla-radio',
-                style={'marginBottom': '25px'}
-            )
+            html.P('💡 Chart displays EV stock trends with key policy annotations (China NEV subsidies, EU CO₂ standards, COVID impact)', 
+                   style={'fontSize': '11px', 'color': '#666', 'fontStyle': 'italic', 'marginTop': '10px'})
         ])
         
-    elif active_tab == 'tab-infrastructure':
-        # Year slider for infrastructure
-        # Note: A hidden version exists in layout to prevent callback errors
-        # This visible version syncs with it via a callback
+    elif active_tab == 'tab-breakdown':
         controls.extend([
-            html.Label('Year', style={'fontSize': '12px', 'fontWeight': '600', 'color': '#171A20', 'marginBottom': '10px', 'display': 'block', 'textTransform': 'uppercase', 'letterSpacing': '0.5px'}),
-            html.Div([
-                dcc.Slider(
-                    id='year-slider-infrastructure-visible',
-                    min=year_min,
-                    max=year_max,
-                    value=year_max,
-                    marks={year: {'label': str(year), 'style': {'fontSize': '10px', 'color': '#5C5E62'}} for year in range(year_min, year_max + 1, 3)},
-                    step=1,
-                    tooltip={"placement": "bottom", "always_visible": True},
-                    className='tesla-slider'
-                )
-            ], id='infrastructure-slider-container')
+            html.P('No controls for breakdown charts (2023 data only).',
+                   style={'fontSize': '12px', 'color': '#666'})
         ])
     
     return controls, active_tab
@@ -434,34 +418,50 @@ def update_choropleth(year):
 
 @app.callback(
     Output('timeseries-chart', 'figure'),
-    [Input('region-selector', 'value'),
-     Input('metric-selector', 'value')]
+    Input('region-selector', 'value')
 )
-def update_timeseries(selected_regions, selected_metric):
-    """Update time series chart."""
+def update_timeseries(selected_regions):
+    """Update time series chart with policy annotations."""
     if not selected_regions:
-        selected_regions = top_regions[:5]
-    return create_timeseries_chart(ev_data, selected_regions, selected_metric)
+        selected_regions = top_regions[:8]
+    return create_timeseries_chart(ev_data, selected_regions, show_annotations=True)
 
 
 @app.callback(
-    Output('pie-charts', 'figure'),
-    Input('year-slider-infrastructure', 'value')
+    Output('infrastructure-pie', 'figure'),
+    Input('current-tab', 'children')
 )
-def update_pie_charts(year):
-    """Update pie charts."""
-    year = year if year else year_max
-    infra_summary = data_loader.get_charging_infrastructure_summary(year=year)
-    return create_pie_charts(infra_summary, year)
+def update_infrastructure_pie(_active_tab):
+    """Render 2023 infrastructure pie chart using notebook-style aggregation."""
+    # Use notebook-matching data prep from IEA sales dataset
+    charging_final = data_loader.get_charging_points_distribution_2023()
+    fig = px.pie(
+        charging_final,
+        values='total_charging_points',
+        names='region',
+        title='Global Charging Infrastructure Distribution (2023)',
+        template='plotly_white',
+        color_discrete_sequence=px.colors.qualitative.Bold,
+    )
+    fig.update_traces(
+        textposition='inside',
+        textinfo='percent+label',
+        textfont_size=12,
+        textfont_color='white',
+        hovertemplate='<b>%{label}</b><br>Charging Points: %{value:,.0f}<br>Share: %{percent}<extra></extra>'
+    )
+    return fig
 
 
 @app.callback(
-    Output('year-slider-infrastructure', 'value'),
-    Input('year-slider-infrastructure-visible', 'value')
+    Output('powertrain-sunburst', 'figure'),
+    Input('current-tab', 'children')
 )
-def sync_infrastructure_slider(visible_value):
-    """Sync the visible slider with the hidden one."""
-    return visible_value if visible_value is not None else year_max
+def update_powertrain_sunburst(_active_tab):
+    """Render 2023 powertrain sunburst without controls."""
+    df_ev_stock = powertrain_data[['region', 'year', 'powertrain', 'ev_stock']].copy()
+    df_ev_stock = df_ev_stock.rename(columns={'ev_stock': 'value'})
+    return create_powertrain_sunburst_2023(df_ev_stock)
 
 
 @app.callback(
