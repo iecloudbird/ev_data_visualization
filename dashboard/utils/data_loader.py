@@ -30,6 +30,17 @@ class EVDataLoader:
             df = pd.read_csv(file_path)
             self._cache['merged'] = df
         return self._cache['merged'].copy()
+
+    def load_iea_sales_dataset(self):
+        """Load the original IEA Global EV Sales dataset used in the notebook."""
+        if 'iea_sales' not in self._cache:
+            file_path = self.data_dir / 'IEA_Global_EV_Data_2024_filled.csv'
+            df = pd.read_csv(file_path)
+            # Apply notebook-style cleaning: remove EU27 aggregate and percent rows
+            if {'region', 'unit'}.issubset(df.columns):
+                df = df[~((df['region'] == 'EU27') | (df['unit'] == 'percent'))]
+            self._cache['iea_sales'] = df
+        return self._cache['iea_sales'].copy()
     
     def load_stations_dataset(self):
         """Load the merged global charging stations dataset with caching."""
@@ -161,7 +172,51 @@ class EVDataLoader:
         )
         
         return infra_summary
-    
+
+    def get_charging_points_distribution_2023(self):
+        """
+        Replicate notebook Cell 12 aggregation: 2023 charging points by region.
+
+        Filters the IEA sales dataset for parameter contains 'charging points' and year==2023,
+        sums by region, identifies top 5 regions, aggregates all other regions into
+        'Rest of the world', and drops 'World' from the dataset.
+        Returns the final aggregated DataFrame.
+        """
+
+        # Load dataset
+        df_sales = self.load_iea_sales_dataset()
+
+        # Filter charging points for 2023
+        df_charging = df_sales[
+            df_sales['parameter'].str.contains('charging points', case=False, na=False)
+        ].copy()
+        df_charging = df_charging[df_charging['year'] == 2023]
+
+        # Aggregate charging points by region
+        charging_latest = df_charging.groupby('region')['value'].sum().reset_index()
+        charging_latest.columns = ['region', 'total_charging_points']
+
+        # Remove 'World' before top-5 comparison
+        charging_latest = charging_latest[charging_latest['region'] != 'World']
+
+        # Identify top 5 regions with highest charging points
+        top5 = charging_latest.nlargest(5, 'total_charging_points')
+        top5_names = set(top5['region'].tolist())
+
+        # Merge non-top5 regions into 'Rest of the world'
+        charging_latest['region'] = charging_latest['region'].apply(
+            lambda r: r if r in top5_names else 'Rest of the world'
+        )
+
+        # Final aggregation after region relabel
+        charging_final = (
+            charging_latest.groupby('region')['total_charging_points']
+            .sum()
+            .reset_index()
+        )
+
+        return charging_final
+        
     def get_year_range(self):
         """Get the min and max years available in the dataset."""
         df = self.load_merged_dataset()
@@ -191,7 +246,7 @@ class EVDataLoader:
         
         # Calculate global totals
         total_ev_stock = df_year['total_ev_stock'].sum()
-        total_stations = df_year['total_stations'].sum()
+        total_stations = self.get_total_stations()
         avg_stations_per_ev = total_stations / total_ev_stock if total_ev_stock > 0 else 0
         
         # Calculate YoY growth (if previous year exists)
@@ -204,12 +259,27 @@ class EVDataLoader:
         
         return {
             'total_ev_stock': total_ev_stock,
-            'total_stations': total_stations,
+            'total_stations': total_stations,  # Always from 2025
             'avg_stations_per_ev': avg_stations_per_ev,
             'yoy_growth_pct': yoy_growth,
             'year': year
         }
-
+    
+    def get_total_stations(self):
+        """
+        Return the global total number of EV charging stations (static value).
+        Uses the stations dataset, counts all rows as stations.
+        """
+        df = self.load_stations_dataset()
+        
+        # If 'total_stations' column exists, use it; otherwise, count rows
+        if 'total_stations' in df.columns:
+            total = int(df['total_stations'].sum())
+        else:
+            # Each row = one station
+            total = len(df)
+        
+        return total
 
 # Create a global instance for easy import
 data_loader = EVDataLoader()
