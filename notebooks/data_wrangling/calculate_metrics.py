@@ -31,32 +31,6 @@ station_country_agg = stations_df.groupby('country').agg({
     'num_connectors': 'avg_connectors'
 }).reset_index()
 
-ev_stock_agg = merged_df[
-    merged_df['powertrain'].isin(['BEV', 'PHEV'])
-].groupby(['region', 'year', 'category', 'mode']).agg({
-    'ev_stock': 'sum',
-    'total_stations': 'first',
-    'stations_per_million_evs': 'first'
-}).reset_index()
-
-# Add missing columns as NaN for compatibility
-for col in ['fast_charger_ratio', 'always_available_ratio']:
-    ev_stock_agg[col] = np.nan
-
-ev_stock_agg['stations_per_1000_evs'] = np.where(
-    ev_stock_agg['ev_stock'] > 0,
-    (ev_stock_agg['total_stations'] / (ev_stock_agg['ev_stock'] / 1000)),
-    np.nan
-)
-
-stations_ratio = ev_stock_agg[[
-    'region', 'year', 'category', 'mode',
-    'ev_stock', 'total_stations',
-    'stations_per_1000_evs', 'stations_per_million_evs',
-    'fast_charger_ratio', 'always_available_ratio'
-]].copy()
-
-stations_ratio = stations_ratio.dropna(subset=['ev_stock', 'total_stations'])
 growth_base = merged_df[
     merged_df['powertrain'].isin(['BEV', 'PHEV'])
 ].groupby(['region', 'mode', 'year']).agg({
@@ -85,71 +59,6 @@ growth_metrics = growth_metrics[[
 ]].copy()
 
 growth_metrics = growth_metrics.replace([np.inf, -np.inf], np.nan)
-
-def calculate_infrastructure_score(row):
-    stations_score = min(row['stations_per_1000_evs'] / 10 * 100, 100) if pd.notna(row['stations_per_1000_evs']) else 0
-    fast_charger_score = row['fast_charger_ratio'] * 100 if pd.notna(row['fast_charger_ratio']) else 0
-    availability_score = row['always_available_ratio'] * 100 if pd.notna(row['always_available_ratio']) else 0
-    total_score = (stations_score * 0.5) + (fast_charger_score * 0.25) + (availability_score * 0.25)
-    return total_score
-
-infrastructure_adequacy = stations_ratio.copy()
-infrastructure_adequacy['infrastructure_score'] = infrastructure_adequacy.apply(
-    calculate_infrastructure_score, axis=1
-)
-
-score_percentiles = infrastructure_adequacy['infrastructure_score'].quantile([0.33, 0.67])
-
-def categorize_adequacy(score):
-    if pd.isna(score):
-        return 'Unknown'
-    elif score >= score_percentiles[0.67]:
-        return 'Well-served'
-    elif score >= score_percentiles[0.33]:
-        return 'Strained'
-    else:
-        return 'Insufficient'
-
-infrastructure_adequacy['adequacy_category'] = infrastructure_adequacy['infrastructure_score'].apply(
-    categorize_adequacy
-)
-
-powertrain_data = merged_df[
-    merged_df['powertrain'].isin(['BEV', 'PHEV'])
-].copy()
-
-total_ev_sales = powertrain_data.groupby(
-    ['region', 'year', 'category', 'mode']
-)['ev_sales'].sum().reset_index(name='total_ev_sales')
-
-powertrain_shares = powertrain_data.merge(
-    total_ev_sales,
-    on=['region', 'year', 'category', 'mode'],
-    how='left'
-)
-
-powertrain_shares['market_share_pct'] = np.where(
-    powertrain_shares['total_ev_sales'] > 0,
-    (powertrain_shares['ev_sales'] / powertrain_shares['total_ev_sales']) * 100,
-    np.nan
-)
-
-market_share_pivot = powertrain_shares.pivot_table(
-    index=['region', 'year', 'category', 'mode'],
-    columns='powertrain',
-    values=['ev_sales', 'market_share_pct'],
-    aggfunc='first'
-).reset_index()
-
-market_share_pivot.columns = ['_'.join(col).strip('_') if col[1] else col[0] 
-                                for col in market_share_pivot.columns.values]
-
-market_share_pivot = market_share_pivot.rename(columns={
-    'ev_sales_BEV': 'bev_sales',
-    'ev_sales_PHEV': 'phev_sales',
-    'market_share_pct_BEV': 'bev_market_share_pct',
-    'market_share_pct_PHEV': 'phev_market_share_pct'
-})
 
 # ============================================================================
 # INFRASTRUCTURE ADEQUACY: 2023 EV Stock vs 2025 Charging Infrastructure
@@ -423,31 +332,32 @@ infrastructure_adequacy_2023_2025 = infrastructure_adequacy_2023_2025.sort_value
 )
 
 # Create correlation summary dataframe
-correlation_summary = pd.DataFrame({
-    'metric_pair': [
-        'EV Stock 2023 vs Total Stations 2025',
-        'EV Stock 2023 vs Total Connectors 2025',
-        'EV Sales 2023 vs Total Stations 2025',
-        'EV Sales 2023 vs Total Connectors 2025'
-    ],
-    'correlation_coefficient': [
-        correlation_stock_stations if correlation_stock_stations is not None else np.nan,
-        correlation_stock_connectors if correlation_stock_connectors is not None else np.nan,
-        correlation_sales_stations if correlation_sales_stations is not None else np.nan,
-        correlation_sales_connectors if correlation_sales_connectors is not None else np.nan
-    ],
-    'sample_size': [len(corr_data_clean)] * 4
-})
+correlation_summary = pd.DataFrame(
+    {
+        'metric_pair': [
+            'EV Stock 2023 vs Total Stations 2025',
+            'EV Stock 2023 vs Total Connectors 2025',
+            'EV Sales 2023 vs Total Stations 2025',
+            'EV Sales 2023 vs Total Connectors 2025',
+        ],
+        'correlation_coefficient': [
+            correlation_stock_stations if correlation_stock_stations is not None else np.nan,
+            correlation_stock_connectors if correlation_stock_connectors is not None else np.nan,
+            correlation_sales_stations if correlation_sales_stations is not None else np.nan,
+            correlation_sales_connectors if correlation_sales_connectors is not None else np.nan,
+        ],
+        'sample_size': [len(corr_data_clean)] * 4,
+    }
+)
 
+# Only persist metrics that are actually used downstream:
+# - yoy_growth_rates.csv: growth trend analysis
+# - correlation_data.csv: input for infrastructure adequacy scatter plot
+# - correlation_ev_infrastructure.csv: summary correlation table
 output_files = {
-    'stations_per_ev_ratio.csv': stations_ratio,
     'yoy_growth_rates.csv': growth_metrics,
-    'infrastructure_adequacy.csv': infrastructure_adequacy,
-    'bev_phev_market_share.csv': market_share_pivot,
-    'infrastructure_adequacy_2023_2025.csv': infrastructure_adequacy_2023_2025,
-    'major_markets_infrastructure.csv': infrastructure_major_markets,
     'correlation_ev_infrastructure.csv': correlation_summary,
-    'correlation_data.csv': corr_data_clean  # Full dataset for plotting
+    'correlation_data.csv': corr_data_clean,
 }
 
 for filename, dataframe in output_files.items():

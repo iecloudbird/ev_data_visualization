@@ -134,103 +134,34 @@ Main merged dataset combining EV stats with aggregated charging station metrics 
 
 ---
 
-## Dataset: `data/processed/metrics/bev_phev_market_share.csv`
+## Dataset: `data/processed/metrics/correlation_data.csv`
 
-Market share metrics for BEV vs PHEV sales by region and year.
+Cleaned per-region dataset used for the infrastructure adequacy scatter plot.
 
-| Field                 | Type    | Description                                                          | Source file                                      |
-|-----------------------|---------|----------------------------------------------------------------------|--------------------------------------------------|
-| region                | object  | Geographic region or market.                                        | data/processed/metrics/bev_phev_market_share.csv|
-| year                  | int64   | Calendar year.                                                      | data/processed/metrics/bev_phev_market_share.csv|
-| category              | object  | Data category (e.g., sales).                                        | data/processed/metrics/bev_phev_market_share.csv|
-| mode                  | object  | Transport mode.                                                     | data/processed/metrics/bev_phev_market_share.csv|
-| bev_sales             | float64 | Number of BEV units sold.                                           | data/processed/metrics/bev_phev_market_share.csv|
-| phev_sales            | float64 | Number of PHEV units sold.                                          | data/processed/metrics/bev_phev_market_share.csv|
-| bev_market_share_pct  | float64 | BEV share of total EV sales (percentage).                           | data/processed/metrics/bev_phev_market_share.csv|
-| phev_market_share_pct | float64 | PHEV share of total EV sales (percentage).                          | data/processed/metrics/bev_phev_market_share.csv|
-
----
-
-## Dataset: `data/processed/metrics/dashboard_summary.csv`
-
-Pre-computed summary statistics used for dashboard KPI cards.
-
-| Field  | Type    | Description                                       | Source file                                   |
-|--------|---------|---------------------------------------------------|-----------------------------------------------|
-| metric | object  | Name of the KPI metric (e.g., total_ev_stock).   | data/processed/metrics/dashboard_summary.csv  |
-| value  | object  | String or numeric representation of the KPI value.| data/processed/metrics/dashboard_summary.csv  |
+| Field                 | Type    | Description                                                                 | Source file                                 |
+|-----------------------|---------|-----------------------------------------------------------------------------|---------------------------------------------|
+| region                | object  | Geographic region or market.                                               | data/processed/metrics/correlation_data.csv |
+| ev_stock_2023         | float64 | Total EV stock in 2023 (cars, all powertrains) from IEA historical data.  | data/processed/metrics/correlation_data.csv |
+| ev_sales_2023         | float64 | Total EV sales in 2023 (cars) from IEA historical data.                    | data/processed/metrics/correlation_data.csv |
+| total_stations_2025   | float64 | Total public charging stations in 2025 (aggregated by region).            | data/processed/metrics/correlation_data.csv |
+| total_connectors_2025 | float64 | Total charging connectors in 2025 (aggregated by region).                 | data/processed/metrics/correlation_data.csv |
+| evs_per_station       | float64 | EV stock divided by stations (EVs per station).                           | data/processed/metrics/correlation_data.csv |
+| evs_per_connector     | float64 | EV stock divided by connectors (EVs per connector).                       | data/processed/metrics/correlation_data.csv |
+| infrastructure_deficit| float64 | Difference between EVs/connector and benchmark (30 EVs/charger).          | data/processed/metrics/correlation_data.csv |
+| deficit_pct           | float64 | Percentage difference vs benchmark (30 EVs/charger).                      | data/processed/metrics/correlation_data.csv |
+| adequacy_category     | object  | Adequacy label (Adequate, Insufficient, etc.) based on EVs/connector.    | data/processed/metrics/correlation_data.csv |
 
 ---
 
-## Dataset: `data/processed/metrics/infrastructure_adequacy.csv`
+## Dataset: `data/processed/metrics/correlation_ev_infrastructure.csv`
 
-Infrastructure adequacy metrics summarizing EV coverage by charging stations.
+Summary table of Pearson correlation coefficients between EV adoption and infrastructure.
 
-| Field                  | Type    | Description                                                                    | Source file                                        |
-|------------------------|---------|--------------------------------------------------------------------------------|----------------------------------------------------|
-| region                 | object  | Geographic region or market.                                                  | data/processed/metrics/infrastructure_adequacy.csv |
-| year                   | object  | Year string for the metric (may be stored as text).                           | data/processed/metrics/infrastructure_adequacy.csv |
-| category               | object  | Data category (e.g., infrastructure).                                         | data/processed/metrics/infrastructure_adequacy.csv |
-| mode                   | object  | Transport mode.                                                               | data/processed/metrics/infrastructure_adequacy.csv |
-| ev_stock               | object  | EV stock used in the adequacy calculation (string or numeric encoded).       | data/processed/metrics/infrastructure_adequacy.csv |
-| total_stations         | object  | Total charging stations used in the adequacy calculation.                    | data/processed/metrics/infrastructure_adequacy.csv |
-| stations_per_1000_evs  | object  | Number of stations per 1,000 EVs.                                            | data/processed/metrics/infrastructure_adequacy.csv |
-| stations_per_million_evs| object | Number of stations per 1,000,000 EVs.                                        | data/processed/metrics/infrastructure_adequacy.csv |
-| fast_charger_ratio     | object  | Share of stations that are fast chargers.                                    | data/processed/metrics/infrastructure_adequacy.csv |
-| always_available_ratio | object  | Share of stations marked as always available.                                | data/processed/metrics/infrastructure_adequacy.csv |
-| infrastructure_score   | object  | Composite infrastructure adequacy score.                                     | data/processed/metrics/infrastructure_adequacy.csv |
-| adequacy_category      | object  | Categorical label for adequacy (e.g., Well Served, Adequate, Strained).     | data/processed/metrics/infrastructure_adequacy.csv |
-
----
-
-## Dataset: `data/processed/metrics/regional_charging_costs.csv`
-
-Charging cost statistics derived from station-level pricing data.
-
-| Field                       | Type    | Description                                                         | Source file                                         |
-|-----------------------------|---------|---------------------------------------------------------------------|-----------------------------------------------------|
-| country                     | object  | Country name for which costs are aggregated.                        | data/processed/metrics/regional_charging_costs.csv |
-| avg_cost_per_full_charge    | float64 | Average cost to fully charge a representative EV battery.           | data/processed/metrics/regional_charging_costs.csv |
-| median_cost_per_full_charge | float64 | Median cost to fully charge.                                       | data/processed/metrics/regional_charging_costs.csv |
-| std_cost_per_full_charge    | float64 | Standard deviation of full-charge costs.                           | data/processed/metrics/regional_charging_costs.csv |
-| min_cost_per_full_charge    | float64 | Minimum observed full-charge cost.                                 | data/processed/metrics/regional_charging_costs.csv |
-| max_cost_per_full_charge    | float64 | Maximum observed full-charge cost.                                 | data/processed/metrics/regional_charging_costs.csv |
-| avg_cost_per_kwh            | float64 | Average cost per kWh.                                              | data/processed/metrics/regional_charging_costs.csv |
-| median_cost_per_kwh         | float64 | Median cost per kWh.                                               | data/processed/metrics/regional_charging_costs.csv |
-| num_stations                | int64   | Number of stations contributing to the cost statistics.            | data/processed/metrics/regional_charging_costs.csv |
-
----
-
-## Dataset: `data/processed/metrics/regional_leaders.csv`
-
-Top regions by EV adoption and infrastructure.
-
-| Field          | Type    | Description                                              | Source file                                  |
-|----------------|---------|----------------------------------------------------------|----------------------------------------------|
-| region         | object  | Geographic region or market.                            | data/processed/metrics/regional_leaders.csv |
-| ev_stock       | float64 | Total EV stock in the region.                          | data/processed/metrics/regional_leaders.csv |
-| ev_sales       | float64 | Annual EV sales in the region.                         | data/processed/metrics/regional_leaders.csv |
-| ev_sales_share | float64 | EV sales share in total vehicle sales.                 | data/processed/metrics/regional_leaders.csv |
-| total_stations | float64 | Number of charging stations in the region.             | data/processed/metrics/regional_leaders.csv |
-
----
-
-## Dataset: `data/processed/metrics/stations_per_ev_ratio.csv`
-
-Stations-to-EV ratio metrics by region and year.
-
-| Field                  | Type    | Description                                                         | Source file                                      |
-|------------------------|---------|---------------------------------------------------------------------|--------------------------------------------------|
-| region                 | object  | Geographic region or market.                                       | data/processed/metrics/stations_per_ev_ratio.csv|
-| year                   | object  | Year string for the metric.                                        | data/processed/metrics/stations_per_ev_ratio.csv|
-| category               | object  | Data category (e.g., infrastructure).                              | data/processed/metrics/stations_per_ev_ratio.csv|
-| mode                   | object  | Transport mode.                                                    | data/processed/metrics/stations_per_ev_ratio.csv|
-| ev_stock               | object  | EV stock used for ratio computation.                               | data/processed/metrics/stations_per_ev_ratio.csv|
-| total_stations         | object  | Total charging stations used for ratio computation.                | data/processed/metrics/stations_per_ev_ratio.csv|
-| stations_per_1000_evs  | object  | Number of stations per 1,000 EVs.                                  | data/processed/metrics/stations_per_ev_ratio.csv|
-| stations_per_million_evs| object | Number of stations per 1,000,000 EVs.                              | data/processed/metrics/stations_per_ev_ratio.csv|
-| fast_charger_ratio     | object  | Share of stations that are fast chargers.                          | data/processed/metrics/stations_per_ev_ratio.csv|
-| always_available_ratio | object  | Share of stations marked as always available.                      | data/processed/metrics/stations_per_ev_ratio.csv|
+| Field                    | Type    | Description                                                          | Source file                                          |
+|--------------------------|---------|----------------------------------------------------------------------|------------------------------------------------------|
+| metric_pair              | object  | Description of the two variables compared (e.g., stock vs stations). | data/processed/metrics/correlation_ev_infrastructure.csv |
+| correlation_coefficient  | float64 | Pearson correlation coefficient for the metric pair.                 | data/processed/metrics/correlation_ev_infrastructure.csv |
+| sample_size              | int64   | Number of regions included in the correlation calculation.           | data/processed/metrics/correlation_ev_infrastructure.csv |
 
 ---
 

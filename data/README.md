@@ -73,15 +73,11 @@ See `merged_charging_station/README.md` for detailed schema and statistics.
 
 Dashboard metrics calculated from processed data:
 
-| File                          | Description                        |
-| ----------------------------- | ---------------------------------- |
-| `bev_phev_market_share.csv`   | BEV vs PHEV market share by region |
-| `dashboard_summary.csv`       | Summary statistics                 |
-| `infrastructure_adequacy.csv` | Stations-to-EV ratios              |
-| `regional_charging_costs.csv` | Average charging costs             |
-| `regional_leaders.csv`        | Top regions by EV adoption         |
-| `stations_per_ev_ratio.csv`   | Infrastructure density             |
-| `yoy_growth_rates.csv`        | Year-over-year growth              |
+| File                             | Description                                                        |
+| -------------------------------- | ------------------------------------------------------------------ |
+| `yoy_growth_rates.csv`           | Year-over-year growth in EV sales, stock, and charging stations   |
+| `correlation_data.csv`           | Per-country EV stock vs connectors metrics for adequacy scatter   |
+| `correlation_ev_infrastructure.csv` | Summary table of correlation coefficients for EV vs infrastructure |
 
 ### year_2024_processed/
 
