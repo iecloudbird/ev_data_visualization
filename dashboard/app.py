@@ -26,7 +26,8 @@ from dashboard.components.charts import (
     create_powertrain_comparison,
     create_kpi_card_data,
     create_infrastructure_pie_2023,
-    create_powertrain_sunburst_2023
+    create_powertrain_sunburst_2023,
+    create_infrastructure_adequacy_scatter,
 )
 
 # Initialize app
@@ -46,6 +47,7 @@ data_loader = EVDataLoader()
 print("Loading data...")
 ev_data = data_loader.get_ev_stock_by_region_year()
 powertrain_data = data_loader.get_powertrain_data()
+correlation_data = data_loader.load_correlation_data()
 year_min, year_max = data_loader.get_year_range()
 available_regions = data_loader.get_available_regions()
 top_regions = data_loader.get_top_regions(n=10, year=year_max)
@@ -61,6 +63,11 @@ CHART_DESCRIPTIONS = {
     'overview_stations': {
         'title': 'EV Charging Infrastructure Network',
         'description': 'Interactive map displaying 12,002 charging stations worldwide with marker clustering. Each station shows operator, location, and status. Zoom in to explore density patterns in specific regions.',
+        'controls': []
+    },
+    'overview_infra_scatter': {
+        'title': 'Infrastructure Adequacy: EV Stock vs EVs per Connector',
+        'description': 'Log scale scatter comparing 2023 EV stock with 2025 charging connectors. Highlights China, USA, and Europe, revealing where open infrastructure data appears thin relative to vehicle adoption.',
         'controls': []
     },
     'trends_timeseries': {
@@ -184,6 +191,17 @@ app.layout = html.Div([
                                 src='/assets/ev_stations_map.html',
                                 style={'width': '100%', 'height': '600px', 'border': 'none', 'borderRadius': '4px'}
                             )
+                        ], className='chart-container'),
+
+                        # Chart 3: Infrastructure adequacy scatter
+                        html.Div([
+                            html.Div([
+                                html.H3(CHART_DESCRIPTIONS['overview_infra_scatter']['title'],
+                                       style={'fontSize': '20px', 'fontWeight': '600', 'margin': '0', 'color': '#FFFFFF'}),
+                                html.P(CHART_DESCRIPTIONS['overview_infra_scatter']['description'],
+                                      style={'fontSize': '13px', 'color': '#B8B8B8', 'margin': '8px 0 0 0', 'lineHeight': '1.6'})
+                            ], style={'marginBottom': '20px'}),
+                            dcc.Graph(id='infra-adequacy-scatter', config={'displayModeBar': False})
                         ], className='chart-container'),
                         
                     ])
@@ -414,6 +432,15 @@ def update_choropleth(year):
     """Update choropleth map."""
     year = year if year else year_max
     return create_choropleth_map(ev_data, year)
+
+
+@app.callback(
+    Output('infra-adequacy-scatter', 'figure'),
+    Input('current-tab', 'children')
+)
+def render_infrastructure_adequacy_scatter(_active_tab):
+    """Render static infrastructure adequacy scatter in the Overview tab."""
+    return create_infrastructure_adequacy_scatter(correlation_data)
 
 
 @app.callback(

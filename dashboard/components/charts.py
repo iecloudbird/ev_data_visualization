@@ -7,6 +7,7 @@ Matches finalized visualizations from ev.ipynb and ev_stations_map.ipynb.
 import plotly.express as px
 import plotly.graph_objects as go
 import pandas as pd
+import numpy as np
 
 
 def create_choropleth_map(df: pd.DataFrame, selected_year: int):
@@ -294,3 +295,256 @@ def create_kpi_card_data(stats: dict):
         {'title': 'Total Charging Stations', 'value': f"{stats['total_stations']:,.0f}", 'subtitle': 'Globally (2025)'},
         {'title': 'YoY Growth Rate', 'value': f"{stats['yoy_growth_pct']:+.1f}%", 'subtitle': 'Year over Year'}
     ]
+
+
+def create_infrastructure_adequacy_scatter(correlation_data: pd.DataFrame) -> go.Figure:
+    """Create the infrastructure adequacy scatter used in ev.ipynb section 6.
+
+    X-axis: EV stock 2023 (log), Y-axis: EVs per connector (log).
+    Highlights China, USA, Europe and encodes adequacy via color + text box legend.
+    """
+    # Filter for rows with required fields
+    required_cols = ['ev_stock_2023', 'total_connectors_2025', 'evs_per_connector']
+    plot_data = correlation_data[correlation_data[required_cols].notna().all(axis=1)].copy()
+
+    if len(plot_data) <= 1:
+        # Return an empty-but-valid figure with a helpful title
+        fig = go.Figure()
+        fig.update_layout(
+            title='Infrastructure Adequacy: EV Stock vs EVs per Charging Connector (insufficient data)',
+            template='plotly_white'
+        )
+        return fig
+
+    TARGET_EVS_PER_CHARGER = 30.0
+
+    # Major markets for highlighting
+    major_markets = ['China', 'USA', 'Europe']
+    plot_data['is_major_market'] = plot_data['region'].isin(major_markets)
+
+    def get_adequacy_color(category: str) -> str:
+        color_map = {
+            'Adequate': '#4CAF50',      # green
+            'Insufficient': '#D32F2F',  # red
+            'Well-served': '#2E7D32',   # deep green (legacy)
+            'Strained': '#FF9800',      # orange (legacy)
+            'Unknown': '#757575',       # gray
+        }
+        return color_map.get(category, '#757575')
+
+    plot_data['color'] = plot_data['adequacy_category'].apply(get_adequacy_color)
+
+    major_data = plot_data[plot_data['is_major_market']].copy()
+    other_data = plot_data[~plot_data['is_major_market']].copy()
+
+    fig = go.Figure()
+
+    # Axis ranges with padding
+    x_min = plot_data['ev_stock_2023'].min() * 0.8
+    x_max = plot_data['ev_stock_2023'].max() * 2.0
+    y_min = plot_data['evs_per_connector'].min() * 0.5
+    y_max = plot_data['evs_per_connector'].max() * 1.3
+
+    fig.update_xaxes(
+        type="log",
+        title_text="<b>EV Stock (2023)</b>",
+        title_font=dict(size=14),
+        tickfont=dict(size=11),
+        gridcolor='lightgray',
+        gridwidth=1,
+        minor_gridcolor='#f0f0f0',
+        showgrid=True,
+        range=[np.log10(x_min), np.log10(x_max)],
+    )
+
+    fig.update_yaxes(
+        type="log",
+        title_text="<b>EVs per Charging Connector</b>",
+        title_font=dict(size=14),
+        tickfont=dict(size=11),
+        gridcolor='lightgray',
+        gridwidth=1,
+        minor_gridcolor='#f0f0f0',
+        showgrid=True,
+        range=[np.log10(y_min), np.log10(y_max)],
+    )
+
+    # Other countries
+    if len(other_data) > 0:
+        fig.add_trace(
+            go.Scatter(
+                x=other_data['ev_stock_2023'],
+                y=other_data['evs_per_connector'],
+                mode='markers',
+                marker=dict(
+                    size=10,
+                    color=other_data['color'],
+                    opacity=0.7,
+                    line=dict(width=1.5, color='white'),
+                    symbol='circle',
+                ),
+                text=other_data['region'],
+                hovertemplate=(
+                    '<b>%{text}</b><br>'
+                    'EV Stock (2023): %{x:,.0f}<br>'
+                    'EVs per Connector: %{y:,.1f}<br>'
+                    'Charging Connectors: %{customdata:,.0f}<extra></extra>'
+                ),
+                customdata=other_data['total_connectors_2025'],
+                name='Other Countries',
+                showlegend=True,
+            )
+        )
+
+    # Emphasise major markets with distinct colors
+    major_market_colors = {
+        'China': '#8E24AA',   # purple
+        'USA': '#1976D2',     # blue
+        'Europe': '#FF6F00',  # deep orange
+    }
+
+    if len(major_data) > 0:
+        for _, row in major_data.iterrows():
+            marker_size = 12 + max(0, (np.log10(row['ev_stock_2023']) - 4) * 1.2)
+            region_name = row['region']
+            marker_color = major_market_colors.get(region_name, row['color'])
+
+            fig.add_trace(
+                go.Scatter(
+                    x=[row['ev_stock_2023']],
+                    y=[row['evs_per_connector']],
+                    mode='markers',
+                    marker=dict(
+                        size=marker_size,
+                        color=marker_color,
+                        opacity=0.9,
+                        line=dict(width=2, color='black'),
+                        symbol='circle',
+                    ),
+                    text=[row['region']],
+                    hovertemplate=(
+                        '<b>%{text}</b><br>'
+                        'EV Stock (2023): %{x:,.0f}<br>'
+                        'EVs per Connector: %{y:,.1f}<br>'
+                        'Charging Connectors: %{customdata:,.0f}<extra></extra>'
+                    ),
+                    customdata=[row['total_connectors_2025']],
+                    name=row['region'],
+                    showlegend=True,
+                )
+            )
+
+    fig.update_layout(
+        height=800,
+        width=800,
+        title=dict(
+            text=(
+                '<b>Infrastructure Adequacy: EV Stock vs EVs per Charging Connector</b><br>'
+                '<span style="font-size:12px;color:#666">'
+                'Comparing 2023 EV stock with 2025 charging connectors'
+                '</span>'
+            ),
+            x=0.5,
+            font=dict(size=15),
+        ),
+        template='plotly_white',
+        hovermode='closest',
+        legend=dict(
+            x=0.02,
+            y=0.98,
+            bgcolor='rgba(255,255,255,0.8)',
+            bordercolor='gray',
+            borderwidth=1,
+            font=dict(size=11),
+        ),
+        margin=dict(l=100, r=80, t=120, b=80),
+        plot_bgcolor='white',
+        paper_bgcolor='white',
+    )
+
+    # Vertical offsets for annotation boxes to avoid overlap
+    annotations_y_offset = {
+        'China': 0.08,
+        'USA': -0.08,
+        'Europe': -0.08,
+    }
+
+    for _, row in major_data.iterrows():
+        region = row['region']
+        deficit = row['infrastructure_deficit']
+        evs_per_conn = row['evs_per_connector']
+
+        region_annotation_colors = {
+            'China': {'bg': 'rgba(142,36,170,0.15)', 'border': '#8E24AA'},
+            'USA': {'bg': 'rgba(25,118,210,0.15)', 'border': '#1976D2'},
+            'Europe': {'bg': 'rgba(255,111,0,0.15)', 'border': '#FF6F00'},
+        }
+
+        if deficit > 100:
+            status_text = (
+                f"<b>{region}: Severe Reporting Deficit</b><br>"
+                f"EVs/Connector: {evs_per_conn:.0f} (Target: {TARGET_EVS_PER_CHARGER:.0f})<br>"
+                f"Deficit: +{deficit:.0f} EVs/Charger"
+            )
+        elif deficit > 0:
+            status_text = (
+                f"<b>{region}: Infrastructure Deficit</b><br>"
+                f"EVs/Connector: {evs_per_conn:.0f} (Target: {TARGET_EVS_PER_CHARGER:.0f})<br>"
+                f"Deficit: +{deficit:.0f} EVs/Charger"
+            )
+        else:
+            status_text = (
+                f"<b>{region}: Infrastructure Surplus</b><br>"
+                f"EVs/Connector: {evs_per_conn:.0f} (Target: {TARGET_EVS_PER_CHARGER:.0f})<br>"
+                f"Surplus: {deficit:.0f} EVs/Charger"
+            )
+
+        annotation_style = region_annotation_colors.get(
+            region,
+            {'bg': 'rgba(211,47,47,0.1)', 'border': '#D32F2F'},
+        )
+
+        fig.add_annotation(
+            x=np.log10(row['ev_stock_2023']),
+            y=np.log10(row['evs_per_connector']) + annotations_y_offset.get(region, 0),
+            xref='x',
+            yref='y',
+            text=status_text,
+            showarrow=True,
+            arrowhead=2,
+            arrowsize=1.5,
+            arrowwidth=2,
+            arrowcolor=annotation_style['border'],
+            ax=0,
+            ay=-40 if annotations_y_offset.get(region, 0) > 0 else 40,
+            bgcolor=annotation_style['bg'],
+            bordercolor=annotation_style['border'],
+            borderwidth=2,
+            borderpad=8,
+            font=dict(size=11, color='black'),
+            align='left',
+        )
+
+    # Adequacy legend textbox
+    fig.add_annotation(
+        text=(
+            '<b>Infrastructure Adequacy Categories:</b><br>'
+            '<span style="color:#4CAF50">●</span> Adequate (≤30 EVs/Charger)<br>'
+            '<span style="color:#D32F2F">●</span> Insufficient (>30 EVs/Charger)'
+        ),
+        xref='paper',
+        yref='paper',
+        x=0.98,
+        y=0.98,
+        xanchor='right',
+        yanchor='top',
+        showarrow=False,
+        font=dict(size=12, color='#333333', family='Arial, sans-serif'),
+        bgcolor='rgba(255,255,255,0.95)',
+        bordercolor='#666666',
+        borderwidth=2,
+        borderpad=10,
+        align='left',
+    )
+
+    return fig

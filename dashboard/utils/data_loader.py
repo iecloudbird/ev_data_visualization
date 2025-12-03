@@ -49,6 +49,15 @@ class EVDataLoader:
             df = pd.read_csv(file_path)
             self._cache['stations'] = df
         return self._cache['stations'].copy()
+
+    def load_correlation_data(self):
+        """Load correlation_data.csv prepared by notebooks/data_wrangling/calculate_metrics.py."""
+        if 'correlation_data' not in self._cache:
+            metrics_dir = self.data_dir / 'metrics'
+            file_path = metrics_dir / 'correlation_data.csv'
+            df = pd.read_csv(file_path)
+            self._cache['correlation_data'] = df
+        return self._cache['correlation_data'].copy()
     
     def get_ev_stock_by_region_year(self):
         """
