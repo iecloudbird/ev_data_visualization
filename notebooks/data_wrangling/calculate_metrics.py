@@ -310,30 +310,110 @@ worst_market = infrastructure_adequacy_2023_2025.loc[
     infrastructure_adequacy_2023_2025['evs_per_connector'].idxmax()
 ] if not infrastructure_adequacy_2023_2025['evs_per_connector'].isna().all() else None
 
+# Get 2023 EV sales data for correlation analysis
+ev_sales_2023 = iea_full[
+    (iea_full['parameter'] == 'EV sales') &
+    (iea_full['year'] == 2023) &
+    (iea_full['mode'] == 'Cars') &
+    (iea_full['category'] == 'Historical')
+].copy()
+
+# Aggregate EV sales by region
+ev_sales_2023_agg = ev_sales_2023.groupby('region')['value'].sum().reset_index()
+ev_sales_2023_agg.columns = ['region', 'ev_sales_2023']
+
+# Merge sales data with infrastructure data for correlation analysis
+correlation_data = infrastructure_adequacy_2023_2025.merge(
+    ev_sales_2023_agg,
+    on='region',
+    how='left'
+)
+
+# Calculate correlation coefficients
+# Filter out rows with missing values for correlation
+corr_data_clean = correlation_data[
+    correlation_data[['ev_stock_2023', 'ev_sales_2023', 'total_stations_2025', 'total_connectors_2025']].notna().all(axis=1)
+].copy()
+
+correlation_stock_stations = None
+correlation_stock_connectors = None
+correlation_sales_stations = None
+correlation_sales_connectors = None
+
+if len(corr_data_clean) > 1:
+    correlation_stock_stations = corr_data_clean['ev_stock_2023'].corr(corr_data_clean['total_stations_2025'])
+    correlation_stock_connectors = corr_data_clean['ev_stock_2023'].corr(corr_data_clean['total_connectors_2025'])
+    
+    if corr_data_clean['ev_sales_2023'].notna().sum() > 1:
+        correlation_sales_stations = corr_data_clean['ev_sales_2023'].corr(corr_data_clean['total_stations_2025'])
+        correlation_sales_connectors = corr_data_clean['ev_sales_2023'].corr(corr_data_clean['total_connectors_2025'])
+
+# Add sales data to infrastructure adequacy dataframe
+infrastructure_adequacy_2023_2025 = infrastructure_adequacy_2023_2025.merge(
+    ev_sales_2023_agg,
+    on='region',
+    how='left'
+)
+
 # Print summary statistics
 print("\n" + "="*80)
-print("📊 INFRASTRUCTURE ADEQUACY ANALYSIS (2023 EV Stock vs 2025 Infrastructure)")
+print("INFRASTRUCTURE ADEQUACY ANALYSIS (2023 EV Stock vs 2025 Infrastructure)")
 print("="*80)
 print(f"\nTarget Benchmark: ~{TARGET_EVS_PER_CHARGER:.0f} EVs per Charger Connector")
 print(f"\nTotal countries/regions analyzed: {len(infrastructure_adequacy_2023_2025)}")
 
 if worst_market is not None and pd.notna(worst_market['evs_per_connector']):
-    print(f"\n🔴 Highest Infrastructure Deficit:")
+    print(f"\nHighest Infrastructure Deficit:")
     print(f"   Region: {worst_market['region']}")
     print(f"   EVs per Connector: {worst_market['evs_per_connector']:.1f}")
     print(f"   Deficit: {worst_market['infrastructure_deficit']:.1f} EVs/Charger")
     print(f"   Deficit %: {worst_market['deficit_pct']:.1f}% above target")
 
 if len(infrastructure_major_markets) > 0:
-    print(f"\n📈 Major Markets Infrastructure Status:")
+    print(f"\nMajor Markets Infrastructure Status:")
     for _, row in infrastructure_major_markets.iterrows():
-        status_emoji = "🟢" if row['adequacy_category'] in ['Well-served', 'Adequate'] else "🟡" if row['adequacy_category'] == 'Strained' else "🔴"
-        print(f"\n   {status_emoji} {row['region']}:")
+        status = "[OK]" if row['adequacy_category'] in ['Well-served', 'Adequate'] else "[WARN]" if row['adequacy_category'] == 'Strained' else "[CRITICAL]"
+        print(f"\n   {status} {row['region']}:")
         print(f"      EVs per Connector: {row['evs_per_connector']:.1f}")
         print(f"      Category: {row['adequacy_category']}")
         if pd.notna(row['deficit_pct']):
             deficit_sign = "+" if row['deficit_pct'] > 0 else ""
             print(f"      Deficit: {deficit_sign}{row['deficit_pct']:.1f}% vs target")
+
+# Print correlation results
+print("\n" + "="*80)
+print("CORRELATION ANALYSIS: EV Adoption vs Charging Infrastructure")
+print("="*80)
+if correlation_stock_stations is not None:
+    print(f"\nCorrelation Coefficients (Pearson):")
+    print(f"   EV Stock 2023 vs Total Stations 2025: {correlation_stock_stations:.4f}")
+    print(f"   EV Stock 2023 vs Total Connectors 2025: {correlation_stock_connectors:.4f}")
+    if correlation_sales_stations is not None:
+        print(f"   EV Sales 2023 vs Total Stations 2025: {correlation_sales_stations:.4f}")
+        print(f"   EV Sales 2023 vs Total Connectors 2025: {correlation_sales_connectors:.4f}")
+    print(f"\n   Sample size: {len(corr_data_clean)} regions/countries")
+    
+    # Interpret correlation
+    def interpret_correlation(r):
+        """Interpret correlation coefficient strength."""
+        abs_r = abs(r)
+        if abs_r >= 0.9:
+            return "very strong"
+        elif abs_r >= 0.7:
+            return "strong"
+        elif abs_r >= 0.5:
+            return "moderate"
+        elif abs_r >= 0.3:
+            return "weak"
+        else:
+            return "very weak"
+    
+    if correlation_stock_connectors is not None:
+        print(f"\n   Interpretation: {interpret_correlation(correlation_stock_connectors)} positive correlation")
+        print(f"   between EV stock and charging connectors suggests infrastructure")
+        print(f"   deployment is generally aligned with EV adoption levels.")
+else:
+    print("\n   Insufficient data for correlation analysis (need at least 2 valid pairs)")
 
 # Sort by EVs per connector (descending) for easy identification of worst cases
 # NaN values will be placed at the end by default
@@ -342,16 +422,35 @@ infrastructure_adequacy_2023_2025 = infrastructure_adequacy_2023_2025.sort_value
     ascending=False
 )
 
+# Create correlation summary dataframe
+correlation_summary = pd.DataFrame({
+    'metric_pair': [
+        'EV Stock 2023 vs Total Stations 2025',
+        'EV Stock 2023 vs Total Connectors 2025',
+        'EV Sales 2023 vs Total Stations 2025',
+        'EV Sales 2023 vs Total Connectors 2025'
+    ],
+    'correlation_coefficient': [
+        correlation_stock_stations if correlation_stock_stations is not None else np.nan,
+        correlation_stock_connectors if correlation_stock_connectors is not None else np.nan,
+        correlation_sales_stations if correlation_sales_stations is not None else np.nan,
+        correlation_sales_connectors if correlation_sales_connectors is not None else np.nan
+    ],
+    'sample_size': [len(corr_data_clean)] * 4
+})
+
 output_files = {
     'stations_per_ev_ratio.csv': stations_ratio,
     'yoy_growth_rates.csv': growth_metrics,
     'infrastructure_adequacy.csv': infrastructure_adequacy,
     'bev_phev_market_share.csv': market_share_pivot,
     'infrastructure_adequacy_2023_2025.csv': infrastructure_adequacy_2023_2025,
-    'major_markets_infrastructure.csv': infrastructure_major_markets
+    'major_markets_infrastructure.csv': infrastructure_major_markets,
+    'correlation_ev_infrastructure.csv': correlation_summary,
+    'correlation_data.csv': corr_data_clean  # Full dataset for plotting
 }
 
 for filename, dataframe in output_files.items():
     filepath = METRICS_DIR / filename
     dataframe.to_csv(filepath, index=False)
-    print(f"\n✅ Saved: {filepath}")
+    print(f"\nSaved: {filepath}")
