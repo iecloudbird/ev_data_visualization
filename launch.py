@@ -65,6 +65,18 @@ def run_pipeline(skip_map: bool) -> None:
         raise SystemExit("Notebook pipeline failed")
 
 
+def run_metrics_script() -> None:
+    """Run the one-time metrics calculation script to populate data/processed/metrics/."""
+    metrics_script = ROOT / "notebooks" / "data_wrangling" / "calculate_metrics.py"
+    if not metrics_script.exists():
+        print("Metrics script not found; skipping calculate_metrics.py.")
+        return
+    print("Running metrics script (calculate_metrics.py)...")
+    rc = subprocess.call([str(VENV_PY), str(metrics_script)], cwd=str(ROOT))
+    if rc != 0:
+        raise SystemExit("Metrics script calculate_metrics.py failed")
+
+
 def launch_dashboard() -> None:
     print("Launching dashboard at http://localhost:8050")
     rc = subprocess.call([str(VENV_PY), "-m", "dashboard.app"], cwd=str(ROOT))
@@ -86,6 +98,7 @@ def main() -> int:
 
     if args.pipeline:
         run_pipeline(skip_map=args.skip_map)
+        run_metrics_script()
 
     if not args.no_dashboard:
         launch_dashboard()
